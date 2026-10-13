@@ -1,0 +1,13 @@
+ref,x_mm,y_mm,rotation,near
+H1,4.0,4.0,0,
+H2,4.0,156.0,0,
+H3,156.0,4.0,0,
+H4,156.0,156.0,0,
+ROW0,97.0,57.0,90,frontenac
+ROW1,134.8,19.2,90,honore-beaugrand
+ROW2,62.2,47.4,0,jean-talon
+ROW3,20.2,74.7,0,du-college
+ROW4,50.8,70.02,90,outremont
+ROW5,80.2,84.3,90,champ-de-mars
+ROW6,42.28,126.6,0,de-l-eglise
+ROW7,69.4,90.6,90,guy-concordia

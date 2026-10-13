@@ -59,6 +59,8 @@ BOARD = 2.0                    # board mm per canvas unit
 BEND_MM = 4.0                  # bend radius
 MIN_PITCH_MM = 3.3
 PAD_CLEAR_MM = 2.2
+HOLE_INSET_MM = 4.0            # M3 mounting holes, centre to board edge
+HOLE_CLEAR_MM = 4.5            # copper art keeps this far from a hole centre
 TITLE_MM = 8.0
 # The downtown orange line's labels can only go on the river side (the green
 # line is on the other), and white silk on bare copper reads poorly. So the
@@ -303,6 +305,11 @@ water = unary_union([Polygon(g.exterior, [r for r in g.interiors
 wet = sorted(sid for sid in ids if water.contains(Point(MM[sid])))
 for p in MM.values():
     water = water.difference(Point(p).buffer(PAD_CLEAR_MM, 12))
+# mounting holes, one per corner: their pads are bare copper too
+HOLES = [(x, y) for x in (HOLE_INSET_MM, BOARD_W - HOLE_INSET_MM)
+         for y in (HOLE_INSET_MM, BOARD_H - HOLE_INSET_MM)]
+for p in HOLES:
+    water = water.difference(Point(p).buffer(HOLE_CLEAR_MM, 16))
 land = FRAME.difference(water)
 
 
@@ -347,6 +354,7 @@ else:
     print("  warning: no clear land for the wordmark")
 
 d["geo"] = geo
+d["mounting_holes"] = [list(p) for p in HOLES]
 d["annotations"] = annotations
 d["canvas_mm"] = BOARD_W / BOARD
 d["canvas_h_mm"] = BOARD_H / BOARD

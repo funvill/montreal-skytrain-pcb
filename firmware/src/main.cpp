@@ -1,6 +1,6 @@
-// Vancouver SkyTrain LED map - v3 firmware
-// One WS2812B (XL-1615RGBC) per station, 68 LEDs total.
-// Index tables are GENERATED from ai-v3/input/vancouver.json by
+// Montréal métro LED map firmware (ported from the Vancouver SkyTrain v3 board)
+// One WS2812B (XL-1615RGBC) per station, 73 LEDs total.
+// Index tables are GENERATED from input/montreal-schematic-square.json by
 // tools/export_placement.py -> include/firmware_tables.h. Regenerate after
 // any layout/chain change; never edit the tables by hand.
 //
@@ -40,17 +40,17 @@ uint8_t brightness = 40;
 uint16_t stepMs = 700;          // train advance interval
 const uint8_t FADE_PER_FRAME = 24;
 
-// 68 LEDs at full white would pull ~4 A; the board is fed from the XIAO's
+// 73 LEDs at full white would pull ~4.4 A; the board is fed from the XIAO's
 // USB connector, so cap well under what a PC port and the module's VBUS
 // trace will carry. Raise it when running from a dedicated 5 V supply on
 // the +5V test point.
 const uint32_t MAX_MILLIAMPS = 900;
 
-// TransLink line colours
-const CRGB COLOR_EXPO = CRGB(0x00, 0x5D, 0xAA);
-const CRGB COLOR_MILLENNIUM = CRGB(0xFD, 0xD0, 0x05);
-const CRGB COLOR_CANADA = CRGB(0x00, 0x9A, 0xC7);
-const CRGB COLOR_SEABUS = CRGB(0xC0, 0xC0, 0xC0);
+// STM line colours
+const CRGB COLOR_GREEN = CRGB(0x00, 0x8E, 0x4F);
+const CRGB COLOR_ORANGE = CRGB(0xEF, 0x81, 0x22);
+const CRGB COLOR_YELLOW = CRGB(0xFF, 0xE3, 0x00);
+const CRGB COLOR_BLUE = CRGB(0x00, 0x83, 0xCA);
 
 struct Route {
   const int *idx;    // LED index per station along the route
@@ -62,19 +62,15 @@ struct Route {
 };
 
 Route routes[] = {
-  {LINE_EXPO_LANGLEY_CITY_CENTRE, LINE_EXPO_LANGLEY_CITY_CENTRE_COUNT,
-   COLOR_EXPO, 3, {0}, {0}},
-  {LINE_EXPO_PRODUCTION_WAY, LINE_EXPO_PRODUCTION_WAY_COUNT,
-   COLOR_EXPO, 2, {0}, {0}},
-  {LINE_MILLENNIUM, LINE_MILLENNIUM_COUNT, COLOR_MILLENNIUM, 3, {0}, {0}},
-  {LINE_CANADA_YVR, LINE_CANADA_YVR_COUNT, COLOR_CANADA, 2, {0}, {0}},
-  {LINE_CANADA_RICHMOND_BRIGHOUSE, LINE_CANADA_RICHMOND_BRIGHOUSE_COUNT,
-   COLOR_CANADA, 2, {0}, {0}},
+  {LINE_GREEN, LINE_GREEN_COUNT, COLOR_GREEN, 3, {0}, {0}},
+  {LINE_ORANGE, LINE_ORANGE_COUNT, COLOR_ORANGE, 3, {0}, {0}},
+  {LINE_YELLOW, LINE_YELLOW_COUNT, COLOR_YELLOW, 1, {0}, {0}},
+  {LINE_BLUE, LINE_BLUE_COUNT, COLOR_BLUE, 2, {0}, {0}},
 };
 const int ROUTE_COUNT = sizeof(routes) / sizeof(routes[0]);
 
 // Power-on chain check: walk one lit LED from the first to the last, then
-// flash every LED once. On a new board this shows at a glance that all 68
+// flash every LED once. On a new board this shows at a glance that all 73
 // are alive and in chain order - if the walk stops part way, the break is
 // at the LED it stopped on.
 void chainSelfTest() {
@@ -189,10 +185,6 @@ void loop() {
       leds[rt.idx[rt.pos[t]]] = rt.color;
     }
   }
-  // SeaBus: slow breathing pulse
-  leds[LINE_SEABUS[0]] = COLOR_SEABUS;
-  leds[LINE_SEABUS[0]].nscale8(beatsin8(6, 20, 255));
-
   FastLED.show();
   delay(16);
 }
