@@ -55,6 +55,7 @@ VARIANTS = {
 VARIANT = sys.argv[1] if len(sys.argv) > 1 else "wide"
 # U = grid step, mm; XS = sideways stretch; (OX, OY) = board mm of grid (0, 0) = Berri-UQAM
 OUT, BOARD_W, BOARD_H, U, XS, OX, OY = VARIANTS[VARIANT]
+OVERRIDES = f"label_overrides-{VARIANT}.json"
 BOARD = 2.0                    # board mm per canvas unit
 BEND_MM = 4.0                  # bend radius
 MIN_PITCH_MM = 3.3
@@ -79,7 +80,11 @@ MIN_FLOW_KM2 = 0.01            # rivers / canals / lakes: anything this size or 
 MIN_NAMED_KM2 = 0.03           # other water (park ponds, basins) only if named
 MIN_WATER_MM = 0.5             # thinnest copper feature: canals are fattened to this
 MIN_PIECE_MM2 = 1.2            # smallest separate piece of water kept
-MIN_ISLAND_MM2 = 0.8           # smallest island kept
+MIN_EDGE_PIECE_MM2 = 20.0      # ... or this, for a piece cut off by the board edge (a stray river end)
+STUB_MM2 = 10.0                # a piece of water this small, within 5 mm of a station, is dropped
+LABEL_CLEAR_MM = 0.7           # water keeps this far from a hand-placed label
+MIN_ISLAND_MM2 = 8.0           # smallest island kept
+MIN_ISLAND_WIDTH_MM = 0.8      # an island thinner than this is a sliver: fill it
 SHORE_STATIONS = {"cartier", "henri-bourassa", "montmorency", "champ-de-mars", "angrignon"}
 # placed to suit the land (see the yellow line), so they must not steer it
 FIT_IGNORE = {"jean-drapeau", "longueuil-universite-de-sherbrooke"}
@@ -299,9 +304,18 @@ water = shapely.transform(raw, lambda xy: push_from_run(warp(xy))).buffer(0).int
 # canal that warps to a hairline still etches, then drop only the specks.
 water = water.buffer(MIN_WATER_MM / 2, join_style=1).intersection(FRAME)
 water = water.simplify(0.06, preserve_topology=True)
-water = unary_union([g for g in getattr(water, "geoms", [water]) if g.area >= MIN_PIECE_MM2])
-water = unary_union([Polygon(g.exterior, [r for r in g.interiors
-                                          if Polygon(r).area >= MIN_ISLAND_MM2])
+edge = FRAME.boundary.buffer(0.01)
+water = unary_union([g for g in getattr(water, "geoms", [water])
+                     if g.area >= (MIN_EDGE_PIECE_MM2 if g.intersects(edge) else MIN_PIECE_MM2)])
+
+
+def keep_island(ring):
+    island = Polygon(ring)
+    return (island.area >= MIN_ISLAND_MM2
+            and not island.buffer(-MIN_ISLAND_WIDTH_MM / 2).is_empty)
+
+
+water = unary_union([Polygon(g.exterior, [r for r in g.interiors if keep_island(r)])
                      for g in getattr(water, "geoms", [water])])
 wet = sorted(sid for sid in ids if water.contains(Point(MM[sid])))
 # A station at the water's edge gets a wider clearing: its four pads can only
@@ -309,6 +323,23 @@ wet = sorted(sid for sid in ids if water.contains(Point(MM[sid])))
 shore = sorted(sid for sid in ids if water.distance(Point(MM[sid])) < ESCAPE_CLEAR_MM)
 for sid, p in MM.items():
     water = water.difference(Point(p).buffer(ESCAPE_CLEAR_MM if sid in shore else PAD_CLEAR_MM, 16))
+# Clearing the pads chops the canals into stubs; a stub left beside a station
+# is clutter, not geography.
+water = unary_union([g for g in getattr(water, "geoms", [water])
+                     if g.area >= STUB_MM2 or min(g.distance(Point(p)) for p in MM.values()) > 5.0])
+# Hand-placed labels (label_overrides-<variant>.json) win over the water: it
+# is cut back under them so the white text is not sitting on bare copper.
+if os.path.exists(OVERRIDES):
+    sys.path.insert(0, "../tools")
+    import citymap
+    for sid, label in json.load(open(OVERRIDES, encoding="utf-8")).items():
+        info = sk["stations"][sid]
+        st = citymap.Station(sid, info["name"], MM[sid][0] / BOARD, MM[sid][1] / BOARD,
+                             info.get("short", info["name"]),
+                             label={**citymap.DEFAULT_LABEL, **label}, wrap=info.get("wrap"))
+        water = water.difference(Polygon(citymap.label_box(st, citymap.TEXT_H, BOARD))
+                                 .buffer(LABEL_CLEAR_MM, join_style=1))
+    water = unary_union([g for g in getattr(water, "geoms", [water]) if g.area >= MIN_PIECE_MM2])
 # mounting holes, one per corner: their pads are bare copper too
 HOLES = [(x, y) for x in (HOLE_INSET_MM, BOARD_W - HOLE_INSET_MM)
          for y in (HOLE_INSET_MM, BOARD_H - HOLE_INSET_MM)]

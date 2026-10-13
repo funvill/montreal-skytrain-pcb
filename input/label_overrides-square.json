@@ -1,0 +1,14 @@
+{
+  "cartier": {
+    "angle": 0,
+    "anchor": "end",
+    "dx": -1.9,
+    "dy": 1.3
+  },
+  "verdun": {
+    "angle": 0,
+    "anchor": "end",
+    "dx": -1.9,
+    "dy": -0.89
+  }
+}

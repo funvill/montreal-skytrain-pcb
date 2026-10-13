@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "C:\\Users\\funvill\\Documents\\git\\montreal-skytrain-pcb\\hardware\\montreal-metro-pcb.kicad_sch")
-		(date "2026-10-12T21:03:35")
+		(date "2026-10-13T08:45:09")
 		(tool "Eeschema 10.0.5")
 		(sheet
 			(number "1")
@@ -5862,7 +5862,7 @@
 		(net
 			(code "1")
 			(name "+5V")
-			(class "Default")
+			(class "Power")
 			(node
 				(ref "+5V1")
 				(pin "1")

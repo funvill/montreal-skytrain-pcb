@@ -60,6 +60,12 @@ it after moving a station will leave those tracks behind. Do not pass
 **If labels have been edited by hand in KiCad, run `import_labels.py` before
 `export_art.py`**, or the exporter overwrites them.
 
+Or run the whole thing, placement through renders, in one go (Git Bash, from `../tools`):
+
+```
+FREEROUTING_JAR=/path/to/freerouting-2.5.0.jar ./rebuild_board.sh
+```
+
 ## Checking
 
 ```

@@ -16,7 +16,8 @@ so those are never tried. Stations are placed in path order so the
 consistency bonus chains along each corridor.
 
 Usage:
-    python auto_label.py [city.json] [--only sid,sid,...]
+    python auto_label.py [city.json] [--only sid,sid,...] [--fixed overrides.json]
+                         [--parallel sid,sid]
 """
 import argparse
 import json
@@ -70,6 +71,7 @@ def score(ctx, sid, prev_angle):
         s += 10 + abs(st.label["angle"]) / 15
     if prev_angle is not None and st.label["angle"] != prev_angle:
         s += 2
+    s += POSITION_COST[position(st.label)]
     if st.label.get("leader"):
         # a leader is the last resort: dearer than any rotation, cheaper
         # only than a label on bare copper or a real collision
@@ -91,10 +93,42 @@ def score(ctx, sid, prev_angle):
     return s
 
 
+# Cartographers' rule of thumb for a point label, best first: upper right,
+# lower right, upper left, lower left, middle right, middle left. Directly
+# above / below comes after those.
+POSITION_COST = {"upper-right": 0, "lower-right": 1, "upper-left": 2, "lower-left": 3,
+                 "middle-right": 4, "middle-left": 5, "above": 6, "below": 7, "other": 0}
+
+
+def position(label):
+    """Which of the rule-of-thumb positions a horizontal, leaderless label is in."""
+    if label.get("angle", 0) != 0 or label.get("leader"):
+        return "other"                      # costed separately
+    dx, dy = label.get("dx", 0), label.get("dy", 0)
+    if label.get("anchor") == "start" or (label.get("anchor") == "center" and dx > 0.6):
+        side = "right"
+    elif label.get("anchor") == "end" or dx < -0.6:
+        side = "left"
+    else:
+        return "above" if dy < 0 else "below"
+    return ("upper-" if dy < -0.3 else "lower-" if dy > 0.3 else "middle-") + side
+
+
 def candidates(st):
     for short in (False, True):
         if short and st.short == st.name:
             continue
+        # the rule-of-thumb positions first: beside the pad, the text block
+        # sitting just above or just below the pad's centre line
+        keep = st.label
+        st.label = {"short": True} if short else {}
+        n_lines = len(citymap.display_lines(st))
+        st.label = keep
+        rise = round((citymap.BOX_H + (n_lines - 1) * citymap.LINE_PITCH) * citymap.TEXT_H / 2 + 0.2, 2)
+        for anchor, dx in (("start", citymap.LABEL_STANDOFF), ("end", -citymap.LABEL_STANDOFF)):
+            for dy in (-rise, rise):
+                yield {"angle": 0, "anchor": anchor, "dx": dx, "dy": dy,
+                       **({"short": True} if short else {})}
         for angle in ANGLES:
             for anchor in ("start", "end"):
                 dx, dy = citymap.label_offset(angle, anchor)
@@ -220,6 +254,34 @@ def polish(ctx, prev, d, only=None, rounds=8):
             break
 
 
+def parallel_leaders(ctx, d, sids):
+    """One leader offset shared by a group of stations, so their leaders run
+    parallel: the shortest offset that leaves none of them colliding."""
+    sts = [find_station(ctx.city, sid) for sid in sids]
+    best = None
+    for dx10 in range(-90, 91, 5):
+        for dy10 in range(-90, 91, 5):
+            dx, dy = dx10 / 10, dy10 / 10
+            length = math.hypot(dx, dy)
+            if length < 3.5 or (best and length >= best[0]):
+                continue
+            keep = [st.label for st in sts]
+            for st in sts:
+                st.label = {"angle": 0, "anchor": "end" if dx < 0 else "start",
+                            "dx": dx, "dy": dy, "leader": True}
+            if not any(ctx.collisions_for(st.id) for st in sts):
+                best = (length, [dict(st.label) for st in sts])
+            for st, k in zip(sts, keep):
+                st.label = k
+    if not best:
+        print(f"  no collision-free parallel leaders for {sids}")
+        return
+    for st, label in zip(sts, best[1]):
+        st.label = label
+        d["stations"][st.id]["label"] = label
+    print(f"  parallel leaders for {sids}: offset ({best[1][0]['dx']}, {best[1][0]['dy']}) mm")
+
+
 def real_collisions(ctx):
     return [c for c in check_fit.find_collisions(ctx.city, ctx.scale)
             if c.kind != "label-geo"]
@@ -252,6 +314,12 @@ def main():
     ap.add_argument("path", nargs="?", default=PATH, help="city data file")
     ap.add_argument("--only", default="",
                     help="comma-separated station ids to (re)place; default all")
+    ap.add_argument("--fixed", default="",
+                    help="JSON file {station id: label}: hand placements. They are "
+                         "applied first and never moved; everything else works round them")
+    ap.add_argument("--parallel", action="append", default=[], metavar="SID,SID,...",
+                    help="give these stations leader lines that run parallel (same "
+                         "offset from each pad); repeatable")
     ap.add_argument("--passes", type=int, default=1)
     ap.add_argument("--iters", type=int, default=40000)
     args = ap.parse_args()
@@ -261,6 +329,12 @@ def main():
     city = citymap.load(args.path)
     ctx = check_fit.Context(city, city.scale, citymap.TEXT_H, False)
     order, prev = path_order(city)
+    fixed = json.load(open(args.fixed, encoding="utf-8")) if args.fixed else {}
+    for sid, label in fixed.items():
+        find_station(city, sid).label = dict(label)
+        d["stations"][sid]["label"] = dict(label)
+    if fixed:
+        only = (only or set(order)) - set(fixed)
     for p in range(args.passes):
         total = 0
         for sid in order:
@@ -276,6 +350,8 @@ def main():
         print(f"pass {p}: total score {total:.0f}")
     anneal(ctx, prev, d, iters=args.iters, only=only)
     polish(ctx, prev, d, only)
+    for group in args.parallel:
+        parallel_leaders(ctx, d, group.split(","))
     json.dump(d, open(args.path, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
     cols = real_collisions(ctx)
     print(f"remaining real collisions: {len(cols)}")
