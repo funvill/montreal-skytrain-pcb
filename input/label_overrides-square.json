@@ -1,14 +1,658 @@
 {
-  "cartier": {
-    "angle": 0,
-    "anchor": "end",
-    "dx": -1.9,
-    "dy": 1.3
-  },
-  "verdun": {
-    "angle": 0,
-    "anchor": "end",
-    "dx": -1.9,
-    "dy": -0.89
+ "angrignon": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": 1.4,
+   "dy": 2.1
   }
+ },
+ "monk": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "jolicoeur": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "verdun": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": -0.89
+  }
+ },
+ "de-l-eglise": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 5.14,
+   "dy": 2.49
+  }
+ },
+ "lasalle": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": -0.89
+  }
+ },
+ "charlevoix": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "lionel-groulx": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.4
+  }
+ },
+ "atwater": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -2.0,
+   "dy": 0.2
+  }
+ },
+ "guy-concordia": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.8,
+   "dy": -0.2
+  }
+ },
+ "peel": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.7,
+   "dy": 0.0
+  }
+ },
+ "mcgill": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 4.1,
+   "dy": 0.2
+  }
+ },
+ "place-des-arts": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -2.2,
+   "dy": -1.0
+  },
+  "wrap": [
+   "Place-",
+   "des-Arts"
+  ]
+ },
+ "saint-laurent": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": -0.89
+  }
+ },
+ "berri-uqam": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": 0.0
+  }
+ },
+ "beaudry": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "papineau": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "frontenac": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "prefontaine": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "joliette": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "pie-ix": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "viau": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "assomption": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "cadillac": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "langelier": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "radisson": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "honore-beaugrand": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": -5.5,
+   "dy": -2.8
+  },
+  "wrap": [
+   "Honoré Beaugrand"
+  ]
+ },
+ "cote-vertu": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.89
+  }
+ },
+ "du-college": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.89
+  }
+ },
+ "de-la-savane": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.89
+  }
+ },
+ "namur": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 2.0,
+   "dy": -0.3
+  }
+ },
+ "plamondon": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": -6.4,
+   "dy": 0.0
+  }
+ },
+ "cote-sainte-catherine": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.8,
+   "dy": 0.1
+  },
+  "wrap": false
+ },
+ "snowdon": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -2.1,
+   "dy": 0.0
+  }
+ },
+ "villa-maria": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": -11.9,
+   "dy": 0.1
+  }
+ },
+ "vendome": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": -5.5,
+   "dy": 0.0
+  }
+ },
+ "place-saint-henri": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -2.4,
+   "dy": 0.4
+  },
+  "wrap": false
+ },
+ "georges-vanier": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.8,
+   "dy": 0.3
+  },
+  "wrap": [
+   "Georges-",
+   "Vanier"
+  ]
+ },
+ "lucien-l-allier": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.3,
+   "dy": 1.0
+  },
+  "wrap": [
+   "Lucien L'Allier"
+  ]
+ },
+ "bonaventure": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 5.14,
+   "dy": 2.49
+  }
+ },
+ "square-victoria-oaci": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.5,
+   "dy": 1.5
+  },
+  "wrap": [
+   "Square-",
+   "Victoria-",
+   "OACI"
+  ]
+ },
+ "place-d-armes": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.7,
+   "dy": 1.2
+  },
+  "wrap": [
+   "Place",
+   "d'Armes"
+  ]
+ },
+ "champ-de-mars": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 2.0,
+   "dy": -0.5
+  },
+  "wrap": [
+   "Champ-de",
+   "Mars"
+  ]
+ },
+ "sherbrooke": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.8,
+   "dy": 0.2
+  }
+ },
+ "mont-royal": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.89
+  },
+  "wrap": [
+   "Mont Royal"
+  ]
+ },
+ "laurier": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.89
+  }
+ },
+ "rosemont": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.89
+  }
+ },
+ "beaubien": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.89
+  }
+ },
+ "jean-talon": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.0
+  },
+  "wrap": [
+   "Jean Talon"
+  ]
+ },
+ "jarry": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": -6.2,
+   "dy": 0.1
+  }
+ },
+ "cremazie": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.7,
+   "dy": -0.1
+  }
+ },
+ "sauve": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 2.1,
+   "dy": -0.1
+  }
+ },
+ "henri-bourassa": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 2.3,
+   "dy": -0.6
+  },
+  "wrap": [
+   "Henri Bourassa"
+  ]
+ },
+ "cartier": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -2.2,
+   "dy": 0.1
+  }
+ },
+ "de-la-concorde": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": -0.1,
+   "dy": -3.5
+  },
+  "wrap": [
+   "De la",
+   "Concorde"
+  ]
+ },
+ "montmorency": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": -0.1,
+   "dy": 2.4
+  }
+ },
+ "jean-drapeau": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 8.91,
+   "dy": -1.25,
+   "leader": true
+  }
+ },
+ "longueuil-universite-de-sherbrooke": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.28
+  },
+  "wrap": [
+   "Longueuil–",
+   "Université-de-",
+   "Sherbrooke"
+  ]
+ },
+ "cote-des-neiges": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": -3.9,
+   "dy": -2.5
+  },
+  "wrap": [
+   "Côte-des-",
+   "Neiges"
+  ]
+ },
+ "universite-de-montreal": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.4
+  },
+  "wrap": [
+   "Université-",
+   "de-Montréal"
+  ]
+ },
+ "edouard-montpetit": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 2.1,
+   "dy": 0.12
+  },
+  "wrap": [
+   "Édouard-",
+   "Montpetit"
+  ]
+ },
+ "outremont": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.89
+  }
+ },
+ "acadie": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.89
+  }
+ },
+ "parc": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": -0.89
+  }
+ },
+ "de-castelnau": {
+  "label": {
+   "angle": 0,
+   "anchor": "end",
+   "dx": -1.9,
+   "dy": -0.89
+  }
+ },
+ "fabre": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.9,
+   "dy": 0.89
+  }
+ },
+ "d-iberville": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 1.8,
+   "dy": 0.1
+  }
+ },
+ "saint-michel": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": -7.0,
+   "dy": -0.2
+  }
+ },
+ "vertieres": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": -0.12,
+   "dy": 2.4
+  }
+ },
+ "mary-two-axe-earley": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 0.46,
+   "dy": -3.9
+  },
+  "wrap": [
+   "Mary-Two-",
+   "Axe-Earley"
+  ]
+ },
+ "cesira-parisotto": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 0.24,
+   "dy": 3.6
+  },
+  "wrap": [
+   "Césira-",
+   "Parisotto"
+  ]
+ },
+ "madeleine-parent": {
+  "label": {
+   "angle": 0,
+   "anchor": "center",
+   "dx": 0.72,
+   "dy": -3.5
+  },
+  "wrap": [
+   "Madeleine-",
+   "Parent"
+  ]
+ },
+ "anjou": {
+  "label": {
+   "angle": 0,
+   "anchor": "start",
+   "dx": 2.3,
+   "dy": 0.1
+  }
+ }
 }

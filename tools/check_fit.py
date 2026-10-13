@@ -16,7 +16,7 @@ import citymap
 
 EDGE_MARGIN = 1.0  # labels must stay this far inside the board edge
 DOT_R = 1.1
-OWN_R = 1.7        # own LED + ring: a label may not start on top of it
+OWN_R = 1.3        # own LED + ring. Calibrated to the 2026-10-13 hand pass: labels are tucked this close
 LEADER_DOT_R = 2.8 # a leader-floated label keeps this far from other LEDs
 LABEL_GAP = 0.4    # breathing room between any two labels, mm
 
@@ -31,7 +31,7 @@ def inflate(poly, d):
         L = math.hypot(vx, vy) or 1
         out.append((x + vx / L * d * 1.4, y + vy / L * d * 1.4))
     return out
-LINE_HALF_W = 1.1  # half the route stroke (0.75) plus 0.35 mm breathing room
+LINE_HALF_W = 0.75  # half the route stroke, no extra margin: the hand pass puts text right against its line
 
 
 @dataclass

@@ -315,7 +315,7 @@ def main():
     ap.add_argument("--only", default="",
                     help="comma-separated station ids to (re)place; default all")
     ap.add_argument("--fixed", default="",
-                    help="JSON file {station id: label}: hand placements. They are "
+                    help="JSON file {station id: {label, wrap?}}: hand placements. They are "
                          "applied first and never moved; everything else works round them")
     ap.add_argument("--parallel", action="append", default=[], metavar="SID,SID,...",
                     help="give these stations leader lines that run parallel (same "
@@ -330,9 +330,14 @@ def main():
     ctx = check_fit.Context(city, city.scale, citymap.TEXT_H, False)
     order, prev = path_order(city)
     fixed = json.load(open(args.fixed, encoding="utf-8")) if args.fixed else {}
-    for sid, label in fixed.items():
-        find_station(city, sid).label = dict(label)
-        d["stations"][sid]["label"] = dict(label)
+    for sid, entry in fixed.items():
+        entry = entry if "label" in entry else {"label": entry}
+        st = find_station(city, sid)
+        st.label = dict(entry["label"])
+        d["stations"][sid]["label"] = dict(entry["label"])
+        if "wrap" in entry:
+            st.wrap = entry["wrap"]
+            d["stations"][sid]["wrap"] = entry["wrap"]
     if fixed:
         only = (only or set(order)) - set(fixed)
     for p in range(args.passes):

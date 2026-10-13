@@ -9,3 +9,4 @@ firmware/.pio/
 *-backups/
 fp-info-cache
 *.bak
+.history/

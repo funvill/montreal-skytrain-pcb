@@ -327,16 +327,21 @@ for sid, p in MM.items():
 # is clutter, not geography.
 water = unary_union([g for g in getattr(water, "geoms", [water])
                      if g.area >= STUB_MM2 or min(g.distance(Point(p)) for p in MM.values()) > 5.0])
-# Hand-placed labels (label_overrides-<variant>.json) win over the water: it
-# is cut back under them so the white text is not sitting on bare copper.
+# Hand-placed labels (label_overrides-<variant>.json: {station: {label, wrap?}},
+# written from the board by import_labels.py + save_label_overrides.py) are
+# applied on every build and win over the water: it is cut back under them so
+# the white text is not sitting on bare copper.
 if os.path.exists(OVERRIDES):
     sys.path.insert(0, "../tools")
     import citymap
-    for sid, label in json.load(open(OVERRIDES, encoding="utf-8")).items():
-        info = sk["stations"][sid]
+    for sid, entry in json.load(open(OVERRIDES, encoding="utf-8")).items():
+        info = d["stations"][sid]
+        info["label"] = dict(entry["label"])           # the hand placement is the truth
+        if "wrap" in entry:
+            info["wrap"] = entry["wrap"]
         st = citymap.Station(sid, info["name"], MM[sid][0] / BOARD, MM[sid][1] / BOARD,
                              info.get("short", info["name"]),
-                             label={**citymap.DEFAULT_LABEL, **label}, wrap=info.get("wrap"))
+                             label={**citymap.DEFAULT_LABEL, **info["label"]}, wrap=info.get("wrap"))
         water = water.difference(Polygon(citymap.label_box(st, citymap.TEXT_H, BOARD))
                                  .buffer(LABEL_CLEAR_MM, join_style=1))
     water = unary_union([g for g in getattr(water, "geoms", [water]) if g.area >= MIN_PIECE_MM2])
