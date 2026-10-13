@@ -4,7 +4,7 @@
 per station, generated from `../input/montreal-schematic-square.json`.
 
 Copied from the Vancouver SkyTrain v3 project and ported by the scripts in
-`../tools`. **The board is placed and has its artwork, but is not routed.**
+`../tools`. **The board is placed, has its artwork and is autorouted; DRC is clean.**
 
 ## State
 
@@ -12,9 +12,10 @@ Copied from the Vancouver SkyTrain v3 project and ported by the scripts in
 |---|---|
 | Schematic | 73 LEDs. LED69–73 were added by `add_schematic_leds.py`; chain and power verified from KiCad's netlist by `check_led_chain.py` |
 | Board vs schematic | 0 parity issues (`kicad-cli pcb drc --schematic-parity`) |
-| Placement | LEDs at their stations, each turned so DOUT faces the next LED; 8 capacitors on the front in spots clear of labels, routes and water; XIAO and buttons centred on the back; M3 holes 4 mm in from each corner |
+| Placement | LEDs at their stations, each turned so DOUT faces the next LED; 8 capacitors on the front in spots clear of labels, routes and water; XIAO and buttons on the back at (124, 122) mm, away from the downtown LEDs whose vias their pads would block; M3 holes 4 mm in from each corner |
 | Artwork | Water (bare copper), routes, station rings and labels, wordmark — written by `export_art.py` |
-| DRC | No clearance, edge-clearance, short or courtyard violations. 170 unconnected items: **nothing is routed yet** |
+| Routing | Freerouting 2.5.0, via `autoroute.py`: 944 track segments, 82 vias. +5V is 0.5 mm, signals 0.25 mm. Ground is the pour on both sides; every ground pad on the front has its own via to the back pour |
+| DRC | 0 violations, 0 unconnected items, 0 schematic parity issues |
 | Back side | The Vancouver moon-phase artwork was removed: it is 191 mm wide and does not fit this board |
 
 ## Regenerating
@@ -29,6 +30,28 @@ kicad-cli sch export netlist --format kicadsexpr -o ../test-results/netlist.net 
 "C:/Program Files/KiCad/10.0/bin/python.exe" port_board.py ../hardware/montreal-metro-pcb.kicad_pcb ../test-results/netlist.net ../hardware/leds.csv ../hardware/parts.csv
 python export_art.py       ../input/montreal-schematic-square.json ../hardware/montreal-metro-pcb.kicad_pcb --scale 2.0
 ```
+
+Use the same `reposition_board.py` arguments every time, including
+`--controller 124 122`.
+
+## Routing
+
+The water is bare copper on the front with no net, and KiCad does not export
+graphic copper to the autorouter. `autoroute.py export` therefore covers the
+front artwork with track-and-via keepouts on a throwaway copy of the board,
+and tells the router the ground plane is on the back only.
+
+```
+"C:/Program Files/KiCad/10.0/bin/python.exe" autoroute.py export ../hardware/montreal-metro-pcb.kicad_pcb OUT.dsn
+java -jar freerouting-2.5.0.jar -de OUT.dsn -do OUT.ses -mp 40 --gui.enabled=false
+"C:/Program Files/KiCad/10.0/bin/python.exe" autoroute.py import ../hardware/montreal-metro-pcb.kicad_pcb OUT.ses
+kicad-cli pcb drc ... --refill-zones --save-board          # see Checking
+"C:/Program Files/KiCad/10.0/bin/python.exe" stitch_ground.py ../hardware/montreal-metro-pcb.kicad_pcb U1 13
+```
+
+`import` replaces every track, so re-routing is repeatable; any hand routing
+is lost. The last step ties U1's ground pad into the back pour: its
+neighbouring pads are too close for the pour to reach it.
 
 `port_board.py` moves LEDs and re-aims them, so once tracks exist, re-running
 it after moving a station will leave those tracks behind. Do not pass
@@ -47,8 +70,8 @@ python render_board.py ../hardware/montreal-metro-pcb.kicad_pcb ../test-results 
 
 ## Still to do
 
-1. **Route** the data chain and power. The water is bare copper on the front
-   with no net, so front-side tracks cannot cross it.
+1. Review the autorouted tracks. About 70 % of the track length is on the
+   front, where it cuts visible channels in the ground pour.
 2. Check U1's orientation (USB-C toward a board edge) and the test-point
    positions on the back.
 3. New back-side artwork, if wanted.

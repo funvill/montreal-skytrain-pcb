@@ -59,6 +59,7 @@ BOARD = 2.0                    # board mm per canvas unit
 BEND_MM = 4.0                  # bend radius
 MIN_PITCH_MM = 3.3
 PAD_CLEAR_MM = 2.2
+ESCAPE_CLEAR_MM = 3.4          # clearing around a station that touches water (room for vias)
 HOLE_INSET_MM = 4.0            # M3 mounting holes, centre to board edge
 HOLE_CLEAR_MM = 4.5            # copper art keeps this far from a hole centre
 TITLE_MM = 8.0
@@ -303,8 +304,11 @@ water = unary_union([Polygon(g.exterior, [r for r in g.interiors
                                           if Polygon(r).area >= MIN_ISLAND_MM2])
                      for g in getattr(water, "geoms", [water])])
 wet = sorted(sid for sid in ids if water.contains(Point(MM[sid])))
-for p in MM.values():
-    water = water.difference(Point(p).buffer(PAD_CLEAR_MM, 12))
+# A station at the water's edge gets a wider clearing: its four pads can only
+# be reached through vias, and vias cannot sit in the bare-copper water.
+shore = sorted(sid for sid in ids if water.distance(Point(MM[sid])) < ESCAPE_CLEAR_MM)
+for sid, p in MM.items():
+    water = water.difference(Point(p).buffer(ESCAPE_CLEAR_MM if sid in shore else PAD_CLEAR_MM, 16))
 # mounting holes, one per corner: their pads are bare copper too
 HOLES = [(x, y) for x in (HOLE_INSET_MM, BOARD_W - HOLE_INSET_MM)
          for y in (HOLE_INSET_MM, BOARD_H - HOLE_INSET_MM)]
@@ -365,6 +369,7 @@ ys = [p[1] for p in MM.values()]
 print(f"wrote {OUT}: board {BOARD_W:.0f} x {BOARD_H:.0f} mm, {len(MM)} stations spanning "
       f"x {min(xs):.1f}..{max(xs):.1f}, y {min(ys):.1f}..{max(ys):.1f} mm, {len(geo)} water")
 print(f"stations whose pad sits in water (island carved): {wet or 'none'}")
+print(f"stations given a wider clearing at the shore: {shore or 'none'}")
 if os.environ.get("SHOW_TRUE"):
     for sid in os.environ["SHOW_TRUE"].split(","):
         tx, ty = similar(src[[ids.index(sid)]])[0]

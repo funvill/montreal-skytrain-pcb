@@ -80,29 +80,30 @@ def main():
     ap.add_argument("--board", type=float, default=150.0, help="width mm")
     ap.add_argument("--height", type=float, default=None,
                     help="height mm (default: square)")
+    ap.add_argument("--controller", type=float, nargs=2, metavar=("X", "Y"), default=None,
+                    help="centre of the XIAO / button group on the back, mm "
+                         "(default: board centre). Keep it away from dense LED "
+                         "clusters: its pads block the vias those LEDs need")
     args = ap.parse_args()
     height = args.height if args.height else args.board
 
     with open(args.csv, encoding="utf-8") as f:
         pos = {row["ref"]: (row["x_mm"], row["y_mm"])
                for row in csv.DictReader(f)}
-    c, cy = args.board / 2, height / 2
+    c, cy = args.controller if args.controller else (args.board / 2, height / 2)
     pos["U1"] = (c, cy)                      # XIAO centered, USB-C down
     pos.update({"SW1": (c - 18, cy - 12), "SW2": (c - 18, cy + 12),
                 "SW3": (c + 18, cy - 12), "SW4": (c + 18, cy + 12)})
 
-    # Three test points (GND / +5V / LED_IN) are hand-placed leftovers from
-    # v2's original 100x82.9mm layout, positioned relative to U1's old
-    # off-centre spot - they never moved when U1 got recentred for the
-    # 150mm board, landing inside its courtyard. Reference-only matching
-    # can't fix them (there's a second, unrelated "+5V" test point
-    # elsewhere on the board), so key these three by uuid and place them
-    # just outside the XIAO courtyard (half-width 8.835mm) on its left,
-    # clear of both the courtyard and the SW1/SW2 buttons at c-18.
+    # Three test points (GND / +5V / LED_IN) share a reference pattern with
+    # others on the board, so they are keyed by uuid. They go in a row below
+    # the XIAO, well clear of it and of the buttons: packed in beside them
+    # they boxed in a button's ground pad, which the back pour then could
+    # not reach.
     uuid_pos = {
-        "3b08c00e-5e5e-4e28-8a48-1b276cc8aedb": (c - 12, cy - 4.6),   # GND
-        "46ba156a-b5f9-49b6-8fde-9be163fb3450": (c - 12, cy + 0.4),  # +5V
-        "9d44b3cc-bb74-4bbe-a707-82358cea217e": (c - 12, cy - 14.8),  # LED_IN
+        "9d44b3cc-bb74-4bbe-a707-82358cea217e": (c - 6, cy + 19),    # LED_IN
+        "3b08c00e-5e5e-4e28-8a48-1b276cc8aedb": (c, cy + 19),        # GND
+        "46ba156a-b5f9-49b6-8fde-9be163fb3450": (c + 6, cy + 19),    # +5V
     }
 
     with open(args.pcb, encoding="utf-8") as f:
