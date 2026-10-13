@@ -25,7 +25,7 @@ From `../tools`, after any change to the data file:
 ```
 python export_placement.py ../input/montreal-schematic-square.json ../hardware --scale 2.0
 python place_parts.py      ../input/montreal-schematic-square.json ../hardware --scale 2.0
-python reposition_board.py ../hardware/montreal-metro-pcb.kicad_pcb ../hardware/leds.csv --board 160 --height 160
+python reposition_board.py ../hardware/montreal-metro-pcb.kicad_pcb ../hardware/leds.csv --board 160 --height 160 --controller 124 122
 kicad-cli sch export netlist --format kicadsexpr -o ../test-results/netlist.net ../hardware/montreal-metro-pcb.kicad_sch
 "C:/Program Files/KiCad/10.0/bin/python.exe" port_board.py ../hardware/montreal-metro-pcb.kicad_pcb ../test-results/netlist.net ../hardware/leds.csv ../hardware/parts.csv
 python export_art.py       ../input/montreal-schematic-square.json ../hardware/montreal-metro-pcb.kicad_pcb --scale 2.0
