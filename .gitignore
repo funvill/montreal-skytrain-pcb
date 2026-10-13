@@ -1,0 +1,5 @@
+# KiCad lock files
+*.lck
+# Python / PlatformIO build output
+__pycache__/
+firmware/.pio/

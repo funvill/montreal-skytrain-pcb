@@ -1,0 +1,1685 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-10-10T05:43:38Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 26232890,
+  "lat": 45.5612107,
+  "lon": -73.5472170,
+  "tags": {
+    "name": "Viau",
+    "operator": "Société de transport de Montréal",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 214052275,
+  "lat": 45.5467272,
+  "lon": -73.6079220,
+  "tags": {
+    "name": "Fabre",
+    "operator": "Société de transport de Montréal",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 214052280,
+  "lat": 45.5530778,
+  "lon": -73.6022739,
+  "tags": {
+    "name": "D’Iberville",
+    "operator": "Société de transport de Montréal",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 218271645,
+  "lat": 45.5597648,
+  "lon": -73.5998596,
+  "tags": {
+    "name": "Saint-Michel",
+    "operator": "Société de transport de Montréal",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 218356337,
+  "lat": 45.5417170,
+  "lon": -73.5542209,
+  "tags": {
+    "name": "Préfontaine",
+    "operator": "Société de transport de Montréal",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 218356349,
+  "lat": 45.5468903,
+  "lon": -73.5511268,
+  "tags": {
+    "name": "Joliette",
+    "operator": "Société de transport de Montréal",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "station": "subway",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 246654576,
+  "lat": 45.5691651,
+  "lon": -73.5472116,
+  "tags": {
+    "internet_access": "no",
+    "name": "Assomption",
+    "operator": "Société de transport de Montréal",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 246655684,
+  "lat": 45.5768391,
+  "lon": -73.5467179,
+  "tags": {
+    "name": "Cadillac",
+    "operator": "Société de transport de Montréal",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 246656707,
+  "lat": 45.5827497,
+  "lon": -73.5431832,
+  "tags": {
+    "name": "Langelier",
+    "operator": "Société de transport de Montréal",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 246656708,
+  "lat": 45.5891558,
+  "lon": -73.5394200,
+  "tags": {
+    "name": "Radisson",
+    "operator": "Société de transport de Montréal",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 246656713,
+  "lat": 45.5964086,
+  "lon": -73.5354197,
+  "tags": {
+    "name": "Honoré-Beaugrand",
+    "operator": "Société de transport de Montréal",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 264271702,
+  "lat": 45.5542002,
+  "lon": -73.5515006,
+  "tags": {
+    "name": "Pie IX",
+    "operator": "Société de transport de Montréal",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "station": "subway",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 300121632,
+  "lat": 45.5896121,
+  "lon": -73.5398353,
+  "tags": {
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 300121720,
+  "lat": 45.5895311,
+  "lon": -73.5388830,
+  "tags": {
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 300121748,
+  "lat": 45.5969182,
+  "lon": -73.5361792,
+  "tags": {
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 300121753,
+  "lat": 45.5969225,
+  "lon": -73.5350226,
+  "tags": {
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 300121877,
+  "lat": 45.5968547,
+  "lon": -73.5344743,
+  "tags": {
+    "level": "0",
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 369795141,
+  "lat": 45.6174270,
+  "lon": -73.5973371,
+  "tags": {
+    "name": "Anjou",
+    "network": "exo;VIA Rail",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "railway:ref": "ANJO",
+    "train": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 369795696,
+  "lat": 45.5990955,
+  "lon": -73.6168117,
+  "tags": {
+    "name": "Saint-Léonard–Montréal-Nord",
+    "network": "exo",
+    "operator": "exo",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "railway:ref": "STLE",
+    "train": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 369795743,
+  "lat": 45.5834630,
+  "lon": -73.6299196,
+  "tags": {
+    "name": "Saint-Michel–Montréal-Nord",
+    "network": "exo",
+    "operator": "exo",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "railway:ref": "STMI",
+    "train": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 484676289,
+  "lat": 45.5537764,
+  "lon": -73.6020720,
+  "tags": {
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 877874168,
+  "lat": 45.5403155,
+  "lon": -73.6131537,
+  "tags": {
+    "name": "Jean-Talon",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 877874183,
+  "lat": 45.5465048,
+  "lon": -73.6081693,
+  "tags": {
+    "name": "Fabre",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 877874193,
+  "lat": 45.5478869,
+  "lon": -73.6073804,
+  "tags": {
+    "name": "Fabre",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 977743390,
+  "lat": 45.5539481,
+  "lon": -73.5519741,
+  "tags": {
+    "check_date:wheelchair": "2022-04-05",
+    "name": "Pie-IX",
+    "railway": "subway_entrance",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2505358991,
+  "lat": 45.5611553,
+  "lon": -73.5472188,
+  "tags": {
+    "name": "métro Viau",
+    "railway": "subway_entrance",
+    "source": "local_knowledge",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 2628992881,
+  "lat": 45.5433093,
+  "lon": -73.6284259,
+  "tags": {
+    "entrance": "yes",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 4022676407,
+  "lat": 45.5847154,
+  "lon": -73.6249509,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 4467277319,
+  "lat": 45.5470199,
+  "lon": -73.5514805,
+  "tags": {
+    "automatic_door": "no",
+    "railway": "subway_entrance",
+    "wheelchair": "yes;no"
+  }
+},
+{
+  "type": "node",
+  "id": 4635235785,
+  "lat": 45.5416331,
+  "lon": -73.5547892,
+  "tags": {
+    "name": "Préfontaine",
+    "operator": "Société de transport de Montréal",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5238601183,
+  "lat": 45.6265344,
+  "lon": -73.5783919,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 5238652063,
+  "lat": 45.6242911,
+  "lon": -73.5205409,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 5238652067,
+  "lat": 45.6242995,
+  "lon": -73.5206710,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 5238652070,
+  "lat": 45.6257438,
+  "lon": -73.5203867,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 5238652074,
+  "lat": 45.6243276,
+  "lon": -73.5207260,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 5238652075,
+  "lat": 45.6243473,
+  "lon": -73.5208011,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 5238652090,
+  "lat": 45.6248087,
+  "lon": -73.5201674,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 5238652127,
+  "lat": 45.6299601,
+  "lon": -73.5227448,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 5238746874,
+  "lat": 45.6008357,
+  "lon": -73.5955837,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 5238746877,
+  "lat": 45.6008568,
+  "lon": -73.5956091,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 5337275121,
+  "lat": 45.5473180,
+  "lon": -73.5435751,
+  "tags": {
+    "bench": "yes",
+    "bin": "yes",
+    "bus": "yes",
+    "construction": "yes",
+    "highway": "bus_stop",
+    "lit": "no",
+    "name": "Place Simon-Valois (Ontario / Valois)",
+    "name:vi": "125 và 355",
+    "public_transport": "platform",
+    "ref": "53154",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 5769014303,
+  "lat": 45.5539610,
+  "lon": -73.5522480,
+  "tags": {
+    "bench": "yes",
+    "bin": "no",
+    "bus": "yes",
+    "construction": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Pie-IX / Pierre-De Coubertin",
+    "public_transport": "platform",
+    "ref": "61373",
+    "shelter": "yes",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6010973614,
+  "lat": 45.5496040,
+  "lon": -73.5579150,
+  "tags": {
+    "bench": "no",
+    "bin": "no",
+    "bus": "yes",
+    "construction": "yes",
+    "highway": "bus_stop",
+    "lit": "yes",
+    "name": "Rachel / De Chambly",
+    "public_transport": "platform",
+    "ref": "52865",
+    "shelter": "no",
+    "tactile_paving": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 6131782545,
+  "lat": 45.5431669,
+  "lon": -73.6287573,
+  "tags": {
+    "name": "Jarry",
+    "operator": "Société de transport de Montréal",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "start_date": "1966-10-14",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 6301960461,
+  "lat": 45.6182795,
+  "lon": -73.5961726,
+  "tags": {
+    "name": "Anjou",
+    "network": "exo;VIA Rail",
+    "operator": "exo",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "ANJO",
+    "train": "yes",
+    "wikidata": "Q4765858",
+    "wikipedia": "fr:Gare Anjou"
+  }
+},
+{
+  "type": "node",
+  "id": 6302011942,
+  "lat": 45.5997788,
+  "lon": -73.6162114,
+  "tags": {
+    "name": "Saint-Léonard–Montréal-Nord",
+    "network": "exo",
+    "operator": "exo",
+    "public_transport": "station",
+    "railway": "station",
+    "railway:ref": "STLE",
+    "train": "yes",
+    "wikidata": "Q7400704",
+    "wikipedia": "fr:Gare Saint-Léonard–Montréal-Nord"
+  }
+},
+{
+  "type": "node",
+  "id": 6615202527,
+  "lat": 45.5611109,
+  "lon": -73.5473091,
+  "tags": {
+    "name": "Viau",
+    "network": "Métro de Montréal",
+    "network:en": "Montreal Metro",
+    "network:fr": "Métro de Montréal",
+    "network:wikidata": "Q392377",
+    "operator": "Société de transport de Montréal",
+    "operator:short": "STM",
+    "operator:wikidata": "Q1817151",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "train": "yes",
+    "wheelchair": "yes",
+    "wikidata": "Q1892890",
+    "wikipedia": "fr:Viau (métro de Montréal)"
+  }
+},
+{
+  "type": "node",
+  "id": 6615202531,
+  "lat": 45.5417253,
+  "lon": -73.5542369,
+  "tags": {
+    "addr:housenumber": "3100",
+    "addr:street": "Rue Hochelaga",
+    "name": "Préfontaine",
+    "network": "Métro de Montréal",
+    "network:en": "Montreal Metro",
+    "network:fr": "Métro de Montréal",
+    "network:wikidata": "Q392377",
+    "operator": "Société de transport de Montréal",
+    "operator:short": "STM",
+    "operator:wikidata": "Q1817151",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "train": "yes",
+    "wheelchair": "yes",
+    "wikidata": "Q1827087",
+    "wikipedia": "fr:Préfontaine (métro de Montréal)"
+  }
+},
+{
+  "type": "node",
+  "id": 7036709925,
+  "lat": 45.6180415,
+  "lon": -73.5964465,
+  "tags": {
+    "name": "Anjou",
+    "network": "Exo",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "railway:ref": "ANJO",
+    "train": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7041520765,
+  "lat": 45.5768358,
+  "lon": -73.5466995,
+  "tags": {
+    "name": "Cadillac",
+    "network": "Métro de Montréal",
+    "network:en": "Montreal Metro",
+    "network:fr": "Métro de Montréal",
+    "network:wikidata": "Q392377",
+    "operator": "Société de transport de Montréal",
+    "operator:short": "STM",
+    "operator:wikidata": "Q1817151",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "wheelchair": "no",
+    "wikidata": "Q743385",
+    "wikipedia": "fr:Cadillac (métro de Montréal)"
+  }
+},
+{
+  "type": "node",
+  "id": 7041520766,
+  "lat": 45.5964140,
+  "lon": -73.5354362,
+  "tags": {
+    "name": "Honoré-Beaugrand",
+    "network": "Métro de Montréal",
+    "network:en": "Montreal Metro",
+    "network:fr": "Métro de Montréal",
+    "network:wikidata": "Q392377",
+    "operator": "Société de transport de Montréal",
+    "operator:short": "STM",
+    "operator:wikidata": "Q1817151",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "wikidata": "Q1627267",
+    "wikipedia": "fr:Honoré-Beaugrand (métro de Montréal)"
+  }
+},
+{
+  "type": "node",
+  "id": 7052471485,
+  "lat": 45.5597489,
+  "lon": -73.5999622,
+  "tags": {
+    "addr:city": "Montréal",
+    "addr:street": "Boulevard Saint-Michel",
+    "name": "Saint-Michel",
+    "operator": "Société de transport de Montréal",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "wikidata": "Q176603",
+    "wikipedia": "fr:Saint-Michel (métro de Montréal)"
+  }
+},
+{
+  "type": "node",
+  "id": 7052471486,
+  "lat": 45.5525993,
+  "lon": -73.6026995,
+  "tags": {
+    "name": "D’Iberville",
+    "operator": "Société de transport de Montréal",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "wheelchair": "yes",
+    "wikidata": "Q1272978",
+    "wikipedia": "fr:D'Iberville (métro de Montréal)"
+  }
+},
+{
+  "type": "node",
+  "id": 7052471487,
+  "lat": 45.5467522,
+  "lon": -73.6078016,
+  "tags": {
+    "name": "Fabre",
+    "operator": "Société de transport de Montréal",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "wheelchair": "no",
+    "wikidata": "Q1390685",
+    "wikipedia": "fr:Fabre (métro de Montréal)"
+  }
+},
+{
+  "type": "node",
+  "id": 7052605747,
+  "lat": 45.5432233,
+  "lon": -73.6286029,
+  "tags": {
+    "name": "Jarry",
+    "network": "Métro de Montréal",
+    "network:en": "Montreal Metro",
+    "network:fr": "Métro de Montréal",
+    "network:wikidata": "Q392377",
+    "operator": "Société de transport de Montréal",
+    "operator:short": "STM",
+    "operator:wikidata": "Q1817151",
+    "public_transport": "station",
+    "railway": "station",
+    "start_date": "1966-10-14",
+    "station": "subway",
+    "subway": "yes",
+    "wheelchair": "no",
+    "wikidata": "Q1634277",
+    "wikipedia": "fr:Jarry (métro de Montréal)"
+  }
+},
+{
+  "type": "node",
+  "id": 7052949183,
+  "lat": 45.5896475,
+  "lon": -73.5397875,
+  "tags": {
+    "name": "Radisson",
+    "network": "Métro de Montréal",
+    "network:en": "Montreal Metro",
+    "network:fr": "Métro de Montréal",
+    "network:wikidata": "Q392377",
+    "operator": "Société de transport de Montréal",
+    "operator:short": "STM",
+    "operator:wikidata": "Q1817151",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "wheelchair": "no",
+    "wikidata": "Q1827231",
+    "wikipedia": "fr:Radisson (métro de Montréal)"
+  }
+},
+{
+  "type": "node",
+  "id": 7052949184,
+  "lat": 45.5827257,
+  "lon": -73.5431577,
+  "tags": {
+    "name": "Langelier",
+    "network": "Métro de Montréal",
+    "network:en": "Montreal Metro",
+    "network:fr": "Métro de Montréal",
+    "network:wikidata": "Q392377",
+    "operator": "Société de transport de Montréal",
+    "operator:short": "STM",
+    "operator:wikidata": "Q1817151",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "train": "yes",
+    "wikidata": "Q1705135",
+    "wikipedia": "fr:Langelier (métro de Montréal)"
+  }
+},
+{
+  "type": "node",
+  "id": 7052992085,
+  "lat": 45.5693911,
+  "lon": -73.5467318,
+  "tags": {
+    "internet_access": "no",
+    "name": "Assomption",
+    "network": "Métro de Montréal",
+    "network:en": "Montreal Metro",
+    "network:fr": "Métro de Montréal",
+    "network:wikidata": "Q392377",
+    "operator": "Société de transport de Montréal",
+    "operator:short": "STM",
+    "operator:wikidata": "Q1817151",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "wheelchair": "no",
+    "wikidata": "Q538758",
+    "wikipedia": "fr:Assomption (métro de Montréal)"
+  }
+},
+{
+  "type": "node",
+  "id": 7052992086,
+  "lat": 45.5541959,
+  "lon": -73.5515329,
+  "tags": {
+    "name": "Pie IX",
+    "network": "Métro de Montréal",
+    "network:en": "Montreal Metro",
+    "network:fr": "Métro de Montréal",
+    "network:wikidata": "Q392377",
+    "operator": "Société de transport de Montréal",
+    "operator:short": "STM",
+    "operator:wikidata": "Q1817151",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "train": "yes",
+    "wheelchair": "yes",
+    "wikidata": "Q1892913",
+    "wikipedia": "fr:Pie-IX (métro de Montréal)"
+  }
+},
+{
+  "type": "node",
+  "id": 7052992087,
+  "lat": 45.5469325,
+  "lon": -73.5510099,
+  "tags": {
+    "defibrillator:location": "Après le portique de paiement",
+    "name": "Joliette",
+    "network": "Métro de Montréal",
+    "network:en": "Montreal Metro",
+    "network:fr": "Métro de Montréal",
+    "network:wikidata": "Q392377",
+    "operator": "Société de transport de Montréal",
+    "operator:short": "STM",
+    "operator:wikidata": "Q1817151",
+    "public_transport": "station",
+    "railway": "station",
+    "station": "subway",
+    "subway": "yes",
+    "wheelchair": "no",
+    "wikidata": "Q1249429",
+    "wikipedia": "fr:Joliette (métro de Montréal)"
+  }
+},
+{
+  "type": "node",
+  "id": 7159588997,
+  "lat": 45.5998142,
+  "lon": -73.6161473,
+  "tags": {
+    "name": "Saint-Léonard–Montréal-Nord",
+    "network": "exo",
+    "operator": "exo",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "railway:ref": "STLE",
+    "train": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7159589001,
+  "lat": 45.6192845,
+  "lon": -73.5948709,
+  "tags": {
+    "name": "Anjou",
+    "network": "VIA Rail",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "railway:ref": "ANJO",
+    "train": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 7167708623,
+  "lat": 45.5968561,
+  "lon": -73.5359752,
+  "tags": {
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 7773090587,
+  "lat": 45.5893130,
+  "lon": -73.5396058,
+  "tags": {
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 7773188126,
+  "lat": 45.5828597,
+  "lon": -73.5426628,
+  "tags": {
+    "name": "Langelier",
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 7773188127,
+  "lat": 45.5826832,
+  "lon": -73.5435801,
+  "tags": {
+    "name": "Langelier",
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 7773188128,
+  "lat": 45.5824824,
+  "lon": -73.5428827,
+  "tags": {
+    "name": "Langelier",
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 7773225613,
+  "lat": 45.5769142,
+  "lon": -73.5462811,
+  "tags": {
+    "name": "Cadillac",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7773225614,
+  "lat": 45.5768373,
+  "lon": -73.5470857,
+  "tags": {
+    "name": "Cadillac",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7806766943,
+  "lat": 45.5692803,
+  "lon": -73.5467841,
+  "tags": {
+    "name": "Assomption",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7806766944,
+  "lat": 45.5470662,
+  "lon": -73.5508551,
+  "tags": {
+    "name": "Joliette",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7806766945,
+  "lat": 45.5415143,
+  "lon": -73.5543775,
+  "tags": {
+    "name": "Péfontaine",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7806766946,
+  "lat": 45.5414809,
+  "lon": -73.5542680,
+  "tags": {
+    "elevator": "yes",
+    "name": "Préfontaine",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7806766947,
+  "lat": 45.5471401,
+  "lon": -73.5510759,
+  "tags": {
+    "name": "Joliette",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7810702130,
+  "lat": 45.5597539,
+  "lon": -73.5998939,
+  "tags": {
+    "name": "Saint-Michel",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 7810702131,
+  "lat": 45.5591844,
+  "lon": -73.5998722,
+  "tags": {
+    "entrance": "main",
+    "name": "Saint-Michel",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 8893384759,
+  "lat": 45.6298664,
+  "lon": -73.5487398,
+  "tags": {
+    "railway": "buffer_stop"
+  }
+},
+{
+  "type": "node",
+  "id": 9170746437,
+  "lat": 45.5525949,
+  "lon": -73.6025288,
+  "tags": {
+    "entrance": "yes",
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 9170746440,
+  "lat": 45.5526233,
+  "lon": -73.6027311,
+  "tags": {
+    "addr:housenumber": "2400",
+    "addr:street": "Rue Jean-Talon Est",
+    "automatic_door": "no",
+    "railway": "subway_entrance",
+    "wheelchair": "bad"
+  }
+},
+{
+  "type": "node",
+  "id": 9377861029,
+  "lat": 45.5470176,
+  "lon": -73.5518559,
+  "tags": {
+    "railway": "subway_entrance",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10693966233,
+  "lat": 45.5431740,
+  "lon": -73.6283036,
+  "tags": {
+    "entrance": "yes",
+    "name": "Rue Berri",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10693966237,
+  "lat": 45.5434522,
+  "lon": -73.6283414,
+  "tags": {
+    "entrance": "yes",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10913998533,
+  "lat": 45.6179016,
+  "lon": -73.5963738,
+  "tags": {
+    "name": "Platform 2 - Parking lot (East)",
+    "name:fr": "Quai 2 - Stationnement incitatif (Est)",
+    "railway": "train_station_entrance",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 10913998537,
+  "lat": 45.6182409,
+  "lon": -73.5963897,
+  "tags": {
+    "name": "Platform 1 - 5th Avenue / 8th Street",
+    "name:fr": "Quai 1 - 5e avenue / 8e rue",
+    "railway": "train_station_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10913998592,
+  "lat": 45.6187320,
+  "lon": -73.5957821,
+  "tags": {
+    "name": "Platform 1 - 6th Avenue / 8th Street",
+    "name:fr": "Quai 1 - 6e avenue / 8e rue",
+    "railway": "train_station_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10913998609,
+  "lat": 45.6177315,
+  "lon": -73.5971154,
+  "tags": {
+    "name": "Platform 1 - 4th Avenue / 8th Street",
+    "name:fr": "Quai 1 - 4e avenue / 8e rue",
+    "railway": "train_station_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 10913998653,
+  "lat": 45.6175530,
+  "lon": -73.5967698,
+  "tags": {
+    "name": "Platform 2 - Parking lot (West)",
+    "name:fr": "Quai 2 - Stationnement incitatif (Ouest)",
+    "railway": "train_station_entrance",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11147137640,
+  "lat": 45.5536240,
+  "lon": -73.5520867,
+  "tags": {
+    "name": "Pie-IX, ouest",
+    "railway": "subway_entrance",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11147137641,
+  "lat": 45.5534508,
+  "lon": -73.5520311,
+  "tags": {
+    "name": "Pie-IX, ouest",
+    "railway": "subway_entrance",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11543557221,
+  "lat": 45.5416808,
+  "lon": -73.5549444,
+  "tags": {
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11660423954,
+  "lat": 45.5896150,
+  "lon": -73.5399252,
+  "tags": {
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 11660423959,
+  "lat": 45.5897417,
+  "lon": -73.5398513,
+  "tags": {
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 11660423960,
+  "lat": 45.5897041,
+  "lon": -73.5397788,
+  "tags": {
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 11660423984,
+  "lat": 45.5897144,
+  "lon": -73.5400581,
+  "tags": {
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 11660423986,
+  "lat": 45.5897696,
+  "lon": -73.5400194,
+  "tags": {
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 11834045644,
+  "lat": 45.5537731,
+  "lon": -73.6021502,
+  "tags": {
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "node",
+  "id": 11919111540,
+  "lat": 45.5539659,
+  "lon": -73.5520102,
+  "tags": {
+    "check_date:wheelchair": "2022-04-05",
+    "name": "Pie-IX",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11919111553,
+  "lat": 45.5539526,
+  "lon": -73.5518453,
+  "tags": {
+    "check_date:wheelchair": "2022-04-05",
+    "name": "Pie-IX",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 11964893589,
+  "lat": 45.5833479,
+  "lon": -73.6297452,
+  "tags": {
+    "door": "yes",
+    "entrance": "yes",
+    "name": "Paltform 1 - Station building",
+    "name:fr": "Quai 1 - Édicule de la gare",
+    "railway": "train_station_entrance",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11964893600,
+  "lat": 45.5992276,
+  "lon": -73.6169074,
+  "tags": {
+    "name": "Platform 1 - Passenger drop-off facility",
+    "name:fr": "Quai 1 - Débarcadère",
+    "railway": "train_station_entrance",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11964893618,
+  "lat": 45.6017560,
+  "lon": -73.6149583,
+  "tags": {
+    "entrance": "yes",
+    "name": "Elevator to Platform 1",
+    "name:fr": "Ascenseur vers le quai 1",
+    "railway": "train_station_entrance",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 11964893620,
+  "lat": 45.6017866,
+  "lon": -73.6150372,
+  "tags": {
+    "name": "Platform 1 - Boulevard Lacordaire stairs",
+    "name:fr": "Quai 1 - Escalier du boulevard Lacordaire",
+    "railway": "train_station_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 12235711754,
+  "lat": 45.5415826,
+  "lon": -73.5540187,
+  "tags": {
+    "elevator": "yes",
+    "level": "0",
+    "name": "Préfontaine",
+    "railway": "subway_entrance",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13164309486,
+  "lat": 45.5431919,
+  "lon": -73.6287429,
+  "tags": {
+    "name": "Jarry",
+    "operator": "Société de transport de Montréal",
+    "public_transport": "stop_position",
+    "railway": "stop",
+    "start_date": "1966-10-14",
+    "subway": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13317781984,
+  "lat": 45.5434841,
+  "lon": -73.6281261,
+  "tags": {
+    "entrance": "yes",
+    "name": "Rue Lajeunesse",
+    "railway": "subway_entrance",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "node",
+  "id": 13961511189,
+  "lat": 45.5970010,
+  "lon": -73.5364530,
+  "tags": {
+    "railway": "subway_entrance"
+  }
+},
+{
+  "type": "way",
+  "id": 160542810,
+  "center": {
+    "lat": 45.5416861,
+    "lon": -73.5548531
+  },
+  "tags": {
+    "building": "transportation",
+    "building:levels": "1",
+    "name": "Métro Préfontaine",
+    "railway": "subway_entrance",
+    "roof:levels": "0",
+    "roof:shape": "quadruple_saltbox",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 297679840,
+  "center": {
+    "lat": 45.6070434,
+    "lon": -73.5618539
+  },
+  "tags": {
+    "check_date": "2026-09-07",
+    "construction": "subway",
+    "landuse": "construction",
+    "name": "Garage d'Anjou",
+    "operator": "STM",
+    "website": "https://www.stm.info/sites/default/files/media/Travaux/2025/PLB/25817_44_plan_sa_atelier_phasage_phase_4_fr_v02.pdf"
+  }
+},
+{
+  "type": "way",
+  "id": 492375119,
+  "center": {
+    "lat": 45.5787448,
+    "lon": -73.5848167
+  },
+  "tags": {
+    "check_date": "2026-05-29",
+    "construction": "subway",
+    "layer": "-3",
+    "name": "Ligne Bleue (prolongement)",
+    "opening_date": "2031",
+    "railway": "construction",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 661617959,
+  "center": {
+    "lat": 45.5986315,
+    "lon": -73.5662748
+  },
+  "tags": {
+    "check_date": "2026-06-17",
+    "construction": "subway",
+    "construction:railway": "subway",
+    "name": "Ligne Bleue (prolongement)",
+    "railway": "construction",
+    "start_date": "2031",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1311144318,
+  "center": {
+    "lat": 45.6010459,
+    "lon": -73.5599305
+  },
+  "tags": {
+    "check_date": "2026-09-15",
+    "construction": "subway",
+    "landuse": "construction",
+    "name": "Station Anjou - Édicule Principale - Ligne Bleue",
+    "note": "Travaux d'excavation en 2025",
+    "operator": "STM",
+    "start_date": "2031",
+    "website": "https://www.stm.info/fr/projet-ligne-bleue/les-chantiers-du-projet/future-station-anjou"
+  }
+},
+{
+  "type": "way",
+  "id": 1530485295,
+  "center": {
+    "lat": 45.6074245,
+    "lon": -73.5610197
+  },
+  "tags": {
+    "check_date": "2026-06-17",
+    "construction": "subway",
+    "construction:railway": "subway",
+    "name": "Ligne Bleue (prolongement)",
+    "network": "STM",
+    "note": "Sert comme arrière station",
+    "operator": "Société de transport de Montréal",
+    "railway": "construction",
+    "service": "yard",
+    "start_date": "2031",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1530485296,
+  "center": {
+    "lat": 45.6053759,
+    "lon": -73.5596844
+  },
+  "tags": {
+    "check_date": "2026-06-17",
+    "construction": "subway",
+    "construction:railway": "subway",
+    "name": "Garage Anjou",
+    "network": "STM",
+    "note": "Sert comme arrière station",
+    "operator": "Société de transport de Montréal",
+    "railway": "construction",
+    "service": "yard",
+    "start_date": "2031",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1530485297,
+  "center": {
+    "lat": 45.6058649,
+    "lon": -73.5588311
+  },
+  "tags": {
+    "check_date": "2026-06-17",
+    "construction": "subway",
+    "construction:railway": "subway",
+    "name": "Ligne Bleue (prolongement)",
+    "note": "Sert comme arrière station",
+    "railway": "construction",
+    "service": "yard",
+    "start_date": "2031",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1530730151,
+  "center": {
+    "lat": 45.6077530,
+    "lon": -73.5641511
+  },
+  "tags": {
+    "check_date": "2026-06-17",
+    "construction": "subway",
+    "construction:railway": "subway",
+    "name": "Garage Anjou (voie 4)",
+    "network": "STM",
+    "note": "Sert comme arrière station",
+    "operator": "Société de transport de Montréal",
+    "railway": "construction",
+    "service": "yard",
+    "start_date": "2031",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1530730152,
+  "center": {
+    "lat": 45.6077361,
+    "lon": -73.5641538
+  },
+  "tags": {
+    "check_date": "2026-06-17",
+    "construction": "subway",
+    "construction:railway": "subway",
+    "name": "Garage Anjou (voie 5)",
+    "network": "STM",
+    "note": "Sert comme arrière station",
+    "operator": "Société de transport de Montréal",
+    "railway": "construction",
+    "service": "yard",
+    "start_date": "2031",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1530730153,
+  "center": {
+    "lat": 45.6074523,
+    "lon": -73.5614437
+  },
+  "tags": {
+    "check_date": "2026-06-17",
+    "construction": "subway",
+    "construction:railway": "subway",
+    "name": "Ligne Bleue (prolongement)",
+    "network": "STM",
+    "note": "Sert comme arrière station",
+    "operator": "Société de transport de Montréal",
+    "railway": "construction",
+    "service": "yard",
+    "start_date": "2031",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1530730154,
+  "center": {
+    "lat": 45.6075699,
+    "lon": -73.5642618
+  },
+  "tags": {
+    "check_date": "2026-06-17",
+    "construction": "subway",
+    "construction:railway": "subway",
+    "name": "Garage Anjou (voie 6)",
+    "network": "STM",
+    "note": "Sert comme arrière station",
+    "operator": "Société de transport de Montréal",
+    "railway": "construction",
+    "service": "yard",
+    "start_date": "2031",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1530730155,
+  "center": {
+    "lat": 45.6075482,
+    "lon": -73.5642621
+  },
+  "tags": {
+    "check_date": "2026-06-17",
+    "construction": "subway",
+    "construction:railway": "subway",
+    "name": "Garage Anjou (voie 7)",
+    "network": "STM",
+    "note": "Sert comme arrière station",
+    "operator": "Société de transport de Montréal",
+    "railway": "construction",
+    "service": "yard",
+    "start_date": "2031",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1530730156,
+  "center": {
+    "lat": 45.6072542,
+    "lon": -73.5619016
+  },
+  "tags": {
+    "check_date": "2026-06-17",
+    "construction": "subway",
+    "construction:railway": "subway",
+    "name": "Garage Anjou (voie 8)",
+    "network": "STM",
+    "note": "Sert comme arrière station",
+    "operator": "Société de transport de Montréal",
+    "railway": "construction",
+    "service": "yard",
+    "start_date": "2031",
+    "tunnel": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 1559192102,
+  "center": {
+    "lat": 45.6081999,
+    "lon": -73.5667303
+  },
+  "tags": {
+    "check_date": "2026-09-15",
+    "construction": "subway",
+    "landuse": "construction",
+    "name": "Bâtiment auxiliaire Pauline-Vanier",
+    "operator": "STM",
+    "website": "https://stm.info/fr/projet-ligne-bleue/les-chantiers-du-projet/batiment-auxiliaire-pauline-vanier#id_troisieme"
+  }
+},
+{
+  "type": "relation",
+  "id": 15880444,
+  "center": {
+    "lat": 45.6182656,
+    "lon": -73.5960807
+  },
+  "tags": {
+    "building": "yes",
+    "public_transport": "station",
+    "railway": "station",
+    "train": "yes",
+    "type": "multipolygon"
+  }
+}
+
+  ]
+}
