@@ -837,9 +837,7 @@
     },
     "honore-beaugrand": {
       "name": "Honoré-Beaugrand",
-      "wrap": [
-        "Honoré Beaugrand"
-      ],
+      "wrap": false,
       "x": 68.9,
       "y": 9.6,
       "label": {
@@ -981,9 +979,7 @@
     },
     "lucien-l-allier": {
       "name": "Lucien-L'Allier",
-      "wrap": [
-        "Lucien L'Allier"
-      ],
+      "wrap": false,
       "x": 33.2,
       "y": 50.55,
       "label": {
@@ -1032,7 +1028,7 @@
         "dy": 1.2
       },
       "wrap": [
-        "Place",
+        "Place-",
         "d'Armes"
       ]
     },
@@ -1047,7 +1043,7 @@
         "dy": -0.5
       },
       "wrap": [
-        "Champ-de",
+        "Champ-de-",
         "Mars"
       ]
     },
@@ -1072,9 +1068,7 @@
         "dx": 1.9,
         "dy": -0.89
       },
-      "wrap": [
-        "Mont Royal"
-      ]
+      "wrap": false
     },
     "laurier": {
       "name": "Laurier",
@@ -1120,9 +1114,7 @@
         "dx": 1.9,
         "dy": 0.0
       },
-      "wrap": [
-        "Jean Talon"
-      ]
+      "wrap": false
     },
     "jarry": {
       "name": "Jarry",
@@ -1159,9 +1151,7 @@
     },
     "henri-bourassa": {
       "name": "Henri-Bourassa",
-      "wrap": [
-        "Henri Bourassa"
-      ],
+      "wrap": false,
       "x": 22.7,
       "y": 13.8,
       "label": {

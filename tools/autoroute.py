@@ -3,6 +3,7 @@
     python autoroute.py export BOARD.kicad_pcb OUT.dsn
     java -jar freerouting.jar -de OUT.dsn -do OUT.ses -mp 30
     python autoroute.py import BOARD.kicad_pcb OUT.ses
+    python autoroute.py clear  BOARD.kicad_pcb            # remove every track and via
 
 export writes a Specctra file from a throwaway copy of the board in which
 every piece of front copper artwork (the bare-copper water and the copper
@@ -99,6 +100,16 @@ def import_ses(pcb_path, ses_path):
     pcbnew.SaveBoard(pcb_path, board)
 
 
+def clear(pcb_path, _=None):
+    board = pcbnew.LoadBoard(pcb_path)
+    old = list(board.GetTracks())
+    for t in old:
+        board.Remove(t)
+    pcbnew.SaveBoard(pcb_path, board)
+    print(f"removed {len(old)} tracks and vias")
+
+
 if __name__ == "__main__":
-    mode, pcb, other = sys.argv[1:4]
-    {"export": export, "import": import_ses}[mode](pcb, other)
+    mode, pcb = sys.argv[1:3]
+    other = sys.argv[3] if len(sys.argv) > 3 else None
+    {"export": export, "import": import_ses, "clear": clear}[mode](pcb, other)

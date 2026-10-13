@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "C:\\Users\\funvill\\Documents\\git\\montreal-skytrain-pcb\\hardware\\montreal-metro-pcb.kicad_sch")
-		(date "2026-10-13T08:45:09")
+		(date "2026-10-13T14:50:17")
 		(tool "Eeschema 10.0.5")
 		(sheet
 			(number "1")

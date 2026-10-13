@@ -4,7 +4,7 @@
 per station, generated from `../input/montreal-schematic-square.json`.
 
 Copied from the Vancouver SkyTrain v3 project and ported by the scripts in
-`../tools`. **The board is placed, has its artwork and is autorouted; DRC is clean.**
+`../tools`. **The board is placed and has its artwork. It is not routed: routing is done by hand.**
 
 ## State
 
@@ -14,8 +14,9 @@ Copied from the Vancouver SkyTrain v3 project and ported by the scripts in
 | Board vs schematic | 0 parity issues (`kicad-cli pcb drc --schematic-parity`) |
 | Placement | LEDs at their stations, each turned so DOUT faces the next LED; 8 capacitors on the front in spots clear of labels, routes and water; XIAO and buttons on the back at (124, 122) mm, away from the downtown LEDs whose vias their pads would block; M3 holes 4 mm in from each corner |
 | Artwork | Water (bare copper), routes, station rings and labels, wordmark — written by `export_art.py` |
-| Routing | Freerouting 2.5.0, via `autoroute.py`: 944 track segments, 82 vias. +5V is 0.5 mm, signals 0.25 mm. Ground is the pour on both sides; every ground pad on the front has its own via to the back pour |
-| DRC | 0 violations, 0 unconnected items, 0 schematic parity issues |
+| Labels | Placed by hand in KiCad (2026-10-13) and frozen in `../input/label_overrides-square.json`; every build re-applies them |
+| Routing | **None.** The tracks are to be routed by hand. An autorouted version (Freerouting, DRC-clean) is in git history at `b02ee1b` for reference |
+| DRC | No clearance, edge, short or courtyard violations; every net is unconnected until routed |
 | Back side | The Vancouver moon-phase artwork was removed: it is 191 mm wide and does not fit this board |
 
 ## Regenerating
@@ -36,34 +37,34 @@ Use the same `reposition_board.py` arguments every time, including
 
 ## Routing
 
-The water is bare copper on the front with no net, and KiCad does not export
-graphic copper to the autorouter. `autoroute.py export` therefore covers the
-front artwork with track-and-via keepouts on a throwaway copy of the board,
-and tells the router the ground plane is on the back only.
+Routing is manual. The water is bare copper on the front with no net, so
+front-side tracks must not cross it; ground pads on the front each need a
+via to the back pour, because the front pour is cut into islands by the
+artwork. `U1` pad 13 (GND) sits between two pads closer than the pour's
+clearance, so the pour will not reach it: give it a track.
+
+`rebuild_board.sh` leaves tracks alone. `rebuild_board.sh --autoroute`
+replaces **every** track with the autorouter's (`autoroute.py`,
+`stitch_ground.py`); `autoroute.py clear` removes them all.
+
+## After editing labels in KiCad
 
 ```
-"C:/Program Files/KiCad/10.0/bin/python.exe" autoroute.py export ../hardware/montreal-metro-pcb.kicad_pcb OUT.dsn
-java -jar freerouting-2.5.0.jar -de OUT.dsn -do OUT.ses -mp 40 --gui.enabled=false
-"C:/Program Files/KiCad/10.0/bin/python.exe" autoroute.py import ../hardware/montreal-metro-pcb.kicad_pcb OUT.ses
-kicad-cli pcb drc ... --refill-zones --save-board          # see Checking
-"C:/Program Files/KiCad/10.0/bin/python.exe" stitch_ground.py ../hardware/montreal-metro-pcb.kicad_pcb U1 13
+python import_labels.py ../input/montreal-schematic-square.json ../hardware/montreal-metro-pcb.kicad_pcb
+python save_label_overrides.py ../input/montreal-schematic-square.json ../input/label_overrides-square.json
 ```
 
-`import` replaces every track, so re-routing is repeatable; any hand routing
-is lost. The last step ties U1's ground pad into the back pour: its
-neighbouring pads are too close for the pour to reach it.
+Do this before any rebuild, or the exporter writes the old labels back.
 
 `port_board.py` moves LEDs and re-aims them, so once tracks exist, re-running
 it after moving a station will leave those tracks behind. Do not pass
 `--strip` again: that removes every track and all front artwork.
 
-**If labels have been edited by hand in KiCad, run `import_labels.py` before
-`export_art.py`**, or the exporter overwrites them.
-
-Or run the whole thing, placement through renders, in one go (Git Bash, from `../tools`):
+Or run the whole thing, placement through renders, in one go (Git Bash, from
+`../tools`); it does not touch tracks:
 
 ```
-FREEROUTING_JAR=/path/to/freerouting-2.5.0.jar ./rebuild_board.sh
+./rebuild_board.sh
 ```
 
 ## Checking
@@ -76,11 +77,9 @@ python render_board.py ../hardware/montreal-metro-pcb.kicad_pcb ../test-results 
 
 ## Still to do
 
-1. Review the autorouted tracks. About 70 % of the track length is on the
-   front, where it cuts visible channels in the ground pour.
+1. **Route the board** (by hand).
 2. Check U1's orientation (USB-C toward a board edge) and the test-point
    positions on the back.
 3. New back-side artwork, if wanted.
-4. Hand pass on the labels in KiCad, then `import_labels.py`.
 5. DRC, then fabrication outputs (`make_jlcpcb.py`). ENIG finish, so the bare
    copper reads gold.

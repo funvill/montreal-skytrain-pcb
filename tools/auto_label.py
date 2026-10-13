@@ -1,5 +1,14 @@
 """Choose a label angle/anchor for every station so nothing collides.
 
+The defaults follow the user's hand pass on the Montréal board (2026-10-13):
+  * the label sits directly beside its station and level with it, about
+    1.9 mm from the pad centre - right side first, then left
+  * if the line is in the way it is nudged up or down, as little as will do
+  * a run of stations keeps its labels on one side
+  * on a level run the labels go below / above the stations, alternating
+  * a leader line is the last resort
+Text may sit right against its own line and pad ring (see check_fit).
+
 Scoring, per candidate placement of one station (lower is better):
   * real collisions (label-label, label-dot, label-line, off-board) x 100
   * label-geo collisions (park hatch, copper water) x 10 - readable but
@@ -71,7 +80,7 @@ def score(ctx, sid, prev_angle):
         s += 10 + abs(st.label["angle"]) / 15
     if prev_angle is not None and st.label["angle"] != prev_angle:
         s += 2
-    s += POSITION_COST[position(st.label)]
+    s += position_cost(ctx, st)
     if st.label.get("leader"):
         # a leader is the last resort: dearer than any rotation, cheaper
         # only than a label on bare copper or a real collision
@@ -93,15 +102,47 @@ def score(ctx, sid, prev_angle):
     return s
 
 
-# Cartographers' rule of thumb for a point label, best first: upper right,
-# lower right, upper left, lower left, middle right, middle left. Directly
-# above / below comes after those.
-POSITION_COST = {"upper-right": 0, "lower-right": 1, "upper-left": 2, "lower-left": 3,
-                 "middle-right": 4, "middle-left": 5, "above": 6, "below": 7, "other": 0}
+NUDGE = 0.45       # a small step up or down from level, mm
+PREV = {}          # station id -> previous station on its path (set in main)
+
+
+def level_run(ctx, st):
+    """True if the station's neighbours on its line sit at the same height:
+    labels beside it would run into them, so they go above / below instead."""
+    near = [o for o in ctx.all_st if o.id != st.id
+            and abs(o.y - st.y) * ctx.scale < 0.3 and abs(o.x - st.x) * ctx.scale < 9.0]
+    return bool(near)
+
+
+def position_cost(ctx, st):
+    """How far a placement is from the preferred one: beside and level, on
+    the right, on the same side as the previous station of the run."""
+    pos = position(st.label)
+    if pos == "other":
+        return 0                                # rotation / leader are costed separately
+    cost = 0.0
+    if pos in ("above", "below"):
+        if not level_run(ctx, st):
+            cost += 6
+        prev = PREV.get(st.id)
+        if prev and position(find_station(ctx.city, prev).label) == pos:
+            cost += 2                           # alternate: not the same as the last one
+        return cost
+    if level_run(ctx, st):
+        cost += 4                               # beside, on a level run: usually collides anyway
+    side = pos.split("-")[1]
+    cost += 0 if side == "right" else 1.5
+    cost += min(abs(st.label.get("dy", 0)) / NUDGE, 4) * 0.6     # level 0, nudge 0.6, raised ~1.2-2.4
+    prev = PREV.get(st.id)
+    if prev:
+        ppos = position(find_station(ctx.city, prev).label)
+        if "-" in ppos and ppos.split("-")[1] != side:
+            cost += 1.5                         # keep a run on one side
+    return cost
 
 
 def position(label):
-    """Which of the rule-of-thumb positions a horizontal, leaderless label is in."""
+    """Where a horizontal, leaderless label sits relative to its station."""
     if label.get("angle", 0) != 0 or label.get("leader"):
         return "other"                      # costed separately
     dx, dy = label.get("dx", 0), label.get("dy", 0)
@@ -118,15 +159,14 @@ def candidates(st):
     for short in (False, True):
         if short and st.short == st.name:
             continue
-        # the rule-of-thumb positions first: beside the pad, the text block
-        # sitting just above or just below the pad's centre line
+        # beside the pad first: level, then nudged, then a full step up / down
         keep = st.label
         st.label = {"short": True} if short else {}
         n_lines = len(citymap.display_lines(st))
         st.label = keep
         rise = round((citymap.BOX_H + (n_lines - 1) * citymap.LINE_PITCH) * citymap.TEXT_H / 2 + 0.2, 2)
-        for anchor, dx in (("start", citymap.LABEL_STANDOFF), ("end", -citymap.LABEL_STANDOFF)):
-            for dy in (-rise, rise):
+        for dy in (0.0, -NUDGE, NUDGE, -2 * NUDGE, 2 * NUDGE, -rise, rise):
+            for anchor, dx in (("start", citymap.LABEL_STANDOFF), ("end", -citymap.LABEL_STANDOFF)):
                 yield {"angle": 0, "anchor": anchor, "dx": dx, "dy": dy,
                        **({"short": True} if short else {})}
         for angle in ANGLES:
@@ -329,6 +369,7 @@ def main():
     city = citymap.load(args.path)
     ctx = check_fit.Context(city, city.scale, citymap.TEXT_H, False)
     order, prev = path_order(city)
+    PREV.update(prev)
     fixed = json.load(open(args.fixed, encoding="utf-8")) if args.fixed else {}
     for sid, entry in fixed.items():
         entry = entry if "label" in entry else {"label": entry}
