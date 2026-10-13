@@ -148,7 +148,7 @@ def best_label(ctx, sid, prev_angle, exclude=None):
     return best
 
 
-def anneal(ctx, prev, d, iters=40000, t0=60.0, t1=0.5, seed=1):
+def anneal(ctx, prev, d, iters=40000, t0=60.0, t1=0.5, seed=1, only=None):
     """Simulated annealing over every label: propose one station's label
     from its candidate list, accept by the change in that station's score
     (its collisions are symmetric, so this tracks the total), cooling
@@ -163,12 +163,14 @@ def anneal(ctx, prev, d, iters=40000, t0=60.0, t1=0.5, seed=1):
         pa = find_station(ctx.city, prev[sid]).label["angle"] if prev.get(sid) else None
         return score(ctx, sid, pa)
 
+    # with --only, every other label (hand-placed ones included) stays put
+    movable = [st for st in all_st if not only or st.id in only]
     cur = {st.id: sc(st.id) for st in all_st}
     total = sum(cur.values())
     best_total, best = total, {st.id: dict(st.label) for st in all_st}
     for i in range(iters):
         t = t0 * (t1 / t0) ** (i / iters)
-        st = all_st[rng.randrange(len(all_st))]
+        st = movable[rng.randrange(len(movable))]
         old_label, old_s = st.label, cur[st.id]
         st.label = rng.choice(cands[st.id])
         boxes[st.id] = ctx.box(st)
@@ -272,7 +274,7 @@ def main():
                 target = next(e for e in d["extras"] if e["id"] == sid)
             target["label"] = label
         print(f"pass {p}: total score {total:.0f}")
-    anneal(ctx, prev, d, iters=args.iters)
+    anneal(ctx, prev, d, iters=args.iters, only=only)
     polish(ctx, prev, d, only)
     json.dump(d, open(args.path, "w", encoding="utf-8"), indent=2, ensure_ascii=False)
     cols = real_collisions(ctx)
