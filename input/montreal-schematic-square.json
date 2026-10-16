@@ -1,0 +1,6357 @@
+{
+  "city": "montreal",
+  "lines": [
+    {
+      "id": "green",
+      "name": "Ligne verte",
+      "color": "#008E4F",
+      "paths": [
+        [
+          "angrignon",
+          "monk",
+          "jolicoeur",
+          "verdun",
+          "de-l-eglise",
+          "lasalle",
+          "charlevoix",
+          "lionel-groulx",
+          "atwater",
+          "guy-concordia",
+          "peel",
+          "mcgill",
+          "place-des-arts",
+          "saint-laurent",
+          "berri-uqam",
+          "beaudry",
+          "papineau",
+          "frontenac",
+          "prefontaine",
+          "joliette",
+          "pie-ix",
+          "viau",
+          "assomption",
+          "cadillac",
+          "langelier",
+          "radisson",
+          "honore-beaugrand"
+        ]
+      ],
+      "shape": {
+        "charlevoix|lionel-groulx": [
+          [
+            28.414,
+            58.486
+          ],
+          [
+            28.552,
+            58.336
+          ],
+          [
+            28.67,
+            58.178
+          ],
+          [
+            28.771,
+            58.012
+          ],
+          [
+            28.854,
+            57.839
+          ],
+          [
+            28.918,
+            57.659
+          ],
+          [
+            28.963,
+            57.471
+          ],
+          [
+            28.991,
+            57.275
+          ],
+          [
+            29.0,
+            57.072
+          ]
+        ],
+        "lionel-groulx|atwater": [
+          [
+            29.0,
+            50.328
+          ],
+          [
+            29.009,
+            50.125
+          ],
+          [
+            29.037,
+            49.929
+          ],
+          [
+            29.082,
+            49.741
+          ],
+          [
+            29.146,
+            49.561
+          ],
+          [
+            29.229,
+            49.388
+          ],
+          [
+            29.33,
+            49.222
+          ],
+          [
+            29.448,
+            49.064
+          ],
+          [
+            29.586,
+            48.914
+          ]
+        ]
+      }
+    },
+    {
+      "id": "orange",
+      "name": "Ligne orange",
+      "color": "#EF8122",
+      "paths": [
+        [
+          "cote-vertu",
+          "du-college",
+          "de-la-savane",
+          "namur",
+          "plamondon",
+          "cote-sainte-catherine",
+          "snowdon",
+          "villa-maria",
+          "vendome",
+          "place-saint-henri",
+          "lionel-groulx",
+          "georges-vanier",
+          "lucien-l-allier",
+          "bonaventure",
+          "square-victoria-oaci",
+          "place-d-armes",
+          "champ-de-mars",
+          "berri-uqam",
+          "sherbrooke",
+          "mont-royal",
+          "laurier",
+          "rosemont",
+          "beaubien",
+          "jean-talon",
+          "jarry",
+          "cremazie",
+          "sauve",
+          "henri-bourassa",
+          "cartier",
+          "de-la-concorde",
+          "montmorency"
+        ]
+      ],
+      "shape": {
+        "champ-de-mars|berri-uqam": [
+          [
+            44.911,
+            38.839
+          ],
+          [
+            45.22,
+            38.486
+          ],
+          [
+            45.441,
+            38.132
+          ],
+          [
+            45.574,
+            37.779
+          ],
+          [
+            45.618,
+            37.425
+          ],
+          [
+            45.574,
+            37.071
+          ],
+          [
+            45.441,
+            36.718
+          ],
+          [
+            45.22,
+            36.364
+          ],
+          [
+            44.911,
+            36.011
+          ]
+        ],
+        "cartier|de-la-concorde": [
+          [
+            16.986,
+            8.086
+          ],
+          [
+            16.836,
+            7.948
+          ],
+          [
+            16.678,
+            7.83
+          ],
+          [
+            16.512,
+            7.729
+          ],
+          [
+            16.339,
+            7.646
+          ],
+          [
+            16.159,
+            7.582
+          ],
+          [
+            15.971,
+            7.537
+          ],
+          [
+            15.775,
+            7.509
+          ],
+          [
+            15.572,
+            7.5
+          ]
+        ]
+      }
+    },
+    {
+      "id": "yellow",
+      "name": "Ligne jaune",
+      "color": "#FFE300",
+      "paths": [
+        [
+          "berri-uqam",
+          "jean-drapeau",
+          "longueuil-universite-de-sherbrooke"
+        ]
+      ],
+      "shape": {
+        "berri-uqam|jean-drapeau": [
+          [
+            48.42,
+            34.8
+          ],
+          [
+            48.889,
+            34.831
+          ],
+          [
+            49.295,
+            34.925
+          ],
+          [
+            49.639,
+            35.081
+          ],
+          [
+            49.92,
+            35.3
+          ],
+          [
+            50.139,
+            35.581
+          ],
+          [
+            50.295,
+            35.925
+          ],
+          [
+            50.389,
+            36.331
+          ],
+          [
+            50.42,
+            36.8
+          ]
+        ],
+        "jean-drapeau|longueuil-universite-de-sherbrooke": [
+          [
+            50.42,
+            44.88
+          ],
+          [
+            50.446,
+            45.274
+          ],
+          [
+            50.525,
+            45.615
+          ],
+          [
+            50.656,
+            45.904
+          ],
+          [
+            50.84,
+            46.14
+          ],
+          [
+            51.076,
+            46.324
+          ],
+          [
+            51.365,
+            46.455
+          ],
+          [
+            51.706,
+            46.534
+          ],
+          [
+            52.1,
+            46.56
+          ]
+        ]
+      }
+    },
+    {
+      "id": "blue",
+      "name": "Ligne bleue",
+      "color": "#0083CA",
+      "paths": [
+        [
+          "snowdon",
+          "cote-des-neiges",
+          "universite-de-montreal",
+          "edouard-montpetit",
+          "outremont",
+          "acadie",
+          "parc",
+          "de-castelnau",
+          "jean-talon",
+          "fabre",
+          "d-iberville",
+          "saint-michel",
+          "vertieres",
+          "mary-two-axe-earley",
+          "cesira-parisotto",
+          "madeleine-parent",
+          "anjou"
+        ]
+      ],
+      "shape": {
+        "universite-de-montreal|edouard-montpetit": [
+          [
+            26.314,
+            40.636
+          ],
+          [
+            26.452,
+            40.486
+          ],
+          [
+            26.57,
+            40.328
+          ],
+          [
+            26.671,
+            40.162
+          ],
+          [
+            26.754,
+            39.989
+          ],
+          [
+            26.818,
+            39.809
+          ],
+          [
+            26.863,
+            39.621
+          ],
+          [
+            26.891,
+            39.425
+          ],
+          [
+            26.9,
+            39.222
+          ]
+        ],
+        "parc|de-castelnau": [
+          [
+            26.9,
+            27.228
+          ],
+          [
+            26.909,
+            27.025
+          ],
+          [
+            26.937,
+            26.829
+          ],
+          [
+            26.982,
+            26.641
+          ],
+          [
+            27.046,
+            26.461
+          ],
+          [
+            27.129,
+            26.288
+          ],
+          [
+            27.23,
+            26.122
+          ],
+          [
+            27.348,
+            25.964
+          ],
+          [
+            27.486,
+            25.814
+          ]
+        ],
+        "saint-michel|vertieres": [
+          [
+            38.914,
+            14.386
+          ],
+          [
+            39.064,
+            14.248
+          ],
+          [
+            39.222,
+            14.13
+          ],
+          [
+            39.388,
+            14.029
+          ],
+          [
+            39.561,
+            13.946
+          ],
+          [
+            39.741,
+            13.882
+          ],
+          [
+            39.929,
+            13.837
+          ],
+          [
+            40.125,
+            13.809
+          ],
+          [
+            40.328,
+            13.8
+          ]
+        ]
+      }
+    }
+  ],
+  "extras": [],
+  "chain": [
+    "longueuil-universite-de-sherbrooke",
+    "jean-drapeau",
+    "berri-uqam",
+    "beaudry",
+    "papineau",
+    "frontenac",
+    "prefontaine",
+    "joliette",
+    "pie-ix",
+    "viau",
+    "assomption",
+    "cadillac",
+    "langelier",
+    "radisson",
+    "honore-beaugrand",
+    "anjou",
+    "madeleine-parent",
+    "cesira-parisotto",
+    "mary-two-axe-earley",
+    "vertieres",
+    "saint-michel",
+    "d-iberville",
+    "fabre",
+    "jean-talon",
+    "jarry",
+    "cremazie",
+    "sauve",
+    "henri-bourassa",
+    "cartier",
+    "de-la-concorde",
+    "montmorency",
+    "cote-vertu",
+    "du-college",
+    "de-la-savane",
+    "namur",
+    "plamondon",
+    "cote-sainte-catherine",
+    "snowdon",
+    "cote-des-neiges",
+    "universite-de-montreal",
+    "edouard-montpetit",
+    "outremont",
+    "acadie",
+    "parc",
+    "de-castelnau",
+    "beaubien",
+    "rosemont",
+    "laurier",
+    "mont-royal",
+    "sherbrooke",
+    "champ-de-mars",
+    "place-d-armes",
+    "square-victoria-oaci",
+    "bonaventure",
+    "lucien-l-allier",
+    "georges-vanier",
+    "lionel-groulx",
+    "charlevoix",
+    "lasalle",
+    "de-l-eglise",
+    "verdun",
+    "jolicoeur",
+    "monk",
+    "angrignon",
+    "villa-maria",
+    "vendome",
+    "place-saint-henri",
+    "atwater",
+    "guy-concordia",
+    "peel",
+    "mcgill",
+    "place-des-arts",
+    "saint-laurent"
+  ],
+  "stations": {
+    "angrignon": {
+      "name": "Angrignon",
+      "x": 14.3,
+      "y": 72.6,
+      "label": {
+        "angle": 0,
+        "anchor": "end",
+        "dx": 1.4,
+        "dy": 2.1
+      }
+    },
+    "monk": {
+      "name": "Monk",
+      "x": 16.4,
+      "y": 70.5,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.89
+      }
+    },
+    "jolicoeur": {
+      "name": "Jolicoeur",
+      "x": 18.5,
+      "y": 68.4,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.89
+      }
+    },
+    "verdun": {
+      "name": "Verdun",
+      "x": 20.6,
+      "y": 66.3,
+      "label": {
+        "angle": 0,
+        "anchor": "end",
+        "dx": -1.9,
+        "dy": -0.89
+      }
+    },
+    "de-l-eglise": {
+      "name": "De l'Église",
+      "x": 22.7,
+      "y": 64.2,
+      "label": {
+        "angle": 0,
+        "anchor": "center",
+        "dx": 5.14,
+        "dy": 2.49
+      }
+    },
+    "lasalle": {
+      "name": "LaSalle",
+      "x": 24.8,
+      "y": 62.1,
+      "label": {
+        "angle": 0,
+        "anchor": "end",
+        "dx": -1.9,
+        "dy": -0.89
+      }
+    },
+    "charlevoix": {
+      "name": "Charlevoix",
+      "x": 26.9,
+      "y": 60.0,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.89
+      }
+    },
+    "lionel-groulx": {
+      "name": "Lionel-Groulx",
+      "interchange": true,
+      "x": 29.0,
+      "y": 54.75,
+      "label": {
+        "angle": 0,
+        "anchor": "end",
+        "dx": -1.9,
+        "dy": 0.4
+      }
+    },
+    "atwater": {
+      "name": "Atwater",
+      "x": 31.1,
+      "y": 47.4,
+      "label": {
+        "angle": 0,
+        "anchor": "end",
+        "dx": -2.0,
+        "dy": 0.2
+      }
+    },
+    "guy-concordia": {
+      "name": "Guy-Concordia",
+      "x": 33.2,
+      "y": 45.3,
+      "label": {
+        "angle": 0,
+        "anchor": "end",
+        "dx": -1.8,
+        "dy": -0.2
+      }
+    },
+    "peel": {
+      "name": "Peel",
+      "x": 35.3,
+      "y": 43.2,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.7,
+        "dy": 0.0
+      }
+    },
+    "mcgill": {
+      "name": "McGill",
+      "x": 37.4,
+      "y": 41.1,
+      "label": {
+        "angle": 0,
+        "anchor": "center",
+        "dx": 4.1,
+        "dy": 0.2
+      }
+    },
+    "place-des-arts": {
+      "name": "Place-des-Arts",
+      "wrap": [
+        "Place-",
+        "des-Arts"
+      ],
+      "x": 39.5,
+      "y": 39.0,
+      "label": {
+        "angle": 0,
+        "anchor": "end",
+        "dx": -2.2,
+        "dy": -1.0
+      }
+    },
+    "saint-laurent": {
+      "name": "Saint-Laurent",
+      "x": 41.6,
+      "y": 36.9,
+      "label": {
+        "angle": 0,
+        "anchor": "end",
+        "dx": -1.9,
+        "dy": -0.89
+      }
+    },
+    "berri-uqam": {
+      "name": "Berri-UQAM",
+      "interchange": true,
+      "x": 43.7,
+      "y": 34.8,
+      "label": {
+        "angle": 0,
+        "anchor": "end",
+        "dx": -1.9,
+        "dy": 0.0
+      }
+    },
+    "beaudry": {
+      "name": "Beaudry",
+      "x": 45.8,
+      "y": 32.7,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.89
+      }
+    },
+    "papineau": {
+      "name": "Papineau",
+      "x": 47.9,
+      "y": 30.6,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.89
+      }
+    },
+    "frontenac": {
+      "name": "Frontenac",
+      "x": 50.0,
+      "y": 28.5,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.89
+      }
+    },
+    "prefontaine": {
+      "name": "Préfontaine",
+      "x": 52.1,
+      "y": 26.4,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.89
+      }
+    },
+    "joliette": {
+      "name": "Joliette",
+      "x": 54.2,
+      "y": 24.3,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.89
+      }
+    },
+    "pie-ix": {
+      "name": "Pie-IX",
+      "x": 56.3,
+      "y": 22.2,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.89
+      }
+    },
+    "viau": {
+      "name": "Viau",
+      "x": 58.4,
+      "y": 20.1,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.89
+      }
+    },
+    "assomption": {
+      "name": "Assomption",
+      "x": 60.5,
+      "y": 18.0,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.89
+      }
+    },
+    "cadillac": {
+      "name": "Cadillac",
+      "x": 62.6,
+      "y": 15.9,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.89
+      }
+    },
+    "langelier": {
+      "name": "Langelier",
+      "x": 64.7,
+      "y": 13.8,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.89
+      }
+    },
+    "radisson": {
+      "name": "Radisson",
+      "x": 66.8,
+      "y": 11.7,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.89
+      }
+    },
+    "honore-beaugrand": {
+      "name": "Honoré-Beaugrand",
+      "wrap": false,
+      "x": 68.9,
+      "y": 9.6,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": -5.5,
+        "dy": -2.8
+      }
+    },
+    "cote-vertu": {
+      "name": "Côte-Vertu",
+      "x": 8.0,
+      "y": 33.75,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": -0.89
+      }
+    },
+    "du-college": {
+      "name": "Du Collège",
+      "x": 10.1,
+      "y": 35.85,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": -0.89
+      }
+    },
+    "de-la-savane": {
+      "name": "De La Savane",
+      "x": 12.2,
+      "y": 37.95,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": -0.89
+      }
+    },
+    "namur": {
+      "name": "Namur",
+      "x": 14.3,
+      "y": 40.05,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 2.0,
+        "dy": -0.3
+      }
+    },
+    "plamondon": {
+      "name": "Plamondon",
+      "x": 16.4,
+      "y": 42.15,
+      "label": {
+        "angle": 0,
+        "anchor": "center",
+        "dx": -6.4,
+        "dy": 0.0
+      }
+    },
+    "cote-sainte-catherine": {
+      "name": "Côte-Sainte-Catherine",
+      "short": "Côte-Ste-Catherine",
+      "wrap": false,
+      "x": 18.5,
+      "y": 44.25,
+      "label": {
+        "angle": 0,
+        "anchor": "end",
+        "dx": -1.8,
+        "dy": 0.1
+      }
+    },
+    "snowdon": {
+      "name": "Snowdon",
+      "interchange": true,
+      "x": 20.6,
+      "y": 46.35,
+      "label": {
+        "angle": 0,
+        "anchor": "end",
+        "dx": -2.1,
+        "dy": 0.0
+      }
+    },
+    "villa-maria": {
+      "name": "Villa-Maria",
+      "x": 22.7,
+      "y": 48.45,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": -11.9,
+        "dy": 0.1
+      }
+    },
+    "vendome": {
+      "name": "Vendôme",
+      "x": 24.8,
+      "y": 50.55,
+      "label": {
+        "angle": 0,
+        "anchor": "center",
+        "dx": -5.5,
+        "dy": 0.0
+      }
+    },
+    "place-saint-henri": {
+      "name": "Place-Saint-Henri",
+      "short": "Place-St-Henri",
+      "wrap": false,
+      "x": 26.9,
+      "y": 52.65,
+      "label": {
+        "angle": 0,
+        "anchor": "end",
+        "dx": -2.4,
+        "dy": 0.4
+      }
+    },
+    "georges-vanier": {
+      "name": "Georges-Vanier",
+      "wrap": [
+        "Georges-",
+        "Vanier"
+      ],
+      "x": 31.1,
+      "y": 52.65,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.8,
+        "dy": 0.3
+      }
+    },
+    "lucien-l-allier": {
+      "name": "Lucien-L'Allier",
+      "wrap": false,
+      "x": 33.2,
+      "y": 50.55,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.3,
+        "dy": 1.0
+      }
+    },
+    "bonaventure": {
+      "name": "Bonaventure",
+      "x": 35.3,
+      "y": 48.45,
+      "label": {
+        "angle": 0,
+        "anchor": "center",
+        "dx": 5.14,
+        "dy": 2.49
+      }
+    },
+    "square-victoria-oaci": {
+      "name": "Square-Victoria-OACI",
+      "short": "Square-Victoria",
+      "wrap": [
+        "Square-",
+        "Victoria-",
+        "OACI"
+      ],
+      "x": 37.4,
+      "y": 46.35,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.5,
+        "dy": 1.5
+      }
+    },
+    "place-d-armes": {
+      "name": "Place-d'Armes",
+      "x": 39.5,
+      "y": 44.25,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.7,
+        "dy": 1.2
+      },
+      "wrap": [
+        "Place-",
+        "d'Armes"
+      ]
+    },
+    "champ-de-mars": {
+      "name": "Champ-de-Mars",
+      "x": 41.6,
+      "y": 42.15,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 2.0,
+        "dy": -0.5
+      },
+      "wrap": [
+        "Champ-de-",
+        "Mars"
+      ]
+    },
+    "sherbrooke": {
+      "name": "Sherbrooke",
+      "x": 41.6,
+      "y": 32.7,
+      "label": {
+        "angle": 0,
+        "anchor": "end",
+        "dx": -1.8,
+        "dy": 0.2
+      }
+    },
+    "mont-royal": {
+      "name": "Mont-Royal",
+      "x": 39.5,
+      "y": 30.6,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": -0.89
+      },
+      "wrap": false
+    },
+    "laurier": {
+      "name": "Laurier",
+      "x": 37.4,
+      "y": 28.5,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": -0.89
+      }
+    },
+    "rosemont": {
+      "name": "Rosemont",
+      "x": 35.3,
+      "y": 26.4,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": -0.89
+      }
+    },
+    "beaubien": {
+      "name": "Beaubien",
+      "x": 33.2,
+      "y": 24.3,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": -0.89
+      }
+    },
+    "jean-talon": {
+      "name": "Jean-Talon",
+      "interchange": true,
+      "x": 31.1,
+      "y": 22.2,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.0
+      },
+      "wrap": false
+    },
+    "jarry": {
+      "name": "Jarry",
+      "x": 29.0,
+      "y": 20.1,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": -6.2,
+        "dy": 0.1
+      }
+    },
+    "cremazie": {
+      "name": "Crémazie",
+      "x": 26.9,
+      "y": 18.0,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.7,
+        "dy": -0.1
+      }
+    },
+    "sauve": {
+      "name": "Sauvé",
+      "x": 24.8,
+      "y": 15.9,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 2.1,
+        "dy": -0.1
+      }
+    },
+    "henri-bourassa": {
+      "name": "Henri-Bourassa",
+      "wrap": false,
+      "x": 22.7,
+      "y": 13.8,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 2.3,
+        "dy": -0.6
+      }
+    },
+    "cartier": {
+      "name": "Cartier",
+      "x": 18.5,
+      "y": 9.6,
+      "label": {
+        "angle": 0,
+        "anchor": "end",
+        "dx": -2.2,
+        "dy": 0.1
+      }
+    },
+    "de-la-concorde": {
+      "name": "De la Concorde",
+      "wrap": [
+        "De la",
+        "Concorde"
+      ],
+      "x": 13.25,
+      "y": 7.5,
+      "label": {
+        "angle": 0,
+        "anchor": "center",
+        "dx": -0.1,
+        "dy": -3.5
+      }
+    },
+    "montmorency": {
+      "name": "Montmorency",
+      "x": 10.1,
+      "y": 7.5,
+      "label": {
+        "angle": 0,
+        "anchor": "center",
+        "dx": -0.1,
+        "dy": 2.4
+      }
+    },
+    "jean-drapeau": {
+      "name": "Jean-Drapeau",
+      "x": 50.42,
+      "y": 44.46,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 8.91,
+        "dy": -1.25,
+        "leader": true
+      }
+    },
+    "longueuil-universite-de-sherbrooke": {
+      "name": "Longueuil–Université-de-Sherbrooke",
+      "short": "Longueuil",
+      "wrap": [
+        "Longueuil–",
+        "Université-de-",
+        "Sherbrooke"
+      ],
+      "x": 56.3,
+      "y": 46.56,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.28
+      }
+    },
+    "cote-des-neiges": {
+      "name": "Côte-des-Neiges",
+      "wrap": [
+        "Côte-des-",
+        "Neiges"
+      ],
+      "x": 22.7,
+      "y": 44.25,
+      "label": {
+        "angle": 0,
+        "anchor": "center",
+        "dx": -3.9,
+        "dy": -2.5
+      }
+    },
+    "universite-de-montreal": {
+      "name": "Université-de-Montréal",
+      "short": "U. de Montréal",
+      "wrap": [
+        "Université-",
+        "de-Montréal"
+      ],
+      "x": 24.8,
+      "y": 42.15,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.4
+      }
+    },
+    "edouard-montpetit": {
+      "name": "Édouard-Montpetit",
+      "wrap": [
+        "Édouard-",
+        "Montpetit"
+      ],
+      "x": 26.9,
+      "y": 37.74,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 2.1,
+        "dy": 0.12
+      }
+    },
+    "outremont": {
+      "name": "Outremont",
+      "x": 26.9,
+      "y": 35.01,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": -0.89
+      }
+    },
+    "acadie": {
+      "name": "Acadie",
+      "x": 26.9,
+      "y": 32.28,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": -0.89
+      }
+    },
+    "parc": {
+      "name": "Parc",
+      "x": 26.9,
+      "y": 29.55,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": -0.89
+      }
+    },
+    "de-castelnau": {
+      "name": "De Castelnau",
+      "x": 29.0,
+      "y": 24.3,
+      "label": {
+        "angle": 0,
+        "anchor": "end",
+        "dx": -1.9,
+        "dy": -0.89
+      }
+    },
+    "fabre": {
+      "name": "Fabre",
+      "x": 33.2,
+      "y": 20.1,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.9,
+        "dy": 0.89
+      }
+    },
+    "d-iberville": {
+      "name": "D'Iberville",
+      "x": 35.3,
+      "y": 18.0,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 1.8,
+        "dy": 0.1
+      }
+    },
+    "saint-michel": {
+      "name": "Saint-Michel",
+      "x": 37.4,
+      "y": 15.9,
+      "label": {
+        "angle": 0,
+        "anchor": "center",
+        "dx": -7.0,
+        "dy": -0.2
+      }
+    },
+    "vertieres": {
+      "name": "Vertières",
+      "future": true,
+      "x": 42.86,
+      "y": 13.8,
+      "label": {
+        "angle": 0,
+        "anchor": "center",
+        "dx": -0.12,
+        "dy": 2.4
+      }
+    },
+    "mary-two-axe-earley": {
+      "name": "Mary-Two-Axe-Earley",
+      "future": true,
+      "wrap": [
+        "Mary-Two-",
+        "Axe-Earley"
+      ],
+      "x": 46.22,
+      "y": 13.8,
+      "label": {
+        "angle": 0,
+        "anchor": "center",
+        "dx": 0.46,
+        "dy": -3.9
+      }
+    },
+    "cesira-parisotto": {
+      "name": "Césira-Parisotto",
+      "future": true,
+      "wrap": [
+        "Césira-",
+        "Parisotto"
+      ],
+      "x": 49.58,
+      "y": 13.8,
+      "label": {
+        "angle": 0,
+        "anchor": "center",
+        "dx": 0.24,
+        "dy": 3.6
+      }
+    },
+    "madeleine-parent": {
+      "name": "Madeleine-Parent",
+      "future": true,
+      "wrap": [
+        "Madeleine-",
+        "Parent"
+      ],
+      "x": 52.94,
+      "y": 13.8,
+      "label": {
+        "angle": 0,
+        "anchor": "center",
+        "dx": 0.72,
+        "dy": -3.5
+      }
+    },
+    "anjou": {
+      "name": "Anjou",
+      "future": true,
+      "x": 56.3,
+      "y": 13.8,
+      "label": {
+        "angle": 0,
+        "anchor": "start",
+        "dx": 2.3,
+        "dy": 0.1
+      }
+    }
+  },
+  "geo": [
+    {
+      "name": "water-0",
+      "type": "water",
+      "points": [
+        [
+          54.63,
+          43.24
+        ],
+        [
+          54.65,
+          43.22
+        ],
+        [
+          54.68,
+          43.2
+        ],
+        [
+          55.2,
+          41.6
+        ],
+        [
+          55.63,
+          40.35
+        ],
+        [
+          55.93,
+          39.75
+        ],
+        [
+          56.03,
+          39.37
+        ],
+        [
+          56.08,
+          39.33
+        ],
+        [
+          56.22,
+          39.35
+        ],
+        [
+          56.27,
+          39.51
+        ],
+        [
+          56.45,
+          39.62
+        ],
+        [
+          56.55,
+          39.77
+        ],
+        [
+          56.73,
+          39.89
+        ],
+        [
+          56.89,
+          39.93
+        ],
+        [
+          57.63,
+          39.81
+        ],
+        [
+          57.79,
+          39.66
+        ],
+        [
+          57.85,
+          39.53
+        ],
+        [
+          58.11,
+          39.8
+        ],
+        [
+          58.23,
+          39.76
+        ],
+        [
+          58.32,
+          39.6
+        ],
+        [
+          58.42,
+          39.7
+        ],
+        [
+          58.55,
+          39.71
+        ],
+        [
+          58.69,
+          39.61
+        ],
+        [
+          58.72,
+          39.49
+        ],
+        [
+          58.47,
+          39.06
+        ],
+        [
+          58.58,
+          39.06
+        ],
+        [
+          58.9,
+          39.37
+        ],
+        [
+          59.0,
+          39.37
+        ],
+        [
+          59.1,
+          39.3
+        ],
+        [
+          59.14,
+          39.18
+        ],
+        [
+          59.05,
+          38.93
+        ],
+        [
+          59.25,
+          38.69
+        ],
+        [
+          59.63,
+          38.05
+        ],
+        [
+          59.75,
+          37.94
+        ],
+        [
+          60.03,
+          38.31
+        ],
+        [
+          60.16,
+          38.37
+        ],
+        [
+          60.4,
+          38.29
+        ],
+        [
+          60.49,
+          38.19
+        ],
+        [
+          60.59,
+          38.16
+        ],
+        [
+          60.69,
+          38.24
+        ],
+        [
+          60.79,
+          38.25
+        ],
+        [
+          61.25,
+          38.16
+        ],
+        [
+          61.71,
+          37.98
+        ],
+        [
+          61.87,
+          37.89
+        ],
+        [
+          61.95,
+          37.78
+        ],
+        [
+          61.91,
+          37.27
+        ],
+        [
+          62.25,
+          37.11
+        ],
+        [
+          62.54,
+          36.79
+        ],
+        [
+          62.66,
+          36.72
+        ],
+        [
+          62.91,
+          36.74
+        ],
+        [
+          63.48,
+          36.56
+        ],
+        [
+          63.39,
+          36.77
+        ],
+        [
+          63.46,
+          36.9
+        ],
+        [
+          63.8,
+          36.9
+        ],
+        [
+          63.96,
+          37.0
+        ],
+        [
+          64.1,
+          36.99
+        ],
+        [
+          65.02,
+          36.38
+        ],
+        [
+          65.21,
+          36.18
+        ],
+        [
+          65.51,
+          35.69
+        ],
+        [
+          65.73,
+          35.5
+        ],
+        [
+          65.96,
+          35.46
+        ],
+        [
+          66.21,
+          35.58
+        ],
+        [
+          66.34,
+          35.55
+        ],
+        [
+          66.88,
+          35.09
+        ],
+        [
+          67.18,
+          34.92
+        ],
+        [
+          67.28,
+          34.75
+        ],
+        [
+          67.41,
+          34.73
+        ],
+        [
+          67.49,
+          34.64
+        ],
+        [
+          67.79,
+          34.5
+        ],
+        [
+          68.25,
+          34.04
+        ],
+        [
+          68.61,
+          33.83
+        ],
+        [
+          68.71,
+          33.69
+        ],
+        [
+          68.73,
+          33.51
+        ],
+        [
+          68.87,
+          33.54
+        ],
+        [
+          69.02,
+          33.48
+        ],
+        [
+          69.11,
+          33.52
+        ],
+        [
+          69.23,
+          33.5
+        ],
+        [
+          69.74,
+          33.11
+        ],
+        [
+          69.8,
+          32.9
+        ],
+        [
+          70.06,
+          32.77
+        ],
+        [
+          70.1,
+          32.48
+        ],
+        [
+          70.23,
+          32.38
+        ],
+        [
+          70.43,
+          32.43
+        ],
+        [
+          70.62,
+          32.3
+        ],
+        [
+          70.86,
+          32.28
+        ],
+        [
+          71.16,
+          32.13
+        ],
+        [
+          71.8,
+          31.58
+        ],
+        [
+          71.86,
+          31.45
+        ],
+        [
+          72.0,
+          31.43
+        ],
+        [
+          72.87,
+          30.73
+        ],
+        [
+          74.25,
+          29.84
+        ],
+        [
+          74.34,
+          29.73
+        ],
+        [
+          74.6,
+          29.67
+        ],
+        [
+          78.48,
+          27.79
+        ],
+        [
+          78.81,
+          27.55
+        ],
+        [
+          78.96,
+          27.56
+        ],
+        [
+          79.61,
+          27.2
+        ],
+        [
+          79.75,
+          27.22
+        ],
+        [
+          80.0,
+          27.15
+        ],
+        [
+          80.0,
+          24.74
+        ],
+        [
+          79.74,
+          24.88
+        ],
+        [
+          78.65,
+          25.71
+        ],
+        [
+          78.41,
+          26.0
+        ],
+        [
+          77.68,
+          26.16
+        ],
+        [
+          77.58,
+          26.24
+        ],
+        [
+          77.47,
+          26.45
+        ],
+        [
+          77.35,
+          26.35
+        ],
+        [
+          77.24,
+          26.35
+        ],
+        [
+          77.04,
+          26.58
+        ],
+        [
+          76.91,
+          26.61
+        ],
+        [
+          76.65,
+          26.51
+        ],
+        [
+          76.43,
+          26.66
+        ],
+        [
+          76.31,
+          26.61
+        ],
+        [
+          76.04,
+          26.61
+        ],
+        [
+          75.97,
+          26.54
+        ],
+        [
+          75.8,
+          26.49
+        ],
+        [
+          75.62,
+          26.55
+        ],
+        [
+          75.23,
+          26.12
+        ],
+        [
+          74.94,
+          25.94
+        ],
+        [
+          74.92,
+          25.56
+        ],
+        [
+          75.03,
+          25.24
+        ],
+        [
+          75.19,
+          25.18
+        ],
+        [
+          75.26,
+          25.02
+        ],
+        [
+          75.36,
+          24.93
+        ],
+        [
+          75.38,
+          24.83
+        ],
+        [
+          75.33,
+          24.74
+        ],
+        [
+          74.71,
+          24.26
+        ],
+        [
+          74.83,
+          24.18
+        ],
+        [
+          74.88,
+          24.06
+        ],
+        [
+          75.06,
+          24.0
+        ],
+        [
+          75.46,
+          24.35
+        ],
+        [
+          75.65,
+          24.36
+        ],
+        [
+          75.77,
+          24.32
+        ],
+        [
+          75.99,
+          24.04
+        ],
+        [
+          75.97,
+          23.89
+        ],
+        [
+          75.8,
+          23.7
+        ],
+        [
+          75.87,
+          23.63
+        ],
+        [
+          75.93,
+          23.44
+        ],
+        [
+          76.39,
+          23.19
+        ],
+        [
+          76.52,
+          22.94
+        ],
+        [
+          76.63,
+          22.85
+        ],
+        [
+          76.84,
+          23.05
+        ],
+        [
+          77.0,
+          23.02
+        ],
+        [
+          77.05,
+          22.9
+        ],
+        [
+          77.43,
+          22.59
+        ],
+        [
+          77.51,
+          22.38
+        ],
+        [
+          77.91,
+          21.79
+        ],
+        [
+          78.17,
+          21.65
+        ],
+        [
+          78.96,
+          20.9
+        ],
+        [
+          79.09,
+          20.48
+        ],
+        [
+          80.0,
+          20.24
+        ],
+        [
+          80.0,
+          16.3
+        ],
+        [
+          79.91,
+          16.34
+        ],
+        [
+          79.66,
+          16.7
+        ],
+        [
+          79.51,
+          16.82
+        ],
+        [
+          79.05,
+          17.41
+        ],
+        [
+          78.63,
+          17.66
+        ],
+        [
+          78.28,
+          17.98
+        ],
+        [
+          78.07,
+          18.05
+        ],
+        [
+          77.86,
+          18.25
+        ],
+        [
+          77.44,
+          18.35
+        ],
+        [
+          77.56,
+          18.18
+        ],
+        [
+          77.5,
+          17.98
+        ],
+        [
+          77.61,
+          17.54
+        ],
+        [
+          78.16,
+          16.4
+        ],
+        [
+          78.96,
+          15.65
+        ],
+        [
+          79.35,
+          14.99
+        ],
+        [
+          79.57,
+          14.87
+        ],
+        [
+          80.0,
+          14.03
+        ],
+        [
+          80.0,
+          6.9
+        ],
+        [
+          79.31,
+          7.25
+        ],
+        [
+          77.87,
+          8.43
+        ],
+        [
+          76.25,
+          10.37
+        ],
+        [
+          76.02,
+          10.3
+        ],
+        [
+          75.92,
+          10.34
+        ],
+        [
+          75.87,
+          10.62
+        ],
+        [
+          75.45,
+          11.14
+        ],
+        [
+          74.96,
+          11.61
+        ],
+        [
+          74.21,
+          12.65
+        ],
+        [
+          74.06,
+          13.03
+        ],
+        [
+          73.78,
+          13.44
+        ],
+        [
+          73.55,
+          13.97
+        ],
+        [
+          73.42,
+          14.13
+        ],
+        [
+          73.3,
+          14.58
+        ],
+        [
+          73.08,
+          15.1
+        ],
+        [
+          72.96,
+          15.71
+        ],
+        [
+          72.83,
+          16.05
+        ],
+        [
+          72.81,
+          16.64
+        ],
+        [
+          72.65,
+          17.14
+        ],
+        [
+          72.48,
+          18.11
+        ],
+        [
+          72.56,
+          18.27
+        ],
+        [
+          72.8,
+          18.34
+        ],
+        [
+          72.87,
+          18.41
+        ],
+        [
+          72.5,
+          20.25
+        ],
+        [
+          71.8,
+          21.04
+        ],
+        [
+          71.66,
+          21.05
+        ],
+        [
+          71.46,
+          21.28
+        ],
+        [
+          71.43,
+          21.47
+        ],
+        [
+          71.6,
+          21.68
+        ],
+        [
+          70.65,
+          22.77
+        ],
+        [
+          70.62,
+          22.86
+        ],
+        [
+          68.87,
+          24.31
+        ],
+        [
+          66.67,
+          25.62
+        ],
+        [
+          65.2,
+          25.94
+        ],
+        [
+          65.16,
+          26.1
+        ],
+        [
+          65.58,
+          26.64
+        ],
+        [
+          65.47,
+          26.74
+        ],
+        [
+          65.47,
+          26.87
+        ],
+        [
+          64.57,
+          27.06
+        ],
+        [
+          60.84,
+          29.64
+        ],
+        [
+          60.72,
+          29.84
+        ],
+        [
+          60.76,
+          30.05
+        ],
+        [
+          60.97,
+          30.37
+        ],
+        [
+          61.07,
+          30.41
+        ],
+        [
+          61.21,
+          30.34
+        ],
+        [
+          61.33,
+          30.34
+        ],
+        [
+          62.25,
+          29.68
+        ],
+        [
+          62.27,
+          29.72
+        ],
+        [
+          62.21,
+          29.78
+        ],
+        [
+          62.01,
+          29.88
+        ],
+        [
+          61.88,
+          30.11
+        ],
+        [
+          61.97,
+          30.41
+        ],
+        [
+          62.1,
+          30.54
+        ],
+        [
+          61.12,
+          31.12
+        ],
+        [
+          57.79,
+          33.46
+        ],
+        [
+          57.77,
+          33.56
+        ],
+        [
+          57.82,
+          33.64
+        ],
+        [
+          58.15,
+          33.71
+        ],
+        [
+          58.14,
+          33.75
+        ],
+        [
+          57.01,
+          33.56
+        ],
+        [
+          56.37,
+          34.04
+        ],
+        [
+          56.36,
+          34.13
+        ],
+        [
+          56.43,
+          34.2
+        ],
+        [
+          57.3,
+          34.35
+        ],
+        [
+          57.24,
+          34.43
+        ],
+        [
+          56.26,
+          34.29
+        ],
+        [
+          56.19,
+          34.37
+        ],
+        [
+          56.14,
+          34.69
+        ],
+        [
+          56.16,
+          34.94
+        ],
+        [
+          56.25,
+          35.02
+        ],
+        [
+          56.2,
+          35.11
+        ],
+        [
+          55.18,
+          34.98
+        ],
+        [
+          55.1,
+          35.06
+        ],
+        [
+          52.48,
+          36.56
+        ],
+        [
+          51.65,
+          37.59
+        ],
+        [
+          51.65,
+          37.73
+        ],
+        [
+          50.9,
+          38.61
+        ],
+        [
+          50.9,
+          38.75
+        ],
+        [
+          50.54,
+          39.09
+        ],
+        [
+          50.54,
+          39.23
+        ],
+        [
+          50.15,
+          39.61
+        ],
+        [
+          50.15,
+          39.77
+        ],
+        [
+          49.82,
+          40.09
+        ],
+        [
+          49.81,
+          40.21
+        ],
+        [
+          49.44,
+          40.59
+        ],
+        [
+          48.23,
+          42.18
+        ],
+        [
+          48.23,
+          42.32
+        ],
+        [
+          50.3,
+          42.77
+        ],
+        [
+          50.31,
+          42.73
+        ],
+        [
+          50.42,
+          42.45
+        ],
+        [
+          50.4,
+          42.15
+        ],
+        [
+          50.54,
+          41.88
+        ],
+        [
+          51.06,
+          41.16
+        ],
+        [
+          50.86,
+          41.55
+        ],
+        [
+          51.09,
+          42.21
+        ],
+        [
+          51.09,
+          42.38
+        ],
+        [
+          51.17,
+          42.45
+        ],
+        [
+          51.39,
+          42.49
+        ],
+        [
+          51.6,
+          42.37
+        ],
+        [
+          52.01,
+          41.92
+        ],
+        [
+          52.01,
+          41.8
+        ],
+        [
+          52.09,
+          41.69
+        ],
+        [
+          52.08,
+          41.3
+        ],
+        [
+          52.02,
+          41.14
+        ],
+        [
+          51.92,
+          41.03
+        ],
+        [
+          51.79,
+          41.05
+        ],
+        [
+          51.69,
+          41.22
+        ],
+        [
+          51.56,
+          41.09
+        ],
+        [
+          51.17,
+          41.06
+        ],
+        [
+          51.22,
+          40.98
+        ],
+        [
+          53.28,
+          39.4
+        ],
+        [
+          53.52,
+          39.28
+        ],
+        [
+          53.74,
+          39.38
+        ],
+        [
+          53.8,
+          39.57
+        ],
+        [
+          53.53,
+          40.31
+        ],
+        [
+          53.45,
+          40.34
+        ],
+        [
+          53.1,
+          40.12
+        ],
+        [
+          53.0,
+          40.1
+        ],
+        [
+          52.79,
+          40.25
+        ],
+        [
+          52.59,
+          40.23
+        ],
+        [
+          52.35,
+          40.31
+        ],
+        [
+          52.22,
+          40.5
+        ],
+        [
+          52.32,
+          40.77
+        ],
+        [
+          52.58,
+          40.99
+        ],
+        [
+          52.49,
+          41.42
+        ],
+        [
+          52.72,
+          41.6
+        ],
+        [
+          52.91,
+          41.9
+        ],
+        [
+          52.09,
+          44.13
+        ],
+        [
+          52.09,
+          44.13
+        ],
+        [
+          52.11,
+          44.29
+        ],
+        [
+          52.12,
+          44.46
+        ],
+        [
+          52.11,
+          44.63
+        ],
+        [
+          52.09,
+          44.79
+        ],
+        [
+          52.05,
+          44.95
+        ],
+        [
+          51.99,
+          45.11
+        ],
+        [
+          51.92,
+          45.26
+        ],
+        [
+          51.83,
+          45.4
+        ],
+        [
+          51.76,
+          45.51
+        ],
+        [
+          51.65,
+          45.82
+        ],
+        [
+          51.55,
+          46.32
+        ],
+        [
+          51.44,
+          46.55
+        ],
+        [
+          51.12,
+          46.87
+        ],
+        [
+          50.76,
+          47.46
+        ],
+        [
+          50.39,
+          47.93
+        ],
+        [
+          49.21,
+          49.28
+        ],
+        [
+          49.01,
+          49.29
+        ],
+        [
+          48.87,
+          49.18
+        ],
+        [
+          48.78,
+          48.62
+        ],
+        [
+          48.96,
+          48.76
+        ],
+        [
+          49.37,
+          48.74
+        ],
+        [
+          49.7,
+          48.43
+        ],
+        [
+          49.72,
+          48.23
+        ],
+        [
+          49.52,
+          47.99
+        ],
+        [
+          49.26,
+          47.85
+        ],
+        [
+          48.86,
+          47.87
+        ],
+        [
+          48.73,
+          47.97
+        ],
+        [
+          48.71,
+          47.71
+        ],
+        [
+          49.11,
+          45.72
+        ],
+        [
+          49.17,
+          45.61
+        ],
+        [
+          49.11,
+          45.54
+        ],
+        [
+          49.01,
+          45.4
+        ],
+        [
+          48.92,
+          45.26
+        ],
+        [
+          48.85,
+          45.11
+        ],
+        [
+          48.79,
+          44.95
+        ],
+        [
+          48.75,
+          44.79
+        ],
+        [
+          48.73,
+          44.63
+        ],
+        [
+          48.72,
+          44.46
+        ],
+        [
+          48.73,
+          44.29
+        ],
+        [
+          48.75,
+          44.13
+        ],
+        [
+          48.79,
+          43.97
+        ],
+        [
+          48.85,
+          43.81
+        ],
+        [
+          48.92,
+          43.66
+        ],
+        [
+          49.01,
+          43.52
+        ],
+        [
+          49.11,
+          43.38
+        ],
+        [
+          49.22,
+          43.26
+        ],
+        [
+          49.34,
+          43.15
+        ],
+        [
+          49.48,
+          43.05
+        ],
+        [
+          49.62,
+          42.96
+        ],
+        [
+          49.77,
+          42.89
+        ],
+        [
+          49.93,
+          42.83
+        ],
+        [
+          50.09,
+          42.79
+        ],
+        [
+          50.25,
+          42.77
+        ],
+        [
+          50.3,
+          42.77
+        ],
+        [
+          48.23,
+          42.32
+        ],
+        [
+          46.67,
+          44.34
+        ],
+        [
+          45.14,
+          45.73
+        ],
+        [
+          45.12,
+          45.83
+        ],
+        [
+          45.17,
+          45.92
+        ],
+        [
+          45.66,
+          46.1
+        ],
+        [
+          46.47,
+          45.37
+        ],
+        [
+          46.55,
+          45.34
+        ],
+        [
+          45.81,
+          46.36
+        ],
+        [
+          44.9,
+          46.0
+        ],
+        [
+          44.3,
+          46.54
+        ],
+        [
+          44.27,
+          46.64
+        ],
+        [
+          44.32,
+          46.73
+        ],
+        [
+          45.35,
+          47.17
+        ],
+        [
+          45.28,
+          47.27
+        ],
+        [
+          44.04,
+          46.79
+        ],
+        [
+          43.39,
+          47.33
+        ],
+        [
+          43.38,
+          47.43
+        ],
+        [
+          43.45,
+          47.51
+        ],
+        [
+          44.78,
+          47.97
+        ],
+        [
+          44.67,
+          48.1
+        ],
+        [
+          43.28,
+          47.61
+        ],
+        [
+          43.14,
+          47.66
+        ],
+        [
+          42.76,
+          48.22
+        ],
+        [
+          42.77,
+          48.35
+        ],
+        [
+          44.13,
+          48.83
+        ],
+        [
+          44.02,
+          48.97
+        ],
+        [
+          42.73,
+          48.54
+        ],
+        [
+          42.6,
+          48.57
+        ],
+        [
+          42.25,
+          49.78
+        ],
+        [
+          42.27,
+          49.96
+        ],
+        [
+          42.2,
+          50.08
+        ],
+        [
+          42.05,
+          50.13
+        ],
+        [
+          41.7,
+          50.75
+        ],
+        [
+          41.69,
+          50.85
+        ],
+        [
+          41.75,
+          50.92
+        ],
+        [
+          41.62,
+          51.14
+        ],
+        [
+          41.52,
+          51.19
+        ],
+        [
+          40.87,
+          52.13
+        ],
+        [
+          40.71,
+          52.17
+        ],
+        [
+          40.72,
+          52.08
+        ],
+        [
+          40.67,
+          52.0
+        ],
+        [
+          40.18,
+          51.84
+        ],
+        [
+          40.11,
+          51.88
+        ],
+        [
+          39.74,
+          52.45
+        ],
+        [
+          37.5,
+          52.97
+        ],
+        [
+          37.22,
+          52.91
+        ],
+        [
+          37.14,
+          52.97
+        ],
+        [
+          37.13,
+          53.07
+        ],
+        [
+          37.04,
+          53.1
+        ],
+        [
+          36.99,
+          53.01
+        ],
+        [
+          36.89,
+          52.99
+        ],
+        [
+          36.68,
+          53.06
+        ],
+        [
+          36.63,
+          53.24
+        ],
+        [
+          36.09,
+          53.39
+        ],
+        [
+          36.09,
+          53.58
+        ],
+        [
+          36.09,
+          53.62
+        ],
+        [
+          36.08,
+          53.65
+        ],
+        [
+          36.07,
+          53.69
+        ],
+        [
+          36.06,
+          53.72
+        ],
+        [
+          36.05,
+          53.75
+        ],
+        [
+          36.03,
+          53.78
+        ],
+        [
+          36.01,
+          53.81
+        ],
+        [
+          35.99,
+          53.83
+        ],
+        [
+          35.97,
+          53.84
+        ],
+        [
+          36.31,
+          53.74
+        ],
+        [
+          35.93,
+          53.88
+        ],
+        [
+          35.9,
+          53.89
+        ],
+        [
+          35.89,
+          53.9
+        ],
+        [
+          35.85,
+          53.97
+        ],
+        [
+          35.88,
+          54.09
+        ],
+        [
+          36.0,
+          54.16
+        ],
+        [
+          36.38,
+          54.06
+        ],
+        [
+          36.44,
+          54.13
+        ],
+        [
+          36.53,
+          54.14
+        ],
+        [
+          36.63,
+          54.11
+        ],
+        [
+          36.68,
+          54.03
+        ],
+        [
+          36.61,
+          53.68
+        ],
+        [
+          37.1,
+          53.6
+        ],
+        [
+          38.41,
+          53.23
+        ],
+        [
+          39.78,
+          52.95
+        ],
+        [
+          39.81,
+          52.96
+        ],
+        [
+          39.53,
+          53.45
+        ],
+        [
+          39.55,
+          53.56
+        ],
+        [
+          39.63,
+          53.62
+        ],
+        [
+          39.79,
+          53.58
+        ],
+        [
+          40.11,
+          53.08
+        ],
+        [
+          40.38,
+          53.2
+        ],
+        [
+          40.48,
+          53.2
+        ],
+        [
+          40.71,
+          53.33
+        ],
+        [
+          40.81,
+          53.32
+        ],
+        [
+          41.03,
+          52.98
+        ],
+        [
+          41.0,
+          52.56
+        ],
+        [
+          41.62,
+          51.68
+        ],
+        [
+          41.81,
+          51.65
+        ],
+        [
+          42.16,
+          51.12
+        ],
+        [
+          42.26,
+          51.15
+        ],
+        [
+          42.35,
+          51.1
+        ],
+        [
+          42.7,
+          50.51
+        ],
+        [
+          42.67,
+          50.36
+        ],
+        [
+          42.94,
+          50.04
+        ],
+        [
+          43.06,
+          50.11
+        ],
+        [
+          43.02,
+          50.24
+        ],
+        [
+          41.46,
+          53.13
+        ],
+        [
+          41.45,
+          53.36
+        ],
+        [
+          41.69,
+          53.56
+        ],
+        [
+          41.95,
+          53.44
+        ],
+        [
+          43.76,
+          50.24
+        ],
+        [
+          44.08,
+          50.43
+        ],
+        [
+          43.0,
+          52.35
+        ],
+        [
+          43.06,
+          52.48
+        ],
+        [
+          43.39,
+          52.67
+        ],
+        [
+          43.5,
+          52.66
+        ],
+        [
+          45.41,
+          49.32
+        ],
+        [
+          46.4,
+          47.82
+        ],
+        [
+          44.76,
+          51.29
+        ],
+        [
+          43.94,
+          54.11
+        ],
+        [
+          43.84,
+          55.15
+        ],
+        [
+          43.91,
+          56.31
+        ],
+        [
+          44.0,
+          56.77
+        ],
+        [
+          43.97,
+          57.19
+        ],
+        [
+          43.89,
+          57.42
+        ],
+        [
+          43.75,
+          57.69
+        ],
+        [
+          42.49,
+          59.33
+        ],
+        [
+          41.64,
+          60.24
+        ],
+        [
+          41.34,
+          60.2
+        ],
+        [
+          39.74,
+          60.67
+        ],
+        [
+          37.23,
+          61.05
+        ],
+        [
+          37.1,
+          61.15
+        ],
+        [
+          36.52,
+          61.2
+        ],
+        [
+          35.71,
+          61.07
+        ],
+        [
+          35.61,
+          60.97
+        ],
+        [
+          35.17,
+          60.21
+        ],
+        [
+          35.01,
+          60.18
+        ],
+        [
+          34.9,
+          60.25
+        ],
+        [
+          34.89,
+          60.37
+        ],
+        [
+          35.43,
+          61.29
+        ],
+        [
+          34.84,
+          61.23
+        ],
+        [
+          34.52,
+          61.32
+        ],
+        [
+          34.32,
+          61.45
+        ],
+        [
+          33.82,
+          62.39
+        ],
+        [
+          33.55,
+          62.78
+        ],
+        [
+          33.46,
+          63.05
+        ],
+        [
+          34.64,
+          63.78
+        ],
+        [
+          35.09,
+          62.84
+        ],
+        [
+          35.22,
+          62.71
+        ],
+        [
+          35.46,
+          62.6
+        ],
+        [
+          35.78,
+          62.56
+        ],
+        [
+          36.37,
+          62.71
+        ],
+        [
+          36.65,
+          62.83
+        ],
+        [
+          36.83,
+          62.83
+        ],
+        [
+          37.15,
+          62.65
+        ],
+        [
+          37.99,
+          62.45
+        ],
+        [
+          38.53,
+          62.05
+        ],
+        [
+          38.87,
+          61.98
+        ],
+        [
+          39.44,
+          62.02
+        ],
+        [
+          39.9,
+          61.64
+        ],
+        [
+          40.19,
+          61.56
+        ],
+        [
+          40.5,
+          61.35
+        ],
+        [
+          40.59,
+          61.47
+        ],
+        [
+          40.7,
+          61.51
+        ],
+        [
+          40.89,
+          61.47
+        ],
+        [
+          41.29,
+          61.47
+        ],
+        [
+          41.48,
+          61.51
+        ],
+        [
+          41.61,
+          61.6
+        ],
+        [
+          41.71,
+          61.89
+        ],
+        [
+          41.75,
+          62.24
+        ],
+        [
+          41.72,
+          62.68
+        ],
+        [
+          41.85,
+          63.15
+        ],
+        [
+          41.8,
+          63.7
+        ],
+        [
+          41.87,
+          63.8
+        ],
+        [
+          42.03,
+          63.86
+        ],
+        [
+          41.9,
+          64.13
+        ],
+        [
+          41.93,
+          64.32
+        ],
+        [
+          42.01,
+          64.39
+        ],
+        [
+          41.92,
+          65.2
+        ],
+        [
+          41.93,
+          65.5
+        ],
+        [
+          41.64,
+          65.38
+        ],
+        [
+          41.5,
+          65.4
+        ],
+        [
+          40.87,
+          65.6
+        ],
+        [
+          40.47,
+          65.79
+        ],
+        [
+          39.18,
+          66.2
+        ],
+        [
+          38.18,
+          67.69
+        ],
+        [
+          37.66,
+          68.14
+        ],
+        [
+          37.21,
+          68.43
+        ],
+        [
+          36.34,
+          69.17
+        ],
+        [
+          36.05,
+          69.26
+        ],
+        [
+          35.51,
+          69.73
+        ],
+        [
+          35.17,
+          69.8
+        ],
+        [
+          34.79,
+          69.96
+        ],
+        [
+          34.73,
+          70.09
+        ],
+        [
+          34.78,
+          70.23
+        ],
+        [
+          34.69,
+          70.39
+        ],
+        [
+          34.07,
+          70.83
+        ],
+        [
+          33.97,
+          70.74
+        ],
+        [
+          33.43,
+          70.52
+        ],
+        [
+          32.76,
+          70.55
+        ],
+        [
+          32.55,
+          70.48
+        ],
+        [
+          32.2,
+          70.63
+        ],
+        [
+          32.03,
+          70.64
+        ],
+        [
+          31.69,
+          70.98
+        ],
+        [
+          31.45,
+          70.98
+        ],
+        [
+          31.33,
+          70.87
+        ],
+        [
+          31.03,
+          70.81
+        ],
+        [
+          30.87,
+          70.72
+        ],
+        [
+          30.76,
+          70.73
+        ],
+        [
+          30.67,
+          70.82
+        ],
+        [
+          30.63,
+          70.71
+        ],
+        [
+          30.54,
+          70.65
+        ],
+        [
+          30.4,
+          70.67
+        ],
+        [
+          30.33,
+          70.75
+        ],
+        [
+          30.3,
+          70.59
+        ],
+        [
+          30.18,
+          70.47
+        ],
+        [
+          30.08,
+          70.08
+        ],
+        [
+          30.28,
+          68.98
+        ],
+        [
+          31.55,
+          67.73
+        ],
+        [
+          31.73,
+          67.5
+        ],
+        [
+          32.21,
+          66.72
+        ],
+        [
+          33.83,
+          65.17
+        ],
+        [
+          34.36,
+          64.18
+        ],
+        [
+          34.64,
+          63.78
+        ],
+        [
+          33.46,
+          63.05
+        ],
+        [
+          33.1,
+          63.65
+        ],
+        [
+          33.01,
+          63.91
+        ],
+        [
+          32.5,
+          64.83
+        ],
+        [
+          32.26,
+          65.15
+        ],
+        [
+          31.74,
+          65.51
+        ],
+        [
+          31.36,
+          65.89
+        ],
+        [
+          30.12,
+          66.92
+        ],
+        [
+          28.84,
+          67.93
+        ],
+        [
+          27.87,
+          68.47
+        ],
+        [
+          27.73,
+          68.63
+        ],
+        [
+          27.08,
+          68.9
+        ],
+        [
+          26.31,
+          69.32
+        ],
+        [
+          25.62,
+          69.58
+        ],
+        [
+          24.78,
+          70.04
+        ],
+        [
+          24.59,
+          70.12
+        ],
+        [
+          24.41,
+          70.14
+        ],
+        [
+          21.25,
+          71.66
+        ],
+        [
+          20.24,
+          72.07
+        ],
+        [
+          19.98,
+          72.08
+        ],
+        [
+          19.57,
+          72.23
+        ],
+        [
+          19.29,
+          72.26
+        ],
+        [
+          18.92,
+          72.47
+        ],
+        [
+          18.04,
+          72.78
+        ],
+        [
+          17.72,
+          72.99
+        ],
+        [
+          17.67,
+          73.11
+        ],
+        [
+          17.78,
+          73.3
+        ],
+        [
+          17.89,
+          73.36
+        ],
+        [
+          18.11,
+          73.6
+        ],
+        [
+          18.09,
+          73.83
+        ],
+        [
+          18.19,
+          73.96
+        ],
+        [
+          23.02,
+          77.67
+        ],
+        [
+          22.93,
+          77.77
+        ],
+        [
+          22.27,
+          77.99
+        ],
+        [
+          21.83,
+          78.21
+        ],
+        [
+          20.85,
+          78.16
+        ],
+        [
+          20.24,
+          77.99
+        ],
+        [
+          19.96,
+          77.98
+        ],
+        [
+          19.68,
+          77.84
+        ],
+        [
+          19.47,
+          77.8
+        ],
+        [
+          19.25,
+          77.66
+        ],
+        [
+          18.55,
+          77.52
+        ],
+        [
+          18.46,
+          77.37
+        ],
+        [
+          18.31,
+          76.73
+        ],
+        [
+          18.36,
+          76.52
+        ],
+        [
+          18.52,
+          76.24
+        ],
+        [
+          18.99,
+          76.09
+        ],
+        [
+          19.2,
+          76.1
+        ],
+        [
+          19.4,
+          76.25
+        ],
+        [
+          19.47,
+          76.38
+        ],
+        [
+          20.43,
+          76.69
+        ],
+        [
+          21.0,
+          76.77
+        ],
+        [
+          21.32,
+          76.74
+        ],
+        [
+          22.26,
+          76.81
+        ],
+        [
+          22.65,
+          76.88
+        ],
+        [
+          23.0,
+          77.14
+        ],
+        [
+          23.0,
+          77.27
+        ],
+        [
+          23.18,
+          77.36
+        ],
+        [
+          23.17,
+          77.46
+        ],
+        [
+          23.05,
+          77.54
+        ],
+        [
+          23.02,
+          77.67
+        ],
+        [
+          18.19,
+          73.96
+        ],
+        [
+          18.12,
+          74.04
+        ],
+        [
+          17.97,
+          74.06
+        ],
+        [
+          17.55,
+          74.3
+        ],
+        [
+          17.56,
+          74.12
+        ],
+        [
+          17.38,
+          73.82
+        ],
+        [
+          17.35,
+          73.63
+        ],
+        [
+          17.21,
+          73.36
+        ],
+        [
+          17.09,
+          73.28
+        ],
+        [
+          16.97,
+          73.28
+        ],
+        [
+          15.71,
+          74.1
+        ],
+        [
+          14.91,
+          74.5
+        ],
+        [
+          14.48,
+          74.62
+        ],
+        [
+          14.33,
+          74.78
+        ],
+        [
+          12.99,
+          75.42
+        ],
+        [
+          12.16,
+          75.58
+        ],
+        [
+          11.54,
+          75.53
+        ],
+        [
+          10.76,
+          75.59
+        ],
+        [
+          10.05,
+          75.72
+        ],
+        [
+          9.95,
+          75.79
+        ],
+        [
+          9.72,
+          75.64
+        ],
+        [
+          9.62,
+          75.64
+        ],
+        [
+          9.04,
+          75.41
+        ],
+        [
+          8.88,
+          75.4
+        ],
+        [
+          8.82,
+          75.36
+        ],
+        [
+          8.78,
+          75.19
+        ],
+        [
+          8.63,
+          75.16
+        ],
+        [
+          8.5,
+          75.06
+        ],
+        [
+          8.39,
+          75.07
+        ],
+        [
+          8.31,
+          75.14
+        ],
+        [
+          8.22,
+          75.07
+        ],
+        [
+          7.7,
+          74.95
+        ],
+        [
+          7.25,
+          74.95
+        ],
+        [
+          7.14,
+          74.99
+        ],
+        [
+          6.95,
+          74.9
+        ],
+        [
+          6.86,
+          74.91
+        ],
+        [
+          6.69,
+          74.82
+        ],
+        [
+          6.63,
+          74.71
+        ],
+        [
+          6.49,
+          74.67
+        ],
+        [
+          5.7,
+          74.2
+        ],
+        [
+          4.75,
+          73.83
+        ],
+        [
+          4.59,
+          73.83
+        ],
+        [
+          4.49,
+          73.89
+        ],
+        [
+          4.28,
+          73.73
+        ],
+        [
+          3.89,
+          73.56
+        ],
+        [
+          3.89,
+          73.44
+        ],
+        [
+          3.97,
+          73.29
+        ],
+        [
+          4.23,
+          73.47
+        ],
+        [
+          4.35,
+          73.46
+        ],
+        [
+          4.55,
+          73.18
+        ],
+        [
+          5.25,
+          72.45
+        ],
+        [
+          5.64,
+          72.17
+        ],
+        [
+          6.05,
+          72.0
+        ],
+        [
+          6.55,
+          71.93
+        ],
+        [
+          8.86,
+          71.98
+        ],
+        [
+          9.63,
+          71.89
+        ],
+        [
+          14.71,
+          70.3
+        ],
+        [
+          14.73,
+          70.17
+        ],
+        [
+          14.77,
+          70.01
+        ],
+        [
+          14.83,
+          69.85
+        ],
+        [
+          14.89,
+          69.72
+        ],
+        [
+          9.51,
+          71.45
+        ],
+        [
+          8.79,
+          71.52
+        ],
+        [
+          6.49,
+          71.47
+        ],
+        [
+          5.89,
+          71.56
+        ],
+        [
+          5.43,
+          71.76
+        ],
+        [
+          4.99,
+          72.06
+        ],
+        [
+          4.17,
+          72.91
+        ],
+        [
+          3.98,
+          73.16
+        ],
+        [
+          3.83,
+          73.01
+        ],
+        [
+          3.59,
+          72.91
+        ],
+        [
+          3.09,
+          72.79
+        ],
+        [
+          2.48,
+          72.57
+        ],
+        [
+          2.22,
+          72.4
+        ],
+        [
+          1.76,
+          72.22
+        ],
+        [
+          1.45,
+          71.98
+        ],
+        [
+          0.86,
+          71.36
+        ],
+        [
+          0.15,
+          69.64
+        ],
+        [
+          0.09,
+          69.54
+        ],
+        [
+          0.0,
+          69.5
+        ],
+        [
+          0.0,
+          76.97
+        ],
+        [
+          0.02,
+          76.94
+        ],
+        [
+          0.13,
+          76.75
+        ],
+        [
+          0.26,
+          76.57
+        ],
+        [
+          0.41,
+          76.41
+        ],
+        [
+          0.57,
+          76.26
+        ],
+        [
+          0.75,
+          76.13
+        ],
+        [
+          0.94,
+          76.02
+        ],
+        [
+          1.14,
+          75.92
+        ],
+        [
+          1.35,
+          75.85
+        ],
+        [
+          1.56,
+          75.79
+        ],
+        [
+          1.78,
+          75.76
+        ],
+        [
+          2.0,
+          75.75
+        ],
+        [
+          2.22,
+          75.76
+        ],
+        [
+          2.44,
+          75.79
+        ],
+        [
+          2.65,
+          75.85
+        ],
+        [
+          2.86,
+          75.92
+        ],
+        [
+          3.06,
+          76.02
+        ],
+        [
+          3.25,
+          76.13
+        ],
+        [
+          3.43,
+          76.26
+        ],
+        [
+          3.59,
+          76.41
+        ],
+        [
+          3.74,
+          76.57
+        ],
+        [
+          3.87,
+          76.75
+        ],
+        [
+          3.98,
+          76.94
+        ],
+        [
+          4.08,
+          77.14
+        ],
+        [
+          4.15,
+          77.35
+        ],
+        [
+          4.21,
+          77.56
+        ],
+        [
+          4.24,
+          77.78
+        ],
+        [
+          4.25,
+          77.93
+        ],
+        [
+          4.78,
+          78.27
+        ],
+        [
+          5.4,
+          78.42
+        ],
+        [
+          5.57,
+          78.5
+        ],
+        [
+          5.71,
+          78.64
+        ],
+        [
+          6.34,
+          78.9
+        ],
+        [
+          6.88,
+          78.9
+        ],
+        [
+          7.32,
+          79.01
+        ],
+        [
+          8.33,
+          79.09
+        ],
+        [
+          11.33,
+          80.0
+        ],
+        [
+          48.05,
+          80.0
+        ],
+        [
+          48.18,
+          79.43
+        ],
+        [
+          48.66,
+          78.53
+        ],
+        [
+          49.04,
+          77.64
+        ],
+        [
+          49.69,
+          76.05
+        ],
+        [
+          50.02,
+          75.05
+        ],
+        [
+          50.17,
+          74.84
+        ],
+        [
+          50.29,
+          74.41
+        ],
+        [
+          50.36,
+          74.34
+        ],
+        [
+          50.77,
+          73.29
+        ],
+        [
+          51.06,
+          72.89
+        ],
+        [
+          51.06,
+          72.76
+        ],
+        [
+          51.48,
+          71.95
+        ],
+        [
+          51.7,
+          71.37
+        ],
+        [
+          51.87,
+          71.37
+        ],
+        [
+          52.02,
+          71.15
+        ],
+        [
+          52.03,
+          70.92
+        ],
+        [
+          52.16,
+          70.63
+        ],
+        [
+          51.98,
+          70.27
+        ],
+        [
+          52.17,
+          69.5
+        ],
+        [
+          52.15,
+          69.29
+        ],
+        [
+          52.42,
+          68.46
+        ],
+        [
+          52.57,
+          67.79
+        ],
+        [
+          52.59,
+          67.02
+        ],
+        [
+          52.51,
+          65.91
+        ],
+        [
+          52.32,
+          65.42
+        ],
+        [
+          52.11,
+          65.25
+        ],
+        [
+          52.06,
+          64.98
+        ],
+        [
+          51.61,
+          63.86
+        ],
+        [
+          51.48,
+          63.38
+        ],
+        [
+          51.62,
+          63.32
+        ],
+        [
+          51.69,
+          63.22
+        ],
+        [
+          51.7,
+          62.84
+        ],
+        [
+          52.13,
+          61.11
+        ],
+        [
+          52.25,
+          60.33
+        ],
+        [
+          52.29,
+          58.89
+        ],
+        [
+          52.25,
+          58.46
+        ],
+        [
+          52.12,
+          58.21
+        ],
+        [
+          52.16,
+          57.83
+        ],
+        [
+          52.1,
+          57.62
+        ],
+        [
+          52.37,
+          56.26
+        ],
+        [
+          52.34,
+          56.08
+        ],
+        [
+          52.28,
+          56.01
+        ],
+        [
+          52.11,
+          55.98
+        ],
+        [
+          51.97,
+          56.06
+        ],
+        [
+          51.57,
+          57.91
+        ],
+        [
+          51.5,
+          57.73
+        ],
+        [
+          51.24,
+          57.64
+        ],
+        [
+          51.27,
+          57.44
+        ],
+        [
+          51.23,
+          57.35
+        ],
+        [
+          51.0,
+          57.3
+        ],
+        [
+          50.93,
+          57.38
+        ],
+        [
+          50.65,
+          58.23
+        ],
+        [
+          50.74,
+          57.38
+        ],
+        [
+          51.06,
+          56.21
+        ],
+        [
+          51.12,
+          55.58
+        ],
+        [
+          51.08,
+          55.48
+        ],
+        [
+          50.77,
+          55.27
+        ],
+        [
+          50.02,
+          54.33
+        ],
+        [
+          49.57,
+          53.08
+        ],
+        [
+          49.49,
+          52.69
+        ],
+        [
+          49.47,
+          51.79
+        ],
+        [
+          49.56,
+          51.18
+        ],
+        [
+          49.86,
+          50.32
+        ],
+        [
+          50.22,
+          49.7
+        ],
+        [
+          51.68,
+          47.89
+        ],
+        [
+          52.24,
+          46.58
+        ],
+        [
+          53.23,
+          43.87
+        ],
+        [
+          53.43,
+          43.99
+        ],
+        [
+          53.77,
+          43.98
+        ],
+        [
+          53.75,
+          44.1
+        ],
+        [
+          53.79,
+          44.18
+        ],
+        [
+          53.77,
+          44.27
+        ],
+        [
+          53.68,
+          44.37
+        ],
+        [
+          53.32,
+          45.91
+        ],
+        [
+          52.84,
+          45.79
+        ],
+        [
+          52.72,
+          45.88
+        ],
+        [
+          51.51,
+          51.12
+        ],
+        [
+          51.14,
+          50.89
+        ],
+        [
+          50.94,
+          50.87
+        ],
+        [
+          50.4,
+          51.66
+        ],
+        [
+          50.13,
+          51.62
+        ],
+        [
+          49.97,
+          51.85
+        ],
+        [
+          50.08,
+          52.12
+        ],
+        [
+          50.08,
+          52.27
+        ],
+        [
+          49.88,
+          52.85
+        ],
+        [
+          49.99,
+          53.04
+        ],
+        [
+          49.89,
+          53.28
+        ],
+        [
+          49.94,
+          53.5
+        ],
+        [
+          49.92,
+          53.74
+        ],
+        [
+          50.03,
+          53.91
+        ],
+        [
+          50.26,
+          53.97
+        ],
+        [
+          50.43,
+          53.89
+        ],
+        [
+          50.6,
+          53.61
+        ],
+        [
+          50.64,
+          53.3
+        ],
+        [
+          50.8,
+          53.11
+        ],
+        [
+          50.85,
+          52.93
+        ],
+        [
+          50.98,
+          52.8
+        ],
+        [
+          51.06,
+          52.62
+        ],
+        [
+          51.17,
+          52.08
+        ],
+        [
+          51.42,
+          51.53
+        ],
+        [
+          50.76,
+          54.45
+        ],
+        [
+          50.84,
+          54.58
+        ],
+        [
+          51.28,
+          54.68
+        ],
+        [
+          51.38,
+          54.65
+        ],
+        [
+          51.43,
+          54.57
+        ],
+        [
+          52.0,
+          52.11
+        ],
+        [
+          51.47,
+          54.47
+        ],
+        [
+          51.25,
+          55.95
+        ],
+        [
+          51.37,
+          56.09
+        ],
+        [
+          51.54,
+          56.06
+        ],
+        [
+          51.71,
+          55.52
+        ],
+        [
+          52.09,
+          55.38
+        ],
+        [
+          52.14,
+          55.5
+        ],
+        [
+          52.12,
+          55.77
+        ],
+        [
+          52.2,
+          55.83
+        ],
+        [
+          52.34,
+          55.83
+        ],
+        [
+          52.4,
+          55.77
+        ],
+        [
+          52.45,
+          55.56
+        ],
+        [
+          52.54,
+          55.47
+        ],
+        [
+          52.61,
+          54.58
+        ],
+        [
+          52.85,
+          53.41
+        ],
+        [
+          52.81,
+          51.3
+        ],
+        [
+          54.26,
+          44.84
+        ],
+        [
+          54.31,
+          44.56
+        ],
+        [
+          54.26,
+          44.42
+        ],
+        [
+          54.28,
+          44.32
+        ],
+        [
+          54.4,
+          44.23
+        ],
+        [
+          54.52,
+          43.68
+        ],
+        [
+          54.52,
+          43.66
+        ],
+        [
+          54.52,
+          43.49
+        ],
+        [
+          54.53,
+          43.46
+        ],
+        [
+          54.53,
+          43.42
+        ],
+        [
+          54.54,
+          43.39
+        ],
+        [
+          54.55,
+          43.36
+        ],
+        [
+          54.57,
+          43.33
+        ],
+        [
+          54.58,
+          43.3
+        ],
+        [
+          54.6,
+          43.27
+        ]
+      ]
+    },
+    {
+      "name": "water-1",
+      "type": "water",
+      "points": [
+        [
+          24.45,
+          6.48
+        ],
+        [
+          24.21,
+          5.12
+        ],
+        [
+          24.1,
+          4.79
+        ],
+        [
+          24.13,
+          4.6
+        ],
+        [
+          24.83,
+          4.09
+        ],
+        [
+          25.12,
+          3.82
+        ],
+        [
+          25.93,
+          3.49
+        ],
+        [
+          25.73,
+          3.74
+        ],
+        [
+          25.73,
+          3.9
+        ],
+        [
+          25.29,
+          4.5
+        ],
+        [
+          25.29,
+          4.74
+        ],
+        [
+          25.44,
+          4.86
+        ],
+        [
+          25.54,
+          4.87
+        ],
+        [
+          26.03,
+          4.38
+        ],
+        [
+          26.18,
+          3.93
+        ],
+        [
+          26.47,
+          3.8
+        ],
+        [
+          26.67,
+          3.55
+        ],
+        [
+          26.82,
+          3.55
+        ],
+        [
+          26.98,
+          3.39
+        ],
+        [
+          27.27,
+          3.32
+        ],
+        [
+          27.37,
+          3.22
+        ],
+        [
+          27.89,
+          3.0
+        ],
+        [
+          28.43,
+          2.96
+        ],
+        [
+          29.26,
+          2.21
+        ],
+        [
+          29.41,
+          1.97
+        ],
+        [
+          29.87,
+          1.48
+        ],
+        [
+          29.92,
+          1.35
+        ],
+        [
+          30.07,
+          1.3
+        ],
+        [
+          30.16,
+          1.11
+        ],
+        [
+          30.36,
+          0.94
+        ],
+        [
+          30.63,
+          0.54
+        ],
+        [
+          30.88,
+          0.0
+        ],
+        [
+          27.29,
+          0.0
+        ],
+        [
+          26.24,
+          0.7
+        ],
+        [
+          26.06,
+          0.89
+        ],
+        [
+          25.61,
+          1.1
+        ],
+        [
+          25.38,
+          1.31
+        ],
+        [
+          24.89,
+          1.62
+        ],
+        [
+          24.69,
+          1.87
+        ],
+        [
+          24.32,
+          2.17
+        ],
+        [
+          24.21,
+          2.4
+        ],
+        [
+          23.99,
+          2.63
+        ],
+        [
+          23.72,
+          2.81
+        ],
+        [
+          23.45,
+          2.9
+        ],
+        [
+          22.91,
+          3.4
+        ],
+        [
+          22.78,
+          3.63
+        ],
+        [
+          22.79,
+          3.88
+        ],
+        [
+          22.65,
+          4.05
+        ],
+        [
+          22.64,
+          4.33
+        ],
+        [
+          22.57,
+          4.46
+        ],
+        [
+          22.32,
+          4.62
+        ],
+        [
+          21.52,
+          5.5
+        ],
+        [
+          21.41,
+          5.53
+        ],
+        [
+          20.73,
+          6.21
+        ],
+        [
+          20.37,
+          6.25
+        ],
+        [
+          20.25,
+          6.43
+        ],
+        [
+          20.1,
+          6.54
+        ],
+        [
+          19.88,
+          6.59
+        ],
+        [
+          19.68,
+          6.74
+        ],
+        [
+          19.48,
+          7.13
+        ],
+        [
+          19.13,
+          7.37
+        ],
+        [
+          18.82,
+          7.69
+        ],
+        [
+          18.79,
+          7.82
+        ],
+        [
+          18.87,
+          7.93
+        ],
+        [
+          19.01,
+          7.95
+        ],
+        [
+          20.84,
+          7.13
+        ],
+        [
+          20.34,
+          7.69
+        ],
+        [
+          19.91,
+          8.01
+        ],
+        [
+          19.51,
+          8.24
+        ],
+        [
+          19.58,
+          8.29
+        ],
+        [
+          19.7,
+          8.4
+        ],
+        [
+          19.81,
+          8.52
+        ],
+        [
+          19.91,
+          8.66
+        ],
+        [
+          20.0,
+          8.8
+        ],
+        [
+          20.07,
+          8.95
+        ],
+        [
+          20.13,
+          9.11
+        ],
+        [
+          20.17,
+          9.27
+        ],
+        [
+          20.18,
+          9.33
+        ],
+        [
+          20.53,
+          9.15
+        ],
+        [
+          21.6,
+          8.77
+        ],
+        [
+          21.68,
+          8.8
+        ],
+        [
+          21.81,
+          8.76
+        ],
+        [
+          22.18,
+          8.88
+        ],
+        [
+          22.38,
+          8.87
+        ],
+        [
+          22.71,
+          8.8
+        ],
+        [
+          23.17,
+          8.47
+        ],
+        [
+          23.49,
+          8.02
+        ],
+        [
+          23.57,
+          7.41
+        ],
+        [
+          23.83,
+          7.34
+        ],
+        [
+          24.08,
+          7.15
+        ]
+      ]
+    },
+    {
+      "name": "water-2",
+      "type": "water",
+      "points": [
+        [
+          8.29,
+          11.49
+        ],
+        [
+          8.44,
+          11.35
+        ],
+        [
+          8.74,
+          11.43
+        ],
+        [
+          8.88,
+          11.37
+        ],
+        [
+          8.98,
+          11.26
+        ],
+        [
+          9.19,
+          11.41
+        ],
+        [
+          9.74,
+          11.43
+        ],
+        [
+          9.95,
+          11.54
+        ],
+        [
+          10.8,
+          11.69
+        ],
+        [
+          11.15,
+          11.87
+        ],
+        [
+          11.42,
+          12.09
+        ],
+        [
+          12.44,
+          12.31
+        ],
+        [
+          12.55,
+          12.39
+        ],
+        [
+          12.66,
+          12.38
+        ],
+        [
+          13.21,
+          12.07
+        ],
+        [
+          13.66,
+          12.08
+        ],
+        [
+          13.85,
+          12.17
+        ],
+        [
+          14.04,
+          12.46
+        ],
+        [
+          14.19,
+          12.57
+        ],
+        [
+          15.25,
+          12.78
+        ],
+        [
+          15.22,
+          12.9
+        ],
+        [
+          15.35,
+          13.12
+        ],
+        [
+          15.46,
+          13.21
+        ],
+        [
+          15.55,
+          13.21
+        ],
+        [
+          15.67,
+          13.08
+        ],
+        [
+          15.83,
+          12.64
+        ],
+        [
+          16.64,
+          12.23
+        ],
+        [
+          17.13,
+          11.87
+        ],
+        [
+          17.61,
+          11.63
+        ],
+        [
+          18.1,
+          11.25
+        ],
+        [
+          18.01,
+          11.23
+        ],
+        [
+          17.85,
+          11.17
+        ],
+        [
+          17.7,
+          11.1
+        ],
+        [
+          17.56,
+          11.01
+        ],
+        [
+          17.42,
+          10.91
+        ],
+        [
+          17.3,
+          10.8
+        ],
+        [
+          17.19,
+          10.68
+        ],
+        [
+          17.09,
+          10.54
+        ],
+        [
+          17.0,
+          10.4
+        ],
+        [
+          16.97,
+          10.34
+        ],
+        [
+          14.92,
+          10.34
+        ],
+        [
+          14.84,
+          10.38
+        ],
+        [
+          14.58,
+          10.35
+        ],
+        [
+          14.4,
+          10.47
+        ],
+        [
+          14.09,
+          10.5
+        ],
+        [
+          12.9,
+          10.4
+        ],
+        [
+          12.77,
+          10.27
+        ],
+        [
+          12.36,
+          10.16
+        ],
+        [
+          12.15,
+          9.92
+        ],
+        [
+          12.02,
+          9.89
+        ],
+        [
+          11.66,
+          9.95
+        ],
+        [
+          11.38,
+          9.83
+        ],
+        [
+          11.19,
+          9.68
+        ],
+        [
+          10.83,
+          9.64
+        ],
+        [
+          10.49,
+          9.78
+        ],
+        [
+          10.03,
+          9.85
+        ],
+        [
+          9.77,
+          10.0
+        ],
+        [
+          9.65,
+          10.13
+        ],
+        [
+          9.04,
+          10.11
+        ],
+        [
+          8.68,
+          10.18
+        ],
+        [
+          8.4,
+          10.06
+        ],
+        [
+          8.04,
+          10.01
+        ],
+        [
+          7.18,
+          10.03
+        ],
+        [
+          6.79,
+          10.17
+        ],
+        [
+          6.61,
+          10.34
+        ],
+        [
+          6.31,
+          10.53
+        ],
+        [
+          5.7,
+          10.76
+        ],
+        [
+          5.27,
+          11.17
+        ],
+        [
+          4.44,
+          11.53
+        ],
+        [
+          3.58,
+          11.51
+        ],
+        [
+          3.28,
+          11.69
+        ],
+        [
+          3.04,
+          11.71
+        ],
+        [
+          2.89,
+          11.68
+        ],
+        [
+          2.41,
+          11.45
+        ],
+        [
+          2.12,
+          11.36
+        ],
+        [
+          1.83,
+          11.33
+        ],
+        [
+          1.47,
+          11.45
+        ],
+        [
+          1.1,
+          11.47
+        ],
+        [
+          1.05,
+          11.37
+        ],
+        [
+          0.97,
+          11.34
+        ],
+        [
+          0.82,
+          11.41
+        ],
+        [
+          0.56,
+          11.43
+        ],
+        [
+          0.42,
+          11.65
+        ],
+        [
+          0.0,
+          11.82
+        ],
+        [
+          0.0,
+          12.88
+        ],
+        [
+          0.65,
+          12.65
+        ],
+        [
+          1.24,
+          12.58
+        ],
+        [
+          1.61,
+          12.59
+        ],
+        [
+          2.48,
+          12.84
+        ],
+        [
+          2.58,
+          12.93
+        ],
+        [
+          2.46,
+          13.08
+        ],
+        [
+          2.46,
+          13.31
+        ],
+        [
+          2.35,
+          13.3
+        ],
+        [
+          2.24,
+          13.36
+        ],
+        [
+          2.13,
+          13.57
+        ],
+        [
+          2.28,
+          13.88
+        ],
+        [
+          2.48,
+          13.95
+        ],
+        [
+          2.61,
+          13.85
+        ],
+        [
+          2.61,
+          13.64
+        ],
+        [
+          2.73,
+          13.55
+        ],
+        [
+          2.94,
+          13.15
+        ],
+        [
+          3.14,
+          13.08
+        ],
+        [
+          3.69,
+          13.12
+        ],
+        [
+          3.8,
+          13.04
+        ],
+        [
+          4.15,
+          13.04
+        ],
+        [
+          4.61,
+          12.89
+        ],
+        [
+          5.56,
+          12.37
+        ],
+        [
+          5.87,
+          12.14
+        ],
+        [
+          6.05,
+          12.08
+        ],
+        [
+          6.24,
+          12.08
+        ],
+        [
+          6.67,
+          11.59
+        ],
+        [
+          6.95,
+          11.65
+        ],
+        [
+          7.09,
+          11.6
+        ],
+        [
+          7.24,
+          11.72
+        ],
+        [
+          7.44,
+          11.73
+        ],
+        [
+          7.63,
+          11.71
+        ],
+        [
+          7.87,
+          11.61
+        ],
+        [
+          7.96,
+          11.73
+        ],
+        [
+          8.1,
+          11.78
+        ],
+        [
+          8.27,
+          11.69
+        ],
+        [
+          8.31,
+          11.58
+        ]
+      ]
+    },
+    {
+      "name": "water-3",
+      "type": "water",
+      "points": [
+        [
+          3.19,
+          61.69
+        ],
+        [
+          4.5,
+          61.44
+        ],
+        [
+          8.53,
+          61.15
+        ],
+        [
+          10.16,
+          60.96
+        ],
+        [
+          11.02,
+          60.69
+        ],
+        [
+          12.32,
+          59.97
+        ],
+        [
+          14.02,
+          59.34
+        ],
+        [
+          14.69,
+          59.17
+        ],
+        [
+          17.33,
+          58.84
+        ],
+        [
+          20.23,
+          58.83
+        ],
+        [
+          21.03,
+          58.78
+        ],
+        [
+          22.29,
+          58.62
+        ],
+        [
+          23.1,
+          58.43
+        ],
+        [
+          23.38,
+          58.23
+        ],
+        [
+          23.72,
+          58.11
+        ],
+        [
+          24.63,
+          58.06
+        ],
+        [
+          25.54,
+          58.19
+        ],
+        [
+          26.4,
+          58.08
+        ],
+        [
+          26.84,
+          58.14
+        ],
+        [
+          27.59,
+          57.98
+        ],
+        [
+          27.68,
+          57.86
+        ],
+        [
+          28.47,
+          57.53
+        ],
+        [
+          28.62,
+          57.59
+        ],
+        [
+          28.7,
+          57.57
+        ],
+        [
+          29.08,
+          57.34
+        ],
+        [
+          29.16,
+          57.23
+        ],
+        [
+          30.79,
+          56.21
+        ],
+        [
+          30.98,
+          56.02
+        ],
+        [
+          31.16,
+          55.98
+        ],
+        [
+          32.43,
+          55.38
+        ],
+        [
+          32.63,
+          55.16
+        ],
+        [
+          32.98,
+          54.97
+        ],
+        [
+          33.43,
+          54.8
+        ],
+        [
+          33.78,
+          54.73
+        ],
+        [
+          35.72,
+          53.93
+        ],
+        [
+          34.38,
+          53.93
+        ],
+        [
+          31.03,
+          55.48
+        ],
+        [
+          30.06,
+          56.08
+        ],
+        [
+          29.94,
+          56.16
+        ],
+        [
+          29.8,
+          56.25
+        ],
+        [
+          29.72,
+          56.29
+        ],
+        [
+          28.94,
+          56.77
+        ],
+        [
+          28.83,
+          56.78
+        ],
+        [
+          28.15,
+          57.19
+        ],
+        [
+          27.19,
+          57.51
+        ],
+        [
+          26.45,
+          57.64
+        ],
+        [
+          25.34,
+          57.74
+        ],
+        [
+          25.23,
+          57.84
+        ],
+        [
+          25.16,
+          57.83
+        ],
+        [
+          25.09,
+          57.72
+        ],
+        [
+          24.85,
+          57.65
+        ],
+        [
+          24.07,
+          57.68
+        ],
+        [
+          22.35,
+          58.14
+        ],
+        [
+          20.76,
+          58.37
+        ],
+        [
+          17.95,
+          58.4
+        ],
+        [
+          17.83,
+          58.48
+        ],
+        [
+          17.33,
+          58.44
+        ],
+        [
+          17.15,
+          58.48
+        ],
+        [
+          17.01,
+          58.44
+        ],
+        [
+          16.58,
+          58.49
+        ],
+        [
+          16.47,
+          58.56
+        ],
+        [
+          16.32,
+          58.52
+        ],
+        [
+          14.61,
+          58.74
+        ],
+        [
+          13.84,
+          58.93
+        ],
+        [
+          12.19,
+          59.54
+        ],
+        [
+          11.86,
+          59.69
+        ],
+        [
+          10.88,
+          60.27
+        ],
+        [
+          10.2,
+          60.5
+        ],
+        [
+          9.32,
+          60.63
+        ],
+        [
+          7.2,
+          60.77
+        ],
+        [
+          4.08,
+          61.07
+        ],
+        [
+          3.26,
+          61.26
+        ],
+        [
+          3.16,
+          61.34
+        ],
+        [
+          3.0,
+          61.32
+        ],
+        [
+          1.81,
+          61.61
+        ],
+        [
+          0.0,
+          61.76
+        ],
+        [
+          0.0,
+          62.2
+        ],
+        [
+          1.77,
+          62.06
+        ]
+      ]
+    },
+    {
+      "name": "water-4",
+      "type": "water",
+      "points": [
+        [
+          32.86,
+          68.77
+        ],
+        [
+          32.88,
+          68.94
+        ],
+        [
+          32.98,
+          69.05
+        ],
+        [
+          33.12,
+          69.07
+        ],
+        [
+          33.27,
+          68.95
+        ],
+        [
+          33.39,
+          68.59
+        ],
+        [
+          33.36,
+          68.44
+        ],
+        [
+          33.64,
+          68.12
+        ],
+        [
+          33.91,
+          67.54
+        ],
+        [
+          34.06,
+          67.44
+        ],
+        [
+          34.01,
+          66.98
+        ],
+        [
+          33.89,
+          66.94
+        ],
+        [
+          33.74,
+          67.03
+        ],
+        [
+          33.48,
+          66.91
+        ],
+        [
+          33.27,
+          66.94
+        ],
+        [
+          32.92,
+          67.33
+        ],
+        [
+          32.74,
+          67.72
+        ],
+        [
+          32.74,
+          67.83
+        ],
+        [
+          32.85,
+          68.04
+        ],
+        [
+          32.94,
+          68.68
+        ]
+      ]
+    },
+    {
+      "name": "water-5",
+      "type": "water",
+      "points": [
+        [
+          36.1,
+          63.69
+        ],
+        [
+          35.84,
+          63.84
+        ],
+        [
+          35.74,
+          63.98
+        ],
+        [
+          35.74,
+          64.08
+        ],
+        [
+          35.8,
+          64.15
+        ],
+        [
+          35.9,
+          64.17
+        ],
+        [
+          36.18,
+          64.09
+        ],
+        [
+          36.32,
+          64.2
+        ],
+        [
+          36.48,
+          64.12
+        ],
+        [
+          36.67,
+          64.12
+        ],
+        [
+          36.83,
+          63.76
+        ],
+        [
+          36.79,
+          63.56
+        ],
+        [
+          36.67,
+          63.48
+        ],
+        [
+          36.49,
+          63.45
+        ],
+        [
+          36.19,
+          63.56
+        ]
+      ]
+    }
+  ],
+  "annotations": [
+    {
+      "text": "MONTRÉAL",
+      "x": 48.2,
+      "y": 4.6,
+      "size": 8.0,
+      "angle": 0,
+      "anchor": "center",
+      "copper": true,
+      "bold": true
+    }
+  ],
+  "canvas_mm": 80.0,
+  "canvas_h_mm": 80.0,
+  "board_scale": 2.0,
+  "mounting_holes": [
+    [
+      4.0,
+      4.0
+    ],
+    [
+      4.0,
+      156.0
+    ],
+    [
+      156.0,
+      4.0
+    ],
+    [
+      156.0,
+      156.0
+    ]
+  ]
+}

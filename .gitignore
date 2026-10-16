@@ -1,0 +1,12 @@
+# KiCad lock files
+*.lck
+# Python / PlatformIO build output
+__pycache__/
+firmware/.pio/
+
+# KiCad local state and backups
+*.kicad_prl
+*-backups/
+fp-info-cache
+*.bak
+.history/

@@ -1,0 +1,3898 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-10-13T14:50:42",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Solder mask aperture bridges items with different nets",
+            "key": "solder_mask_bridge"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "key": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "key": "silk_over_copper"
+        },
+        {
+            "description": "PTH inside courtyard",
+            "key": "pth_inside_courtyard"
+        },
+        {
+            "description": "NPTH inside courtyard",
+            "key": "npth_inside_courtyard"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "schematic_parity": [],
+    "source": "montreal-metro-pcb.kicad_pcb",
+    "unconnected_items": [
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu and B.Cu, priority 0",
+                    "pos": {
+                        "x": 0.45,
+                        "y": 0.45
+                    },
+                    "uuid": "26728c49-a10c-4d1f-98fc-a3aaab36cae5"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu and B.Cu, priority 0",
+                    "pos": {
+                        "x": 0.45,
+                        "y": 0.45
+                    },
+                    "uuid": "26728c49-a10c-4d1f-98fc-a3aaab36cae5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Zone [GND] on F.Cu and B.Cu, priority 0",
+                    "pos": {
+                        "x": 0.45,
+                        "y": 0.45
+                    },
+                    "uuid": "26728c49-a10c-4d1f-98fc-a3aaab36cae5"
+                },
+                {
+                    "description": "Pad 1 [GND] of LED2 on F.Cu",
+                    "pos": {
+                        "x": 99.991472,
+                        "y": 88.707868
+                    },
+                    "uuid": "e7df55c8-55d0-46dc-bb26-46da248a6460"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [GND] of LED2 on F.Cu",
+                    "pos": {
+                        "x": 99.991472,
+                        "y": 88.707868
+                    },
+                    "uuid": "e7df55c8-55d0-46dc-bb26-46da248a6460"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu and B.Cu, priority 0",
+                    "pos": {
+                        "x": 0.45,
+                        "y": 0.45
+                    },
+                    "uuid": "26728c49-a10c-4d1f-98fc-a3aaab36cae5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [GND] of LED1 on F.Cu",
+                    "pos": {
+                        "x": 111.85,
+                        "y": 93.57
+                    },
+                    "uuid": "242339b0-7323-49fc-a065-4a25498693be"
+                },
+                {
+                    "description": "Pad 3 [GND] of SW1 on B.Cu",
+                    "pos": {
+                        "x": 109.0,
+                        "y": 111.85
+                    },
+                    "uuid": "750dbd44-4d94-4ea1-bd5d-3edca42a4c5f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 13 [GND] of U1 on B.Cu",
+                    "pos": {
+                        "x": 132.164999,
+                        "y": 127.08
+                    },
+                    "uuid": "5ade9411-2b31-4726-ac83-8e80797025fe"
+                },
+                {
+                    "description": "Zone [GND] on F.Cu and B.Cu, priority 0",
+                    "pos": {
+                        "x": 0.45,
+                        "y": 0.45
+                    },
+                    "uuid": "26728c49-a10c-4d1f-98fc-a3aaab36cae5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED7-DO)] of LED7 on F.Cu",
+                    "pos": {
+                        "x": 104.65,
+                        "y": 52.05
+                    },
+                    "uuid": "b2f76ede-1358-46cc-9cc7-b6cc234b3d42"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED7-DO)] of LED8 on F.Cu",
+                    "pos": {
+                        "x": 107.95,
+                        "y": 49.35
+                    },
+                    "uuid": "407d0bfa-4653-4172-9d76-1be6532e5768"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED33 on F.Cu",
+                    "pos": {
+                        "x": 19.45,
+                        "y": 72.15
+                    },
+                    "uuid": "c2d139eb-19b7-41c8-8f9f-5af96f636cde"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED32 on F.Cu",
+                    "pos": {
+                        "x": 15.25,
+                        "y": 67.95
+                    },
+                    "uuid": "b1b5f5c7-de93-42d4-9806-baaf600f5042"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [+5V] of ROW3 on F.Cu",
+                    "pos": {
+                        "x": 20.68,
+                        "y": 74.7
+                    },
+                    "uuid": "35d9682b-5dd6-45af-a2e3-9bf79f2f1aa7"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED33 on F.Cu",
+                    "pos": {
+                        "x": 19.45,
+                        "y": 72.15
+                    },
+                    "uuid": "c2d139eb-19b7-41c8-8f9f-5af96f636cde"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED34 on F.Cu",
+                    "pos": {
+                        "x": 23.65,
+                        "y": 76.35
+                    },
+                    "uuid": "74a6a804-a25b-4b6f-92b2-12a09e3b780e"
+                },
+                {
+                    "description": "Pad 2 [+5V] of ROW3 on F.Cu",
+                    "pos": {
+                        "x": 20.68,
+                        "y": 74.7
+                    },
+                    "uuid": "35d9682b-5dd6-45af-a2e3-9bf79f2f1aa7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED30 on F.Cu",
+                    "pos": {
+                        "x": 26.712132,
+                        "y": 14.151472
+                    },
+                    "uuid": "38aad978-1a02-42e4-9d48-c56922b3b7cf"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED31 on F.Cu",
+                    "pos": {
+                        "x": 19.351472,
+                        "y": 14.787868
+                    },
+                    "uuid": "2cc8c446-ab27-4299-a0db-e6a1fe410db4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED35 on F.Cu",
+                    "pos": {
+                        "x": 27.85,
+                        "y": 80.55
+                    },
+                    "uuid": "36235174-b3b2-4f84-81a4-06a2020d08a3"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED36 on F.Cu",
+                    "pos": {
+                        "x": 32.049999,
+                        "y": 84.75
+                    },
+                    "uuid": "b1c2e04b-9fcc-4d0c-a589-21a1ff76c567"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED35 on F.Cu",
+                    "pos": {
+                        "x": 27.85,
+                        "y": 80.55
+                    },
+                    "uuid": "36235174-b3b2-4f84-81a4-06a2020d08a3"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED34 on F.Cu",
+                    "pos": {
+                        "x": 23.65,
+                        "y": 76.35
+                    },
+                    "uuid": "74a6a804-a25b-4b6f-92b2-12a09e3b780e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED64 on F.Cu",
+                    "pos": {
+                        "x": 29.05,
+                        "y": 145.95
+                    },
+                    "uuid": "91af4e1b-e8ee-4f62-a126-ab6b963b7504"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED63 on F.Cu",
+                    "pos": {
+                        "x": 32.349999,
+                        "y": 140.25
+                    },
+                    "uuid": "4ba68d87-a443-4e7f-b3c8-3623a8e58814"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED36 on F.Cu",
+                    "pos": {
+                        "x": 32.049999,
+                        "y": 84.75
+                    },
+                    "uuid": "b1c2e04b-9fcc-4d0c-a589-21a1ff76c567"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED37 on F.Cu",
+                    "pos": {
+                        "x": 36.25,
+                        "y": 88.95
+                    },
+                    "uuid": "68d13b6f-e4c3-48b4-944f-312e8a40f6fd"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED63 on F.Cu",
+                    "pos": {
+                        "x": 32.349999,
+                        "y": 140.25
+                    },
+                    "uuid": "4ba68d87-a443-4e7f-b3c8-3623a8e58814"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED62 on F.Cu",
+                    "pos": {
+                        "x": 36.55,
+                        "y": 136.05
+                    },
+                    "uuid": "07953d91-6447-47c7-ad29-69494dc75866"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED37 on F.Cu",
+                    "pos": {
+                        "x": 36.25,
+                        "y": 88.95
+                    },
+                    "uuid": "68d13b6f-e4c3-48b4-944f-312e8a40f6fd"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED38 on F.Cu",
+                    "pos": {
+                        "x": 41.65,
+                        "y": 93.45
+                    },
+                    "uuid": "eb38fdc4-e6ec-416c-b79e-02119502253c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED29 on F.Cu",
+                    "pos": {
+                        "x": 37.75,
+                        "y": 18.75
+                    },
+                    "uuid": "a9d6b3b8-ed63-4fce-a34e-b0f30f908ae6"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED28 on F.Cu",
+                    "pos": {
+                        "x": 46.15,
+                        "y": 27.15
+                    },
+                    "uuid": "aac93554-ca00-40ce-ac5a-768703645d94"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED29 on F.Cu",
+                    "pos": {
+                        "x": 37.75,
+                        "y": 18.75
+                    },
+                    "uuid": "a9d6b3b8-ed63-4fce-a34e-b0f30f908ae6"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED30 on F.Cu",
+                    "pos": {
+                        "x": 26.712132,
+                        "y": 14.151472
+                    },
+                    "uuid": "38aad978-1a02-42e4-9d48-c56922b3b7cf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED61 on F.Cu",
+                    "pos": {
+                        "x": 40.75,
+                        "y": 131.85
+                    },
+                    "uuid": "f1f968ec-469c-4dd6-98eb-97128b380079"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED62 on F.Cu",
+                    "pos": {
+                        "x": 36.55,
+                        "y": 136.05
+                    },
+                    "uuid": "07953d91-6447-47c7-ad29-69494dc75866"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED38 on F.Cu",
+                    "pos": {
+                        "x": 41.65,
+                        "y": 93.45
+                    },
+                    "uuid": "eb38fdc4-e6ec-416c-b79e-02119502253c"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED39 on F.Cu",
+                    "pos": {
+                        "x": 45.85,
+                        "y": 89.25
+                    },
+                    "uuid": "3c8fafb1-ccbd-455b-b652-0cd71ca3a2fe"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED65 on F.Cu",
+                    "pos": {
+                        "x": 44.65,
+                        "y": 97.35
+                    },
+                    "uuid": "18d70b92-6fd5-4332-be23-99be5ec1b273"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED38 on F.Cu",
+                    "pos": {
+                        "x": 41.65,
+                        "y": 93.45
+                    },
+                    "uuid": "eb38fdc4-e6ec-416c-b79e-02119502253c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED65 on F.Cu",
+                    "pos": {
+                        "x": 44.65,
+                        "y": 97.35
+                    },
+                    "uuid": "18d70b92-6fd5-4332-be23-99be5ec1b273"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED66 on F.Cu",
+                    "pos": {
+                        "x": 48.85,
+                        "y": 101.55
+                    },
+                    "uuid": "06fe3063-147c-4d5d-9854-6785d3d76538"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED60 on F.Cu",
+                    "pos": {
+                        "x": 44.95,
+                        "y": 127.65
+                    },
+                    "uuid": "34b9576f-f303-4766-bcd0-448debb073ae"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED61 on F.Cu",
+                    "pos": {
+                        "x": 40.75,
+                        "y": 131.85
+                    },
+                    "uuid": "f1f968ec-469c-4dd6-98eb-97128b380079"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [+5V] of ROW6 on F.Cu",
+                    "pos": {
+                        "x": 48.4,
+                        "y": 127.92
+                    },
+                    "uuid": "879c21be-a986-4890-bf09-b102a5d39585"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED60 on F.Cu",
+                    "pos": {
+                        "x": 44.95,
+                        "y": 127.65
+                    },
+                    "uuid": "34b9576f-f303-4766-bcd0-448debb073ae"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [+5V] of ROW6 on F.Cu",
+                    "pos": {
+                        "x": 48.4,
+                        "y": 127.92
+                    },
+                    "uuid": "879c21be-a986-4890-bf09-b102a5d39585"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED59 on F.Cu",
+                    "pos": {
+                        "x": 49.15,
+                        "y": 123.45
+                    },
+                    "uuid": "2876d214-e391-4cd8-9e6b-ec06ff162639"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED66 on F.Cu",
+                    "pos": {
+                        "x": 48.85,
+                        "y": 101.55
+                    },
+                    "uuid": "06fe3063-147c-4d5d-9854-6785d3d76538"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED67 on F.Cu",
+                    "pos": {
+                        "x": 54.25,
+                        "y": 106.05
+                    },
+                    "uuid": "315f4fe5-19b5-426f-bc7c-a5c568a66333"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED59 on F.Cu",
+                    "pos": {
+                        "x": 49.15,
+                        "y": 123.45
+                    },
+                    "uuid": "2876d214-e391-4cd8-9e6b-ec06ff162639"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED58 on F.Cu",
+                    "pos": {
+                        "x": 53.35,
+                        "y": 119.25
+                    },
+                    "uuid": "2dcd22ce-d48d-429d-ac4d-6c9e348e9f75"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED40 on F.Cu",
+                    "pos": {
+                        "x": 50.05,
+                        "y": 85.05
+                    },
+                    "uuid": "cbb04e8f-4dc1-4819-83ab-ce9a694faa3c"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED39 on F.Cu",
+                    "pos": {
+                        "x": 45.85,
+                        "y": 89.25
+                    },
+                    "uuid": "3c8fafb1-ccbd-455b-b652-0cd71ca3a2fe"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED40 on F.Cu",
+                    "pos": {
+                        "x": 50.05,
+                        "y": 85.05
+                    },
+                    "uuid": "cbb04e8f-4dc1-4819-83ab-ce9a694faa3c"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED41 on F.Cu",
+                    "pos": {
+                        "x": 54.648528,
+                        "y": 75.692132
+                    },
+                    "uuid": "209c6955-af6a-4a57-8a53-bfeea29847fe"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED27 on F.Cu",
+                    "pos": {
+                        "x": 50.35,
+                        "y": 31.35
+                    },
+                    "uuid": "b6e3d180-1018-4b89-88b9-039036c53e47"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED28 on F.Cu",
+                    "pos": {
+                        "x": 46.15,
+                        "y": 27.15
+                    },
+                    "uuid": "aac93554-ca00-40ce-ac5a-768703645d94"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED44 on F.Cu",
+                    "pos": {
+                        "x": 54.25,
+                        "y": 59.85
+                    },
+                    "uuid": "5baf444b-735d-4a60-ace7-7d728436eec7"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED43 on F.Cu",
+                    "pos": {
+                        "x": 54.648528,
+                        "y": 64.772132
+                    },
+                    "uuid": "84da8f8f-bd06-4abb-ab4d-4f9938996d2e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED26 on F.Cu",
+                    "pos": {
+                        "x": 54.55,
+                        "y": 35.55
+                    },
+                    "uuid": "42fd06ae-7e7e-45a9-a589-614e91e94e76"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED25 on F.Cu",
+                    "pos": {
+                        "x": 58.75,
+                        "y": 39.75
+                    },
+                    "uuid": "71122199-1b38-49a7-a9c0-084e8be77e7a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED26 on F.Cu",
+                    "pos": {
+                        "x": 54.55,
+                        "y": 35.55
+                    },
+                    "uuid": "42fd06ae-7e7e-45a9-a589-614e91e94e76"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED27 on F.Cu",
+                    "pos": {
+                        "x": 50.35,
+                        "y": 31.35
+                    },
+                    "uuid": "b6e3d180-1018-4b89-88b9-039036c53e47"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED43 on F.Cu",
+                    "pos": {
+                        "x": 54.648528,
+                        "y": 64.772132
+                    },
+                    "uuid": "84da8f8f-bd06-4abb-ab4d-4f9938996d2e"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED42 on F.Cu",
+                    "pos": {
+                        "x": 54.648528,
+                        "y": 70.23213199999999
+                    },
+                    "uuid": "8408a1d9-4755-4c83-9a52-04f9f15c8a3a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED42 on F.Cu",
+                    "pos": {
+                        "x": 54.648528,
+                        "y": 70.23213199999999
+                    },
+                    "uuid": "8408a1d9-4755-4c83-9a52-04f9f15c8a3a"
+                },
+                {
+                    "description": "Pad 2 [+5V] of ROW4 on F.Cu",
+                    "pos": {
+                        "x": 50.8,
+                        "y": 69.54
+                    },
+                    "uuid": "13a047f0-02f7-495c-882e-251485d5af48"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED41 on F.Cu",
+                    "pos": {
+                        "x": 54.648528,
+                        "y": 75.692132
+                    },
+                    "uuid": "209c6955-af6a-4a57-8a53-bfeea29847fe"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED42 on F.Cu",
+                    "pos": {
+                        "x": 54.648528,
+                        "y": 70.23213199999999
+                    },
+                    "uuid": "8408a1d9-4755-4c83-9a52-04f9f15c8a3a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED57 on F.Cu",
+                    "pos": {
+                        "x": 57.55,
+                        "y": 108.75
+                    },
+                    "uuid": "759a6a63-24ea-46bb-ba0a-32849dea1932"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED67 on F.Cu",
+                    "pos": {
+                        "x": 54.25,
+                        "y": 106.05
+                    },
+                    "uuid": "315f4fe5-19b5-426f-bc7c-a5c568a66333"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED57 on F.Cu",
+                    "pos": {
+                        "x": 57.55,
+                        "y": 108.75
+                    },
+                    "uuid": "759a6a63-24ea-46bb-ba0a-32849dea1932"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED56 on F.Cu",
+                    "pos": {
+                        "x": 61.75,
+                        "y": 104.55
+                    },
+                    "uuid": "fbb936b0-d146-4d2d-97f5-0ad65c787fd0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED57 on F.Cu",
+                    "pos": {
+                        "x": 57.55,
+                        "y": 108.75
+                    },
+                    "uuid": "759a6a63-24ea-46bb-ba0a-32849dea1932"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED58 on F.Cu",
+                    "pos": {
+                        "x": 53.35,
+                        "y": 119.25
+                    },
+                    "uuid": "2dcd22ce-d48d-429d-ac4d-6c9e348e9f75"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED45 on F.Cu",
+                    "pos": {
+                        "x": 57.787868,
+                        "y": 49.448528
+                    },
+                    "uuid": "6d76f997-7362-4def-ae83-833448f38c3a"
+                },
+                {
+                    "description": "Pad 2 [+5V] of ROW2 on F.Cu",
+                    "pos": {
+                        "x": 62.68,
+                        "y": 47.4
+                    },
+                    "uuid": "ffb1ea7a-518f-48ed-9da2-c77db916d2a7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED25 on F.Cu",
+                    "pos": {
+                        "x": 58.75,
+                        "y": 39.75
+                    },
+                    "uuid": "71122199-1b38-49a7-a9c0-084e8be77e7a"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED24 on F.Cu",
+                    "pos": {
+                        "x": 62.95,
+                        "y": 43.95
+                    },
+                    "uuid": "b0967cc1-1b17-4429-9b73-d5cf8fb30e65"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [+5V] of ROW2 on F.Cu",
+                    "pos": {
+                        "x": 62.68,
+                        "y": 47.4
+                    },
+                    "uuid": "ffb1ea7a-518f-48ed-9da2-c77db916d2a7"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED24 on F.Cu",
+                    "pos": {
+                        "x": 62.95,
+                        "y": 43.95
+                    },
+                    "uuid": "b0967cc1-1b17-4429-9b73-d5cf8fb30e65"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED46 on F.Cu",
+                    "pos": {
+                        "x": 65.65,
+                        "y": 49.05
+                    },
+                    "uuid": "c3c974fd-9a9e-4275-955a-12677229574b"
+                },
+                {
+                    "description": "Pad 2 [+5V] of ROW2 on F.Cu",
+                    "pos": {
+                        "x": 62.68,
+                        "y": 47.4
+                    },
+                    "uuid": "ffb1ea7a-518f-48ed-9da2-c77db916d2a7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED23 on F.Cu",
+                    "pos": {
+                        "x": 65.95,
+                        "y": 39.45
+                    },
+                    "uuid": "84bdd993-1e63-42ee-bffc-c27ce9246840"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED24 on F.Cu",
+                    "pos": {
+                        "x": 62.95,
+                        "y": 43.95
+                    },
+                    "uuid": "b0967cc1-1b17-4429-9b73-d5cf8fb30e65"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED55 on F.Cu",
+                    "pos": {
+                        "x": 65.95,
+                        "y": 100.35
+                    },
+                    "uuid": "b60e456b-4500-461f-a886-f83bbb9e4c4f"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED68 on F.Cu",
+                    "pos": {
+                        "x": 62.65,
+                        "y": 95.55
+                    },
+                    "uuid": "1c8fd133-6e40-45cf-bd6b-191efbd2e571"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED55 on F.Cu",
+                    "pos": {
+                        "x": 65.95,
+                        "y": 100.35
+                    },
+                    "uuid": "b60e456b-4500-461f-a886-f83bbb9e4c4f"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED56 on F.Cu",
+                    "pos": {
+                        "x": 61.75,
+                        "y": 104.55
+                    },
+                    "uuid": "fbb936b0-d146-4d2d-97f5-0ad65c787fd0"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED69 on F.Cu",
+                    "pos": {
+                        "x": 66.85,
+                        "y": 91.35
+                    },
+                    "uuid": "3e83d484-5cba-4b6d-85f2-d36afe9d78f7"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED68 on F.Cu",
+                    "pos": {
+                        "x": 62.65,
+                        "y": 95.55
+                    },
+                    "uuid": "1c8fd133-6e40-45cf-bd6b-191efbd2e571"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [+5V] of ROW7 on F.Cu",
+                    "pos": {
+                        "x": 69.4,
+                        "y": 90.12
+                    },
+                    "uuid": "386779a0-956d-4e05-a752-7d067760e44a"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED69 on F.Cu",
+                    "pos": {
+                        "x": 66.85,
+                        "y": 91.35
+                    },
+                    "uuid": "3e83d484-5cba-4b6d-85f2-d36afe9d78f7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [+5V] of ROW7 on F.Cu",
+                    "pos": {
+                        "x": 69.4,
+                        "y": 90.12
+                    },
+                    "uuid": "386779a0-956d-4e05-a752-7d067760e44a"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED53 on F.Cu",
+                    "pos": {
+                        "x": 74.35,
+                        "y": 91.95
+                    },
+                    "uuid": "6db7e2e8-f431-4b6c-8f1e-5db8650f6721"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED47 on F.Cu",
+                    "pos": {
+                        "x": 69.85,
+                        "y": 53.25
+                    },
+                    "uuid": "6f17f94d-b5d4-4c93-830f-bc863fb3287d"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED48 on F.Cu",
+                    "pos": {
+                        "x": 74.05,
+                        "y": 57.45
+                    },
+                    "uuid": "ba5fbad7-832a-4a6f-bb5d-662576cc298b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED47 on F.Cu",
+                    "pos": {
+                        "x": 69.85,
+                        "y": 53.25
+                    },
+                    "uuid": "6f17f94d-b5d4-4c93-830f-bc863fb3287d"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED46 on F.Cu",
+                    "pos": {
+                        "x": 65.65,
+                        "y": 49.05
+                    },
+                    "uuid": "c3c974fd-9a9e-4275-955a-12677229574b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED22 on F.Cu",
+                    "pos": {
+                        "x": 70.15,
+                        "y": 35.25
+                    },
+                    "uuid": "32310bd6-6571-4dca-bb86-e71de6cc83a7"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED23 on F.Cu",
+                    "pos": {
+                        "x": 65.95,
+                        "y": 39.45
+                    },
+                    "uuid": "84bdd993-1e63-42ee-bffc-c27ce9246840"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED54 on F.Cu",
+                    "pos": {
+                        "x": 70.15,
+                        "y": 96.15
+                    },
+                    "uuid": "7fef3535-7719-4873-9275-26b79fb9c8d5"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED69 on F.Cu",
+                    "pos": {
+                        "x": 66.85,
+                        "y": 91.35
+                    },
+                    "uuid": "3e83d484-5cba-4b6d-85f2-d36afe9d78f7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED70 on F.Cu",
+                    "pos": {
+                        "x": 71.05,
+                        "y": 87.15
+                    },
+                    "uuid": "e7919323-e396-490a-89d1-ced99cfee40a"
+                },
+                {
+                    "description": "Pad 2 [+5V] of ROW7 on F.Cu",
+                    "pos": {
+                        "x": 69.4,
+                        "y": 90.12
+                    },
+                    "uuid": "386779a0-956d-4e05-a752-7d067760e44a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED48 on F.Cu",
+                    "pos": {
+                        "x": 74.05,
+                        "y": 57.45
+                    },
+                    "uuid": "ba5fbad7-832a-4a6f-bb5d-662576cc298b"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED49 on F.Cu",
+                    "pos": {
+                        "x": 78.25,
+                        "y": 61.65
+                    },
+                    "uuid": "b488032e-f83f-45a1-815c-8326b53934e4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED21 on F.Cu",
+                    "pos": {
+                        "x": 74.35,
+                        "y": 31.05
+                    },
+                    "uuid": "324f15f6-d516-4d17-9f38-c50c81f1c94e"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED22 on F.Cu",
+                    "pos": {
+                        "x": 70.15,
+                        "y": 35.25
+                    },
+                    "uuid": "32310bd6-6571-4dca-bb86-e71de6cc83a7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED71 on F.Cu",
+                    "pos": {
+                        "x": 75.25,
+                        "y": 82.95
+                    },
+                    "uuid": "676b3a35-3df5-4f8e-91c2-b1a216f4bb39"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED72 on F.Cu",
+                    "pos": {
+                        "x": 79.45,
+                        "y": 78.75
+                    },
+                    "uuid": "c1ec9c57-d1f4-4eff-8248-0c8840a28900"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED52 on F.Cu",
+                    "pos": {
+                        "x": 78.55,
+                        "y": 87.75
+                    },
+                    "uuid": "9746b35f-58af-4164-805b-5f359546654a"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED71 on F.Cu",
+                    "pos": {
+                        "x": 75.25,
+                        "y": 82.95
+                    },
+                    "uuid": "676b3a35-3df5-4f8e-91c2-b1a216f4bb39"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED52 on F.Cu",
+                    "pos": {
+                        "x": 78.55,
+                        "y": 87.75
+                    },
+                    "uuid": "9746b35f-58af-4164-805b-5f359546654a"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED53 on F.Cu",
+                    "pos": {
+                        "x": 74.35,
+                        "y": 91.95
+                    },
+                    "uuid": "6db7e2e8-f431-4b6c-8f1e-5db8650f6721"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED72 on F.Cu",
+                    "pos": {
+                        "x": 79.45,
+                        "y": 78.75
+                    },
+                    "uuid": "c1ec9c57-d1f4-4eff-8248-0c8840a28900"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED73 on F.Cu",
+                    "pos": {
+                        "x": 83.65,
+                        "y": 74.55
+                    },
+                    "uuid": "2a31b39a-97f5-4f13-80e8-4617179a8dd3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED50 on F.Cu",
+                    "pos": {
+                        "x": 82.351472,
+                        "y": 65.187868
+                    },
+                    "uuid": "44feb011-c0bd-4856-abb5-79a42374dd01"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED49 on F.Cu",
+                    "pos": {
+                        "x": 78.25,
+                        "y": 61.65
+                    },
+                    "uuid": "b488032e-f83f-45a1-815c-8326b53934e4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED51 on F.Cu",
+                    "pos": {
+                        "x": 82.75,
+                        "y": 83.55
+                    },
+                    "uuid": "36086111-8931-4d18-87bc-6ebfe3fd314e"
+                },
+                {
+                    "description": "Pad 2 [+5V] of ROW5 on F.Cu",
+                    "pos": {
+                        "x": 83.68,
+                        "y": 81.3
+                    },
+                    "uuid": "47e0222f-671f-49ee-8a71-22dfef90e5de"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED73 on F.Cu",
+                    "pos": {
+                        "x": 83.65,
+                        "y": 74.55
+                    },
+                    "uuid": "2a31b39a-97f5-4f13-80e8-4617179a8dd3"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED3 on F.Cu",
+                    "pos": {
+                        "x": 87.85,
+                        "y": 70.35
+                    },
+                    "uuid": "023ba9e1-a4e0-48c2-b22f-1524358846e7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [+5V] of ROW5 on F.Cu",
+                    "pos": {
+                        "x": 83.68,
+                        "y": 81.3
+                    },
+                    "uuid": "47e0222f-671f-49ee-8a71-22dfef90e5de"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED72 on F.Cu",
+                    "pos": {
+                        "x": 79.45,
+                        "y": 78.75
+                    },
+                    "uuid": "c1ec9c57-d1f4-4eff-8248-0c8840a28900"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED20 on F.Cu",
+                    "pos": {
+                        "x": 85.932132,
+                        "y": 26.751472
+                    },
+                    "uuid": "dd60e228-6456-4245-9b8d-42680c130fed"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED21 on F.Cu",
+                    "pos": {
+                        "x": 74.35,
+                        "y": 31.05
+                    },
+                    "uuid": "324f15f6-d516-4d17-9f38-c50c81f1c94e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED3 on F.Cu",
+                    "pos": {
+                        "x": 87.85,
+                        "y": 70.35
+                    },
+                    "uuid": "023ba9e1-a4e0-48c2-b22f-1524358846e7"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED4 on F.Cu",
+                    "pos": {
+                        "x": 92.05,
+                        "y": 66.15
+                    },
+                    "uuid": "21641691-757f-4186-8163-91aea234b7fa"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED3 on F.Cu",
+                    "pos": {
+                        "x": 87.85,
+                        "y": 70.35
+                    },
+                    "uuid": "023ba9e1-a4e0-48c2-b22f-1524358846e7"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED50 on F.Cu",
+                    "pos": {
+                        "x": 82.351472,
+                        "y": 65.187868
+                    },
+                    "uuid": "44feb011-c0bd-4856-abb5-79a42374dd01"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED19 on F.Cu",
+                    "pos": {
+                        "x": 92.652132,
+                        "y": 26.751472
+                    },
+                    "uuid": "691521e3-0ea1-4a1b-a3d5-a597b04f088b"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED20 on F.Cu",
+                    "pos": {
+                        "x": 85.932132,
+                        "y": 26.751472
+                    },
+                    "uuid": "dd60e228-6456-4245-9b8d-42680c130fed"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED5 on F.Cu",
+                    "pos": {
+                        "x": 96.25,
+                        "y": 61.95
+                    },
+                    "uuid": "89de3c39-d97b-4ae3-a9bb-0cfa92ebc7d5"
+                },
+                {
+                    "description": "Pad 1 [+5V] of ROW0 on F.Cu",
+                    "pos": {
+                        "x": 99.52,
+                        "y": 60.0
+                    },
+                    "uuid": "3650b6c3-f7e9-4654-9196-d258740e1d0b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED5 on F.Cu",
+                    "pos": {
+                        "x": 96.25,
+                        "y": 61.95
+                    },
+                    "uuid": "89de3c39-d97b-4ae3-a9bb-0cfa92ebc7d5"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED4 on F.Cu",
+                    "pos": {
+                        "x": 92.05,
+                        "y": 66.15
+                    },
+                    "uuid": "21641691-757f-4186-8163-91aea234b7fa"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED18 on F.Cu",
+                    "pos": {
+                        "x": 99.372132,
+                        "y": 26.751472
+                    },
+                    "uuid": "f15841ad-3d02-4043-abc7-4d28bab17abf"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED19 on F.Cu",
+                    "pos": {
+                        "x": 92.652132,
+                        "y": 26.751472
+                    },
+                    "uuid": "691521e3-0ea1-4a1b-a3d5-a597b04f088b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [+5V] of ROW0 on F.Cu",
+                    "pos": {
+                        "x": 99.52,
+                        "y": 60.0
+                    },
+                    "uuid": "3650b6c3-f7e9-4654-9196-d258740e1d0b"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED6 on F.Cu",
+                    "pos": {
+                        "x": 100.45,
+                        "y": 57.75
+                    },
+                    "uuid": "9c7cc66e-5c31-4a84-ad4a-1b2547f07e2c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED2 on F.Cu",
+                    "pos": {
+                        "x": 101.688528,
+                        "y": 89.132132
+                    },
+                    "uuid": "cf772c32-9f97-473f-a031-cd7ee3caed7a"
+                },
+                {
+                    "description": "Pad 2 [+5V] of ROW5 on F.Cu",
+                    "pos": {
+                        "x": 83.68,
+                        "y": 81.3
+                    },
+                    "uuid": "47e0222f-671f-49ee-8a71-22dfef90e5de"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED7 on F.Cu",
+                    "pos": {
+                        "x": 104.65,
+                        "y": 53.55
+                    },
+                    "uuid": "f238e4b3-db53-4756-b68d-a5c260d54500"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED6 on F.Cu",
+                    "pos": {
+                        "x": 100.45,
+                        "y": 57.75
+                    },
+                    "uuid": "9c7cc66e-5c31-4a84-ad4a-1b2547f07e2c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED17 on F.Cu",
+                    "pos": {
+                        "x": 106.092132,
+                        "y": 26.751472
+                    },
+                    "uuid": "88a6bdf1-1662-40a1-a62d-c63f18fac8da"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED16 on F.Cu",
+                    "pos": {
+                        "x": 112.812132,
+                        "y": 26.751472
+                    },
+                    "uuid": "38b72178-61bb-460b-9ce6-e21c1d5a66f3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED17 on F.Cu",
+                    "pos": {
+                        "x": 106.092132,
+                        "y": 26.751472
+                    },
+                    "uuid": "88a6bdf1-1662-40a1-a62d-c63f18fac8da"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED18 on F.Cu",
+                    "pos": {
+                        "x": 99.372132,
+                        "y": 26.751472
+                    },
+                    "uuid": "f15841ad-3d02-4043-abc7-4d28bab17abf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED8 on F.Cu",
+                    "pos": {
+                        "x": 108.85,
+                        "y": 49.35
+                    },
+                    "uuid": "88b528f7-f669-48c4-a907-3ac2385cfd9c"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED7 on F.Cu",
+                    "pos": {
+                        "x": 104.65,
+                        "y": 53.55
+                    },
+                    "uuid": "f238e4b3-db53-4756-b68d-a5c260d54500"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED9 on F.Cu",
+                    "pos": {
+                        "x": 113.05,
+                        "y": 45.15
+                    },
+                    "uuid": "0b7eed3b-2b21-4242-be54-a9f45eefa608"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED8 on F.Cu",
+                    "pos": {
+                        "x": 108.85,
+                        "y": 49.35
+                    },
+                    "uuid": "88b528f7-f669-48c4-a907-3ac2385cfd9c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED9 on F.Cu",
+                    "pos": {
+                        "x": 113.05,
+                        "y": 45.15
+                    },
+                    "uuid": "0b7eed3b-2b21-4242-be54-a9f45eefa608"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED10 on F.Cu",
+                    "pos": {
+                        "x": 117.25,
+                        "y": 40.95
+                    },
+                    "uuid": "44cb53f1-bf34-46e9-b0b3-146a652aff2c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED1 on F.Cu",
+                    "pos": {
+                        "x": 113.35,
+                        "y": 92.67
+                    },
+                    "uuid": "58fbe2c1-87f6-419b-b90c-3e0e287213d1"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED2 on F.Cu",
+                    "pos": {
+                        "x": 101.688528,
+                        "y": 89.132132
+                    },
+                    "uuid": "cf772c32-9f97-473f-a031-cd7ee3caed7a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED1 on F.Cu",
+                    "pos": {
+                        "x": 113.35,
+                        "y": 92.67
+                    },
+                    "uuid": "58fbe2c1-87f6-419b-b90c-3e0e287213d1"
+                },
+                {
+                    "description": "Pad 1 [+5V] of +5V1 on B.Cu",
+                    "pos": {
+                        "x": 140.0,
+                        "y": 118.0
+                    },
+                    "uuid": "696a3955-a16c-4195-85ea-202552da0303"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED10 on F.Cu",
+                    "pos": {
+                        "x": 117.25,
+                        "y": 40.95
+                    },
+                    "uuid": "44cb53f1-bf34-46e9-b0b3-146a652aff2c"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED11 on F.Cu",
+                    "pos": {
+                        "x": 121.45,
+                        "y": 36.75
+                    },
+                    "uuid": "d58ec023-2f4e-4317-81d0-bf2a6888381b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED12 on F.Cu",
+                    "pos": {
+                        "x": 125.65,
+                        "y": 32.55
+                    },
+                    "uuid": "523162b6-0b8b-4304-b529-e1bb4736a3df"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED11 on F.Cu",
+                    "pos": {
+                        "x": 121.45,
+                        "y": 36.75
+                    },
+                    "uuid": "d58ec023-2f4e-4317-81d0-bf2a6888381b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED13 on F.Cu",
+                    "pos": {
+                        "x": 129.85,
+                        "y": 28.35
+                    },
+                    "uuid": "de754de8-4c4e-45c5-88a8-8b2ed4193308"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED12 on F.Cu",
+                    "pos": {
+                        "x": 125.65,
+                        "y": 32.55
+                    },
+                    "uuid": "523162b6-0b8b-4304-b529-e1bb4736a3df"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 14 [+5V] of U1 on B.Cu",
+                    "pos": {
+                        "x": 132.165,
+                        "y": 129.62
+                    },
+                    "uuid": "cb0079e2-edcb-409c-b929-54e1a1b2411c"
+                },
+                {
+                    "description": "Pad 1 [+5V] of +5V2 on B.Cu",
+                    "pos": {
+                        "x": 130.0,
+                        "y": 141.0
+                    },
+                    "uuid": "930a77cb-b6a8-4448-880b-008e0c46c2eb"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 14 [+5V] of U1 on B.Cu",
+                    "pos": {
+                        "x": 132.165,
+                        "y": 129.62
+                    },
+                    "uuid": "cb0079e2-edcb-409c-b929-54e1a1b2411c"
+                },
+                {
+                    "description": "Pad 1 [+5V] of +5V1 on B.Cu",
+                    "pos": {
+                        "x": 140.0,
+                        "y": 118.0
+                    },
+                    "uuid": "696a3955-a16c-4195-85ea-202552da0303"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED14 on F.Cu",
+                    "pos": {
+                        "x": 134.05,
+                        "y": 24.15
+                    },
+                    "uuid": "727ba674-9fe7-4f96-a98e-6d46d591aca6"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED13 on F.Cu",
+                    "pos": {
+                        "x": 129.85,
+                        "y": 28.35
+                    },
+                    "uuid": "de754de8-4c4e-45c5-88a8-8b2ed4193308"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 3 [+5V] of LED14 on F.Cu",
+                    "pos": {
+                        "x": 134.05,
+                        "y": 24.15
+                    },
+                    "uuid": "727ba674-9fe7-4f96-a98e-6d46d591aca6"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED15 on F.Cu",
+                    "pos": {
+                        "x": 138.012132,
+                        "y": 18.351472
+                    },
+                    "uuid": "f6ed8d5f-ffb6-4212-8465-2912d74e7d28"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [+5V] of ROW1 on F.Cu",
+                    "pos": {
+                        "x": 140.8,
+                        "y": 18.72
+                    },
+                    "uuid": "ce6760c8-200e-4e34-9095-2dbcd02057c1"
+                },
+                {
+                    "description": "Pad 3 [+5V] of LED15 on F.Cu",
+                    "pos": {
+                        "x": 138.012132,
+                        "y": 18.351472
+                    },
+                    "uuid": "f6ed8d5f-ffb6-4212-8465-2912d74e7d28"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED8-DO)] of LED8 on F.Cu",
+                    "pos": {
+                        "x": 108.85,
+                        "y": 47.85
+                    },
+                    "uuid": "f339a964-f42a-4e6d-b848-9b545208bfcb"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED8-DO)] of LED9 on F.Cu",
+                    "pos": {
+                        "x": 112.15,
+                        "y": 45.15
+                    },
+                    "uuid": "ecdf59e9-b784-4cf2-bdd7-e250a20bfec4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED69-DO)] of LED69 on F.Cu",
+                    "pos": {
+                        "x": 66.85,
+                        "y": 89.85
+                    },
+                    "uuid": "8be9bf71-0b13-4317-8cef-9b8ec5de2c6d"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED69-DO)] of LED70 on F.Cu",
+                    "pos": {
+                        "x": 70.15,
+                        "y": 87.15
+                    },
+                    "uuid": "2b6b076d-9191-49c9-83f3-f42467b4ff8b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [ROW9] of LED70 on F.Cu",
+                    "pos": {
+                        "x": 71.05,
+                        "y": 85.65
+                    },
+                    "uuid": "7bc931b4-0755-4cec-99aa-5026b13e69fb"
+                },
+                {
+                    "description": "Pad 2 [ROW9] of LED71 on F.Cu",
+                    "pos": {
+                        "x": 74.35,
+                        "y": 82.95
+                    },
+                    "uuid": "896bc47f-947e-45bf-ab49-1bd750854af4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED66-DO)] of LED66 on F.Cu",
+                    "pos": {
+                        "x": 50.35,
+                        "y": 101.55
+                    },
+                    "uuid": "bb29bd8f-099b-44d5-8dae-31d2f6a8aeb1"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED66-DO)] of LED67 on F.Cu",
+                    "pos": {
+                        "x": 53.35,
+                        "y": 106.05
+                    },
+                    "uuid": "26aacd51-421d-41c9-940f-2dbe4da28203"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED67-DO)] of LED67 on F.Cu",
+                    "pos": {
+                        "x": 54.25,
+                        "y": 104.55
+                    },
+                    "uuid": "3ac0485a-7781-49c3-9f5c-d63f7cf5955f"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED67-DO)] of LED68 on F.Cu",
+                    "pos": {
+                        "x": 61.75,
+                        "y": 95.55
+                    },
+                    "uuid": "a8d8fbbb-c74d-4fb7-b83f-06c775cf1c21"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED1-DO)] of LED2 on F.Cu",
+                    "pos": {
+                        "x": 101.052132,
+                        "y": 89.768528
+                    },
+                    "uuid": "ac84c930-ec7a-4c51-a0ad-c67b35353bc7"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED1-DO)] of LED1 on F.Cu",
+                    "pos": {
+                        "x": 111.85,
+                        "y": 92.67
+                    },
+                    "uuid": "7dca8109-2013-4c3c-b210-2e26a85b0147"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED2-DO)] of LED3 on F.Cu",
+                    "pos": {
+                        "x": 86.95,
+                        "y": 70.35
+                    },
+                    "uuid": "8c6b07f7-643a-4e94-9794-dd0193f3abb9"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED2-DO)] of LED2 on F.Cu",
+                    "pos": {
+                        "x": 100.627868,
+                        "y": 88.071472
+                    },
+                    "uuid": "58de5979-c6e4-4a37-87a9-119d5052cfd8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED3-DO)] of LED3 on F.Cu",
+                    "pos": {
+                        "x": 87.85,
+                        "y": 68.85
+                    },
+                    "uuid": "47815315-6121-4948-a265-e2aff754dd90"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED3-DO)] of LED4 on F.Cu",
+                    "pos": {
+                        "x": 91.15,
+                        "y": 66.15
+                    },
+                    "uuid": "c72979e7-028c-4143-81cc-0d0d812e9102"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [ROW4] of LED31 on F.Cu",
+                    "pos": {
+                        "x": 19.987868,
+                        "y": 14.151472
+                    },
+                    "uuid": "e2d90819-2c68-457a-9700-cdc419b9e38b"
+                },
+                {
+                    "description": "Pad 4 [ROW4] of LED30 on F.Cu",
+                    "pos": {
+                        "x": 25.651472,
+                        "y": 15.212132
+                    },
+                    "uuid": "98c133b4-a7f0-463b-8b3c-7906a421ccd2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED31-DO)] of LED32 on F.Cu",
+                    "pos": {
+                        "x": 15.25,
+                        "y": 67.05
+                    },
+                    "uuid": "3298ce82-eb29-45cf-b29c-89fc48090ccb"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED31-DO)] of LED31 on F.Cu",
+                    "pos": {
+                        "x": 20.412132,
+                        "y": 15.848528
+                    },
+                    "uuid": "4d332b10-9ac3-4b76-96f7-36515b605915"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED10-DI)] of LED9 on F.Cu",
+                    "pos": {
+                        "x": 113.05,
+                        "y": 43.65
+                    },
+                    "uuid": "dba3234b-a5e4-4b77-bd56-53a4a0132079"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED10-DI)] of LED10 on F.Cu",
+                    "pos": {
+                        "x": 116.35,
+                        "y": 40.95
+                    },
+                    "uuid": "7e798a62-3de2-49f0-8bb1-bde413bb2158"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED4-DO)] of LED4 on F.Cu",
+                    "pos": {
+                        "x": 92.05,
+                        "y": 64.65
+                    },
+                    "uuid": "b45e8d61-1913-4748-99f1-1ab022a3572f"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED4-DO)] of LED5 on F.Cu",
+                    "pos": {
+                        "x": 95.35,
+                        "y": 61.95
+                    },
+                    "uuid": "057d07f0-872a-47c8-b1eb-06ae57836e68"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED56-DO)] of LED57 on F.Cu",
+                    "pos": {
+                        "x": 58.45,
+                        "y": 108.75
+                    },
+                    "uuid": "e6aba982-a149-4a3b-8a73-30cdd6b3beda"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED56-DO)] of LED56 on F.Cu",
+                    "pos": {
+                        "x": 61.75,
+                        "y": 106.05
+                    },
+                    "uuid": "86eed197-380e-44b1-9d83-98c9ab4b5b36"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED57-DO)] of LED58 on F.Cu",
+                    "pos": {
+                        "x": 54.25,
+                        "y": 119.25
+                    },
+                    "uuid": "a221501c-f3b3-4cdf-9cb6-6b69e2adde7c"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED57-DO)] of LED57 on F.Cu",
+                    "pos": {
+                        "x": 57.55,
+                        "y": 110.25
+                    },
+                    "uuid": "8b1b910f-897d-4e4c-b00d-a5db8a3d564b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED39-DO)] of LED39 on F.Cu",
+                    "pos": {
+                        "x": 45.85,
+                        "y": 87.75
+                    },
+                    "uuid": "34c0eec1-3d89-4249-b392-e45b4a52b3b5"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED39-DO)] of LED40 on F.Cu",
+                    "pos": {
+                        "x": 49.15,
+                        "y": 85.05
+                    },
+                    "uuid": "167c1a32-e6f8-48d4-9b86-177a9d4b428a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [ROW5] of LED40 on F.Cu",
+                    "pos": {
+                        "x": 50.05,
+                        "y": 83.55
+                    },
+                    "uuid": "093c4596-88a0-4383-988f-4165b5b9a043"
+                },
+                {
+                    "description": "Pad 2 [ROW5] of LED41 on F.Cu",
+                    "pos": {
+                        "x": 54.012132,
+                        "y": 76.328528
+                    },
+                    "uuid": "9f3ad8bb-4f5e-49b8-847b-0c775503ce66"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED42-DO)] of LED42 on F.Cu",
+                    "pos": {
+                        "x": 53.587868,
+                        "y": 69.171472
+                    },
+                    "uuid": "62eed3d1-3ded-4cc3-8b3a-99e7bc468c6c"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED42-DO)] of LED43 on F.Cu",
+                    "pos": {
+                        "x": 54.012132,
+                        "y": 65.408528
+                    },
+                    "uuid": "b71e7806-d895-4851-856a-94ee72b6c7cf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED43-DO)] of LED44 on F.Cu",
+                    "pos": {
+                        "x": 53.35,
+                        "y": 59.85
+                    },
+                    "uuid": "eed9fcc1-9aa4-465d-b03f-1b8058756c65"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED43-DO)] of LED43 on F.Cu",
+                    "pos": {
+                        "x": 53.587868,
+                        "y": 63.711472
+                    },
+                    "uuid": "77e9f41f-d702-464d-9035-7d1b0123d508"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED11-DO)] of LED11 on F.Cu",
+                    "pos": {
+                        "x": 121.45,
+                        "y": 35.25
+                    },
+                    "uuid": "27056c06-abf7-4a54-9139-8d155b2f3f48"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED11-DO)] of LED12 on F.Cu",
+                    "pos": {
+                        "x": 124.75,
+                        "y": 32.55
+                    },
+                    "uuid": "2f325a9c-0846-4c08-8143-5be8b0a79db2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED12-DO)] of LED12 on F.Cu",
+                    "pos": {
+                        "x": 125.65,
+                        "y": 31.05
+                    },
+                    "uuid": "0f75b047-c449-4db0-afe7-9a2d61c1eb6b"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED12-DO)] of LED13 on F.Cu",
+                    "pos": {
+                        "x": 128.95,
+                        "y": 28.35
+                    },
+                    "uuid": "c2d5ba24-b773-487b-933e-638e0e66e791"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED6-DO)] of LED6 on F.Cu",
+                    "pos": {
+                        "x": 100.45,
+                        "y": 56.25
+                    },
+                    "uuid": "1248debf-866b-492c-915b-ae94011ed7c9"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED6-DO)] of LED7 on F.Cu",
+                    "pos": {
+                        "x": 103.75,
+                        "y": 53.55
+                    },
+                    "uuid": "6a0a26f0-59f3-49a0-be4c-dc05bcc1c10f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [ROW7] of LED61 on F.Cu",
+                    "pos": {
+                        "x": 41.65,
+                        "y": 131.85
+                    },
+                    "uuid": "a214948f-73e2-4c7a-98d1-a83996998353"
+                },
+                {
+                    "description": "Pad 4 [ROW7] of LED60 on F.Cu",
+                    "pos": {
+                        "x": 44.95,
+                        "y": 129.15
+                    },
+                    "uuid": "5916ae36-7b74-4fb8-beb4-ee2ca7b92d23"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED61-DO)] of LED62 on F.Cu",
+                    "pos": {
+                        "x": 37.45,
+                        "y": 136.05
+                    },
+                    "uuid": "2cfbc9e4-e890-4b15-819b-c0cba878756a"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED61-DO)] of LED61 on F.Cu",
+                    "pos": {
+                        "x": 40.75,
+                        "y": 133.35
+                    },
+                    "uuid": "4100b6d9-e88d-48bf-b55c-916be6f3f776"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED26-DO)] of LED27 on F.Cu",
+                    "pos": {
+                        "x": 50.35,
+                        "y": 32.25
+                    },
+                    "uuid": "2031252b-fcc9-43b1-b744-cf46367b1b7d"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED26-DO)] of LED26 on F.Cu",
+                    "pos": {
+                        "x": 53.05,
+                        "y": 35.55
+                    },
+                    "uuid": "86076a93-5c66-40aa-a845-c61ba793dd85"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED27-DO)] of LED28 on F.Cu",
+                    "pos": {
+                        "x": 46.15,
+                        "y": 28.05
+                    },
+                    "uuid": "3b0e2e47-fa48-4afb-90ae-0feaf02e15c2"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED27-DO)] of LED27 on F.Cu",
+                    "pos": {
+                        "x": 48.85,
+                        "y": 31.35
+                    },
+                    "uuid": "63232181-9aed-4101-98a9-bd84ce007715"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED71-DO)] of LED71 on F.Cu",
+                    "pos": {
+                        "x": 75.25,
+                        "y": 81.45
+                    },
+                    "uuid": "4deb1854-39d9-4841-8ad7-b6073483b62d"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED71-DO)] of LED72 on F.Cu",
+                    "pos": {
+                        "x": 78.55,
+                        "y": 78.75
+                    },
+                    "uuid": "4fab4982-8e88-451e-bb75-37f67ee03a28"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED47-DO)] of LED47 on F.Cu",
+                    "pos": {
+                        "x": 71.35,
+                        "y": 53.25
+                    },
+                    "uuid": "872f493c-31bb-4280-8128-68a1674d97f0"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED47-DO)] of LED48 on F.Cu",
+                    "pos": {
+                        "x": 74.05,
+                        "y": 56.55
+                    },
+                    "uuid": "d5592b9d-43f8-44d1-bc47-9b8752a96470"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED48-DO)] of LED48 on F.Cu",
+                    "pos": {
+                        "x": 75.55,
+                        "y": 57.45
+                    },
+                    "uuid": "300b537c-8f03-43f3-8249-81744a5d7953"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED48-DO)] of LED49 on F.Cu",
+                    "pos": {
+                        "x": 78.25,
+                        "y": 60.75
+                    },
+                    "uuid": "b4c64f02-30e5-44c9-8edf-fcf1a2239b5a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED18-DO)] of LED19 on F.Cu",
+                    "pos": {
+                        "x": 93.288528,
+                        "y": 27.387868
+                    },
+                    "uuid": "03871ac1-3b0c-4b8c-a8be-70cdba73bff1"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED18-DO)] of LED18 on F.Cu",
+                    "pos": {
+                        "x": 98.311472,
+                        "y": 27.812132
+                    },
+                    "uuid": "88ce3fcb-277f-45cb-bcfe-3d82ffbc90ea"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED19-DO)] of LED20 on F.Cu",
+                    "pos": {
+                        "x": 86.568528,
+                        "y": 27.387868
+                    },
+                    "uuid": "106c5cf8-b779-4a63-8ca8-7b4ff0f5bce2"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED19-DO)] of LED19 on F.Cu",
+                    "pos": {
+                        "x": 91.591472,
+                        "y": 27.812132
+                    },
+                    "uuid": "7d5a2a49-ac63-4ac0-bf1a-d2c6bd591e12"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [ROW6] of LED50 on F.Cu",
+                    "pos": {
+                        "x": 83.412132,
+                        "y": 66.248528
+                    },
+                    "uuid": "1548764d-2eae-4ba5-b304-cff58f252e18"
+                },
+                {
+                    "description": "Pad 2 [ROW6] of LED51 on F.Cu",
+                    "pos": {
+                        "x": 83.65,
+                        "y": 83.55
+                    },
+                    "uuid": "0383fd4f-c43d-4179-a4de-389b4f89bcc9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED51-DO)] of LED52 on F.Cu",
+                    "pos": {
+                        "x": 79.45,
+                        "y": 87.75
+                    },
+                    "uuid": "ba141739-f820-4a80-8992-83e91535c8ca"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED51-DO)] of LED51 on F.Cu",
+                    "pos": {
+                        "x": 82.75,
+                        "y": 85.05
+                    },
+                    "uuid": "d1e82e85-0476-4553-a32b-5111591e40bf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED28-DO)] of LED29 on F.Cu",
+                    "pos": {
+                        "x": 37.75,
+                        "y": 19.65
+                    },
+                    "uuid": "6bcd3e60-5ee7-4414-abb6-6bace2b4f4bb"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED28-DO)] of LED28 on F.Cu",
+                    "pos": {
+                        "x": 44.65,
+                        "y": 27.15
+                    },
+                    "uuid": "47499847-7d38-4696-b541-287714a08d1b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED29-DO)] of LED30 on F.Cu",
+                    "pos": {
+                        "x": 27.348528,
+                        "y": 14.787868
+                    },
+                    "uuid": "92359d93-bfcc-4d8e-9c23-8d612c627d6f"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED29-DO)] of LED29 on F.Cu",
+                    "pos": {
+                        "x": 36.25,
+                        "y": 18.75
+                    },
+                    "uuid": "98112af5-94d0-4b5e-a8ca-12d6689dba27"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED64-DO)] of LED64 on F.Cu",
+                    "pos": {
+                        "x": 29.05,
+                        "y": 144.45
+                    },
+                    "uuid": "3ab8aa43-2b7c-418c-8413-f87f0e545f09"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED64-DO)] of LED65 on F.Cu",
+                    "pos": {
+                        "x": 44.65,
+                        "y": 96.45
+                    },
+                    "uuid": "e5bb33c7-ff00-435c-901f-98096121c68f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED65-DO)] of LED65 on F.Cu",
+                    "pos": {
+                        "x": 46.15,
+                        "y": 97.35
+                    },
+                    "uuid": "d8ea9721-c249-4035-b9bd-d40e6031b7d3"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED65-DO)] of LED66 on F.Cu",
+                    "pos": {
+                        "x": 48.85,
+                        "y": 100.65
+                    },
+                    "uuid": "fae8c6ca-81ef-4fba-afce-08bc7f0d52f7"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED36-DO)] of LED36 on F.Cu",
+                    "pos": {
+                        "x": 33.549999,
+                        "y": 84.75
+                    },
+                    "uuid": "085de9bf-b400-4ac5-af9e-48ad29bbdc4a"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED36-DO)] of LED37 on F.Cu",
+                    "pos": {
+                        "x": 36.25,
+                        "y": 88.05
+                    },
+                    "uuid": "42a6251e-acd8-4e34-a6b4-443eb728c1c9"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED37-DO)] of LED37 on F.Cu",
+                    "pos": {
+                        "x": 37.75,
+                        "y": 88.95
+                    },
+                    "uuid": "a970caf6-cbde-419f-b3d2-37d5bf828fa1"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED37-DO)] of LED38 on F.Cu",
+                    "pos": {
+                        "x": 40.75,
+                        "y": 93.45
+                    },
+                    "uuid": "ebf4e8e5-fc0e-4655-b120-be465ae61df3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED54-DO)] of LED55 on F.Cu",
+                    "pos": {
+                        "x": 66.85,
+                        "y": 100.35
+                    },
+                    "uuid": "88d65537-7fb3-487f-b4ad-7513be4a20f3"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED54-DO)] of LED54 on F.Cu",
+                    "pos": {
+                        "x": 70.15,
+                        "y": 97.65
+                    },
+                    "uuid": "eb8cb924-b426-41fd-8538-755f698f39c4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED55-DO)] of LED56 on F.Cu",
+                    "pos": {
+                        "x": 62.65,
+                        "y": 104.55
+                    },
+                    "uuid": "491ef9c6-2a57-48a3-a42b-2020bb5c3741"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED55-DO)] of LED55 on F.Cu",
+                    "pos": {
+                        "x": 65.95,
+                        "y": 101.85
+                    },
+                    "uuid": "7aef65ea-4ffa-4c0b-9a71-efba2e506a60"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED59-DO)] of LED60 on F.Cu",
+                    "pos": {
+                        "x": 45.85,
+                        "y": 127.65
+                    },
+                    "uuid": "df2ff68a-af3c-49d5-9eae-bcd8f89dad33"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED59-DO)] of LED59 on F.Cu",
+                    "pos": {
+                        "x": 49.15,
+                        "y": 124.95
+                    },
+                    "uuid": "c481ab4f-e55e-4c7d-95be-0281e78c8303"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED34-DO)] of LED34 on F.Cu",
+                    "pos": {
+                        "x": 25.15,
+                        "y": 76.35
+                    },
+                    "uuid": "ef4ba4e5-8471-498b-8573-8e39d5ac72ee"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED34-DO)] of LED35 on F.Cu",
+                    "pos": {
+                        "x": 27.85,
+                        "y": 79.65
+                    },
+                    "uuid": "8ce3d23f-b528-4cd2-81ba-b8684c02f6ce"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED35-DO)] of LED35 on F.Cu",
+                    "pos": {
+                        "x": 29.35,
+                        "y": 80.55
+                    },
+                    "uuid": "e55715b7-5acb-44d4-85b8-5b65401e6694"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED35-DO)] of LED36 on F.Cu",
+                    "pos": {
+                        "x": 32.049999,
+                        "y": 83.85
+                    },
+                    "uuid": "fc504b36-a047-4323-834f-661d17a47758"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED41-DO)] of LED41 on F.Cu",
+                    "pos": {
+                        "x": 53.587868,
+                        "y": 74.631472
+                    },
+                    "uuid": "bef545ae-d672-44c3-bd8b-10fafd1382b3"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED41-DO)] of LED42 on F.Cu",
+                    "pos": {
+                        "x": 54.012132,
+                        "y": 70.868528
+                    },
+                    "uuid": "59daeeba-829c-49ab-bea0-d51941f11e31"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED33-DO)] of LED33 on F.Cu",
+                    "pos": {
+                        "x": 20.95,
+                        "y": 72.15
+                    },
+                    "uuid": "8930631e-1eec-48dc-b018-57193f7b8e59"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED33-DO)] of LED34 on F.Cu",
+                    "pos": {
+                        "x": 23.65,
+                        "y": 75.45
+                    },
+                    "uuid": "39db4972-c359-4458-96bc-260f6043497e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [ROW3] of LED21 on F.Cu",
+                    "pos": {
+                        "x": 75.25,
+                        "y": 31.05
+                    },
+                    "uuid": "9a260cc3-9587-4d5a-8770-6c32411f1019"
+                },
+                {
+                    "description": "Pad 4 [ROW3] of LED20 on F.Cu",
+                    "pos": {
+                        "x": 84.871472,
+                        "y": 27.812132
+                    },
+                    "uuid": "7d9cb6e7-cbe7-4c5c-b154-d6af5cd1b9b3"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED72-DO)] of LED72 on F.Cu",
+                    "pos": {
+                        "x": 79.45,
+                        "y": 77.25
+                    },
+                    "uuid": "28f6dda3-fc08-4e52-a67d-8274047d9f30"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED72-DO)] of LED73 on F.Cu",
+                    "pos": {
+                        "x": 82.75,
+                        "y": 74.55
+                    },
+                    "uuid": "66530947-f352-485d-a050-44d3a6548993"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [LED_OUT] of LED73 on F.Cu",
+                    "pos": {
+                        "x": 83.65,
+                        "y": 73.05
+                    },
+                    "uuid": "6bb8f13f-b6ad-41ef-8088-a61af581ecd1"
+                },
+                {
+                    "description": "Pad 1 [LED_OUT] of LED_OUT1 on B.Cu",
+                    "pos": {
+                        "x": 140.0,
+                        "y": 125.0
+                    },
+                    "uuid": "4ca21a10-04b5-4d7f-8fc3-283130b4ff0e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED68-DO)] of LED68 on F.Cu",
+                    "pos": {
+                        "x": 62.65,
+                        "y": 94.05
+                    },
+                    "uuid": "b155d612-fc29-44b2-8931-44467be36e30"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED68-DO)] of LED69 on F.Cu",
+                    "pos": {
+                        "x": 65.95,
+                        "y": 91.35
+                    },
+                    "uuid": "15361128-a522-4101-87ed-164dbeeaf52f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED58-DO)] of LED59 on F.Cu",
+                    "pos": {
+                        "x": 50.05,
+                        "y": 123.45
+                    },
+                    "uuid": "af0de9d2-6f8d-4c7a-8605-4d22b02548ac"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED58-DO)] of LED58 on F.Cu",
+                    "pos": {
+                        "x": 53.35,
+                        "y": 120.75
+                    },
+                    "uuid": "cb3e781f-c482-4476-a6a7-5ff9b896aacf"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED46-DO)] of LED46 on F.Cu",
+                    "pos": {
+                        "x": 67.15,
+                        "y": 49.05
+                    },
+                    "uuid": "f7c7496f-2490-4f17-92d0-0cb9dae3b75a"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED46-DO)] of LED47 on F.Cu",
+                    "pos": {
+                        "x": 69.85,
+                        "y": 52.35
+                    },
+                    "uuid": "eab98289-a773-4615-8c80-2c15d177cbac"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED21-DO)] of LED22 on F.Cu",
+                    "pos": {
+                        "x": 71.05,
+                        "y": 35.25
+                    },
+                    "uuid": "5f849de9-41db-44ca-bb0d-ed360e08fdc3"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED21-DO)] of LED21 on F.Cu",
+                    "pos": {
+                        "x": 74.35,
+                        "y": 32.55
+                    },
+                    "uuid": "64cdd1d4-77dc-4c96-ae10-3a57a06ff4da"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED62-DO)] of LED63 on F.Cu",
+                    "pos": {
+                        "x": 33.249999,
+                        "y": 140.25
+                    },
+                    "uuid": "b06ee034-548d-481d-b56e-f5907f9ee1e4"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED62-DO)] of LED62 on F.Cu",
+                    "pos": {
+                        "x": 36.55,
+                        "y": 137.55
+                    },
+                    "uuid": "db862251-d45c-4366-b914-a5f4b308c823"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED49-DO)] of LED49 on F.Cu",
+                    "pos": {
+                        "x": 79.75,
+                        "y": 61.65
+                    },
+                    "uuid": "d34d687f-a1f8-41b2-a199-49b40647b9ab"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED49-DO)] of LED50 on F.Cu",
+                    "pos": {
+                        "x": 82.987868,
+                        "y": 64.551472
+                    },
+                    "uuid": "625958d9-273a-4f52-a32c-2576dec93f23"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [ROW2] of LED10 on F.Cu",
+                    "pos": {
+                        "x": 117.25,
+                        "y": 39.45
+                    },
+                    "uuid": "60adcf09-ce5d-4264-9430-b8b06a2a98ab"
+                },
+                {
+                    "description": "Pad 2 [ROW2] of LED11 on F.Cu",
+                    "pos": {
+                        "x": 120.55,
+                        "y": 36.75
+                    },
+                    "uuid": "f107955e-b6d4-4016-b925-7776b76d3808"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED24-DO)] of LED25 on F.Cu",
+                    "pos": {
+                        "x": 58.75,
+                        "y": 40.65
+                    },
+                    "uuid": "0aa2124e-f30a-412e-b653-106dc4b8a57c"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED24-DO)] of LED24 on F.Cu",
+                    "pos": {
+                        "x": 61.45,
+                        "y": 43.95
+                    },
+                    "uuid": "cf0cd3b4-d9f1-4b06-8df2-7566081a7646"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED25-DO)] of LED26 on F.Cu",
+                    "pos": {
+                        "x": 54.55,
+                        "y": 36.45
+                    },
+                    "uuid": "40360768-06aa-4354-8757-39419e9d63e3"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED25-DO)] of LED25 on F.Cu",
+                    "pos": {
+                        "x": 57.25,
+                        "y": 39.75
+                    },
+                    "uuid": "178af47e-84b4-43af-a4bf-727f21e27c68"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED16-DO)] of LED17 on F.Cu",
+                    "pos": {
+                        "x": 106.728528,
+                        "y": 27.387868
+                    },
+                    "uuid": "6eb4b99b-b8d0-4c6f-8f33-7debd803ab67"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED16-DO)] of LED16 on F.Cu",
+                    "pos": {
+                        "x": 111.751472,
+                        "y": 27.812132
+                    },
+                    "uuid": "2d57ba94-1509-4636-8f1e-e604c79fb91f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED17-DO)] of LED18 on F.Cu",
+                    "pos": {
+                        "x": 100.008528,
+                        "y": 27.387868
+                    },
+                    "uuid": "275f3e94-86c9-4bb9-b6bf-dcbd6333b262"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED17-DO)] of LED17 on F.Cu",
+                    "pos": {
+                        "x": 105.031472,
+                        "y": 27.812132
+                    },
+                    "uuid": "7076e954-f558-4b91-a391-4656a67a94c8"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED22-DO)] of LED23 on F.Cu",
+                    "pos": {
+                        "x": 66.85,
+                        "y": 39.45
+                    },
+                    "uuid": "8fd9f35f-beb0-4016-b122-3421816c04a9"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED22-DO)] of LED22 on F.Cu",
+                    "pos": {
+                        "x": 70.15,
+                        "y": 36.75
+                    },
+                    "uuid": "c33e200a-1700-4b54-a6a2-c31916a09ed4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED38-DO)] of LED38 on F.Cu",
+                    "pos": {
+                        "x": 41.65,
+                        "y": 91.95
+                    },
+                    "uuid": "34777b3e-f717-4e23-8636-3284a8349763"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED38-DO)] of LED39 on F.Cu",
+                    "pos": {
+                        "x": 44.95,
+                        "y": 89.25
+                    },
+                    "uuid": "d98aac7d-2ea4-4e23-a07c-ccb8bc72b36b"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED45-DO)] of LED45 on F.Cu",
+                    "pos": {
+                        "x": 58.848528,
+                        "y": 48.387868
+                    },
+                    "uuid": "2de1f700-c505-4adf-a2e0-b4c09c228936"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED45-DO)] of LED46 on F.Cu",
+                    "pos": {
+                        "x": 65.65,
+                        "y": 48.15
+                    },
+                    "uuid": "f5cbc3c5-c7b0-4520-a7f6-d6c3c8babd8f"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED13-DO)] of LED13 on F.Cu",
+                    "pos": {
+                        "x": 129.85,
+                        "y": 26.85
+                    },
+                    "uuid": "e0a84851-167d-4df0-8dde-bf4a0de3e8d3"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED13-DO)] of LED14 on F.Cu",
+                    "pos": {
+                        "x": 133.15,
+                        "y": 24.15
+                    },
+                    "uuid": "f017d3ac-5c28-48b5-b4f1-9665fca9f752"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED14-DO)] of LED14 on F.Cu",
+                    "pos": {
+                        "x": 134.05,
+                        "y": 22.65
+                    },
+                    "uuid": "fd0fea0b-ae7d-4dac-ba61-bf11a43c19b2"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED14-DO)] of LED15 on F.Cu",
+                    "pos": {
+                        "x": 138.648528,
+                        "y": 18.987868
+                    },
+                    "uuid": "23430fbc-6dc1-4837-b354-57c45b79182a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED52-DO)] of LED53 on F.Cu",
+                    "pos": {
+                        "x": 75.25,
+                        "y": 91.95
+                    },
+                    "uuid": "ff347d6d-0fb5-42fc-b140-eebf00247c5a"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED52-DO)] of LED52 on F.Cu",
+                    "pos": {
+                        "x": 78.55,
+                        "y": 89.25
+                    },
+                    "uuid": "aadffe7a-4709-472c-80b1-d24ae23bc3c5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED15-DO)] of LED16 on F.Cu",
+                    "pos": {
+                        "x": 113.448528,
+                        "y": 27.387868
+                    },
+                    "uuid": "e1432cd5-2599-4968-abfb-23c7ca5e0992"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED15-DO)] of LED15 on F.Cu",
+                    "pos": {
+                        "x": 136.951472,
+                        "y": 19.412132
+                    },
+                    "uuid": "63ab2e94-36cb-4ad2-bf8a-fc9fed38058e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED23-DO)] of LED24 on F.Cu",
+                    "pos": {
+                        "x": 62.95,
+                        "y": 44.85
+                    },
+                    "uuid": "7391a8ee-8e4f-4582-a3a0-5a6fa6148748"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED23-DO)] of LED23 on F.Cu",
+                    "pos": {
+                        "x": 65.95,
+                        "y": 40.95
+                    },
+                    "uuid": "7d3523f0-4bd9-4e44-8b11-c96277ff33da"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED5-DO)] of LED5 on F.Cu",
+                    "pos": {
+                        "x": 96.25,
+                        "y": 60.45
+                    },
+                    "uuid": "a18c681a-339c-4ac7-a1b7-c35bc3217a6f"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED5-DO)] of LED6 on F.Cu",
+                    "pos": {
+                        "x": 99.55,
+                        "y": 57.75
+                    },
+                    "uuid": "6a15dd26-9563-4a07-ac2d-e04f19805d91"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED53-DO)] of LED54 on F.Cu",
+                    "pos": {
+                        "x": 71.05,
+                        "y": 96.15
+                    },
+                    "uuid": "0e7bf81f-f5e6-4096-97ea-9a3494aa556a"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED53-DO)] of LED53 on F.Cu",
+                    "pos": {
+                        "x": 74.35,
+                        "y": 93.45
+                    },
+                    "uuid": "e73b26a6-302c-4f57-b490-aa07f04b149e"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED32-DO)] of LED32 on F.Cu",
+                    "pos": {
+                        "x": 16.75,
+                        "y": 67.95
+                    },
+                    "uuid": "b5f975f0-052d-426a-b7f1-00085273582d"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED32-DO)] of LED33 on F.Cu",
+                    "pos": {
+                        "x": 19.45,
+                        "y": 71.25
+                    },
+                    "uuid": "227ceadd-6dda-4017-b56d-5c52ca331fd5"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [Net-(LED44-DO)] of LED44 on F.Cu",
+                    "pos": {
+                        "x": 54.25,
+                        "y": 58.35
+                    },
+                    "uuid": "0bd43c29-8a3e-4fad-ab86-725d7386d1f4"
+                },
+                {
+                    "description": "Pad 2 [Net-(LED44-DO)] of LED45 on F.Cu",
+                    "pos": {
+                        "x": 57.151472,
+                        "y": 48.812132
+                    },
+                    "uuid": "8fc9aeed-f2c1-4a3e-a979-5f5615b18a6a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [Net-(LED63-DO)] of LED64 on F.Cu",
+                    "pos": {
+                        "x": 28.15,
+                        "y": 145.95
+                    },
+                    "uuid": "744c706f-6072-41b9-b26a-3b72b18595bb"
+                },
+                {
+                    "description": "Pad 4 [Net-(LED63-DO)] of LED63 on F.Cu",
+                    "pos": {
+                        "x": 32.349999,
+                        "y": 141.75
+                    },
+                    "uuid": "2e3b01ea-e001-4c96-97c8-43db3965054c"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [LED_IN] of LED_IN1 on B.Cu",
+                    "pos": {
+                        "x": 118.0,
+                        "y": 141.0
+                    },
+                    "uuid": "45d51223-a28c-4b67-87c3-0e83c8f99443"
+                },
+                {
+                    "description": "Pad 8 [LED_IN] of U1 on B.Cu",
+                    "pos": {
+                        "x": 132.165,
+                        "y": 114.38
+                    },
+                    "uuid": "a8ad732e-ff02-4d24-b003-e3e75c1cf3a2"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 8 [LED_IN] of U1 on B.Cu",
+                    "pos": {
+                        "x": 132.165,
+                        "y": 114.38
+                    },
+                    "uuid": "a8ad732e-ff02-4d24-b003-e3e75c1cf3a2"
+                },
+                {
+                    "description": "Pad 2 [LED_IN] of LED1 on F.Cu",
+                    "pos": {
+                        "x": 113.35,
+                        "y": 93.57
+                    },
+                    "uuid": "8b0a9204-61d6-41d4-9210-bd670bd47058"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 1 [BUTTON_01] of SW1 on B.Cu",
+                    "pos": {
+                        "x": 109.0,
+                        "y": 108.15
+                    },
+                    "uuid": "085e3b72-c058-490e-8a86-564e99e1cf44"
+                },
+                {
+                    "description": "Pad 1 [BUTTON_01] of U1 on B.Cu",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 129.62
+                    },
+                    "uuid": "2151f2d2-d547-4e81-9c1c-d35b3eedaf1a"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [BUTTON_02] of U1 on B.Cu",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 127.08
+                    },
+                    "uuid": "b7158d99-bc07-49f7-a7cc-ff51947b9adb"
+                },
+                {
+                    "description": "Pad 1 [BUTTON_02] of SW3 on B.Cu",
+                    "pos": {
+                        "x": 145.0,
+                        "y": 108.15
+                    },
+                    "uuid": "41ba53d7-50a2-4848-a0fc-3501d46a91c4"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 2 [BUTTON_03] of SW2 on B.Cu",
+                    "pos": {
+                        "x": 103.0,
+                        "y": 132.15
+                    },
+                    "uuid": "046ba9cf-e4aa-4a52-afb1-f99ad5c986ad"
+                },
+                {
+                    "description": "Pad 3 [BUTTON_03] of U1 on B.Cu",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 124.54
+                    },
+                    "uuid": "27d86c01-5bb1-488f-a0a7-ea64725b4b73"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        },
+        {
+            "description": "Missing connection between items",
+            "items": [
+                {
+                    "description": "Pad 4 [BUTTON_04] of U1 on B.Cu",
+                    "pos": {
+                        "x": 116.0,
+                        "y": 122.0
+                    },
+                    "uuid": "0b6ccbe3-1353-439c-b64e-53eac947ea86"
+                },
+                {
+                    "description": "Pad 2 [BUTTON_04] of SW4 on B.Cu",
+                    "pos": {
+                        "x": 139.0,
+                        "y": 132.15
+                    },
+                    "uuid": "292c07ed-9009-4f01-8c41-afd74d9d36ac"
+                }
+            ],
+            "severity": "error",
+            "type": "unconnected_items"
+        }
+    ],
+    "violations": []
+}

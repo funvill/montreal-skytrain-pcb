@@ -1,0 +1,495 @@
+{
+ "city": "montreal",
+ "lines": [
+  {
+   "id": "green",
+   "name": "Ligne verte",
+   "color": "#008E4F",
+   "paths": [
+    [
+     "angrignon",
+     "monk",
+     "jolicoeur",
+     "verdun",
+     "de-l-eglise",
+     "lasalle",
+     "charlevoix",
+     "lionel-groulx",
+     "atwater",
+     "guy-concordia",
+     "peel",
+     "mcgill",
+     "place-des-arts",
+     "saint-laurent",
+     "berri-uqam",
+     "beaudry",
+     "papineau",
+     "frontenac",
+     "prefontaine",
+     "joliette",
+     "pie-ix",
+     "viau",
+     "assomption",
+     "cadillac",
+     "langelier",
+     "radisson",
+     "honore-beaugrand"
+    ]
+   ]
+  },
+  {
+   "id": "orange",
+   "name": "Ligne orange",
+   "color": "#EF8122",
+   "paths": [
+    [
+     "cote-vertu",
+     "du-college",
+     "de-la-savane",
+     "namur",
+     "plamondon",
+     "cote-sainte-catherine",
+     "snowdon",
+     "villa-maria",
+     "vendome",
+     "place-saint-henri",
+     "lionel-groulx",
+     "georges-vanier",
+     "lucien-l-allier",
+     "bonaventure",
+     "square-victoria-oaci",
+     "place-d-armes",
+     "champ-de-mars",
+     "berri-uqam",
+     "sherbrooke",
+     "mont-royal",
+     "laurier",
+     "rosemont",
+     "beaubien",
+     "jean-talon",
+     "jarry",
+     "cremazie",
+     "sauve",
+     "henri-bourassa",
+     "cartier",
+     "de-la-concorde",
+     "montmorency"
+    ]
+   ]
+  },
+  {
+   "id": "yellow",
+   "name": "Ligne jaune",
+   "color": "#FFE300",
+   "paths": [
+    [
+     "berri-uqam",
+     "jean-drapeau",
+     "longueuil-universite-de-sherbrooke"
+    ]
+   ]
+  },
+  {
+   "id": "blue",
+   "name": "Ligne bleue",
+   "color": "#0083CA",
+   "paths": [
+    [
+     "snowdon",
+     "cote-des-neiges",
+     "universite-de-montreal",
+     "edouard-montpetit",
+     "outremont",
+     "acadie",
+     "parc",
+     "de-castelnau",
+     "jean-talon",
+     "fabre",
+     "d-iberville",
+     "saint-michel",
+     "vertieres",
+     "mary-two-axe-earley",
+     "cesira-parisotto",
+     "madeleine-parent",
+     "anjou"
+    ]
+   ]
+  }
+ ],
+ "stations": {
+  "angrignon": {
+   "name": "Angrignon"
+  },
+  "monk": {
+   "name": "Monk"
+  },
+  "jolicoeur": {
+   "name": "Jolicoeur"
+  },
+  "verdun": {
+   "name": "Verdun"
+  },
+  "de-l-eglise": {
+   "name": "De l'Église"
+  },
+  "lasalle": {
+   "name": "LaSalle"
+  },
+  "charlevoix": {
+   "name": "Charlevoix"
+  },
+  "lionel-groulx": {
+   "name": "Lionel-Groulx",
+   "interchange": true
+  },
+  "atwater": {
+   "name": "Atwater"
+  },
+  "guy-concordia": {
+   "name": "Guy-Concordia"
+  },
+  "peel": {
+   "name": "Peel"
+  },
+  "mcgill": {
+   "name": "McGill"
+  },
+  "place-des-arts": {
+   "name": "Place-des-Arts",
+   "wrap": [
+    "Place-",
+    "des-Arts"
+   ]
+  },
+  "saint-laurent": {
+   "name": "Saint-Laurent"
+  },
+  "berri-uqam": {
+   "name": "Berri-UQAM",
+   "interchange": true
+  },
+  "beaudry": {
+   "name": "Beaudry"
+  },
+  "papineau": {
+   "name": "Papineau"
+  },
+  "frontenac": {
+   "name": "Frontenac"
+  },
+  "prefontaine": {
+   "name": "Préfontaine"
+  },
+  "joliette": {
+   "name": "Joliette"
+  },
+  "pie-ix": {
+   "name": "Pie-IX"
+  },
+  "viau": {
+   "name": "Viau"
+  },
+  "assomption": {
+   "name": "Assomption"
+  },
+  "cadillac": {
+   "name": "Cadillac"
+  },
+  "langelier": {
+   "name": "Langelier"
+  },
+  "radisson": {
+   "name": "Radisson"
+  },
+  "honore-beaugrand": {
+   "name": "Honoré-Beaugrand",
+   "wrap": [
+    "Honoré-",
+    "Beaugrand"
+   ]
+  },
+  "cote-vertu": {
+   "name": "Côte-Vertu"
+  },
+  "du-college": {
+   "name": "Du Collège"
+  },
+  "de-la-savane": {
+   "name": "De La Savane"
+  },
+  "namur": {
+   "name": "Namur"
+  },
+  "plamondon": {
+   "name": "Plamondon"
+  },
+  "cote-sainte-catherine": {
+   "name": "Côte-Sainte-Catherine",
+   "short": "Côte-Ste-Catherine",
+   "wrap": [
+    "Côte-Sainte-",
+    "Catherine"
+   ]
+  },
+  "snowdon": {
+   "name": "Snowdon",
+   "interchange": true
+  },
+  "villa-maria": {
+   "name": "Villa-Maria"
+  },
+  "vendome": {
+   "name": "Vendôme"
+  },
+  "place-saint-henri": {
+   "name": "Place-Saint-Henri",
+   "short": "Place-St-Henri",
+   "wrap": [
+    "Place-",
+    "Saint-Henri"
+   ]
+  },
+  "georges-vanier": {
+   "name": "Georges-Vanier",
+   "wrap": [
+    "Georges-",
+    "Vanier"
+   ]
+  },
+  "lucien-l-allier": {
+   "name": "Lucien-L'Allier",
+   "wrap": [
+    "Lucien-",
+    "L'Allier"
+   ]
+  },
+  "bonaventure": {
+   "name": "Bonaventure"
+  },
+  "square-victoria-oaci": {
+   "name": "Square-Victoria-OACI",
+   "short": "Square-Victoria",
+   "wrap": [
+    "Square-",
+    "Victoria-OACI"
+   ]
+  },
+  "place-d-armes": {
+   "name": "Place-d'Armes"
+  },
+  "champ-de-mars": {
+   "name": "Champ-de-Mars"
+  },
+  "sherbrooke": {
+   "name": "Sherbrooke"
+  },
+  "mont-royal": {
+   "name": "Mont-Royal"
+  },
+  "laurier": {
+   "name": "Laurier"
+  },
+  "rosemont": {
+   "name": "Rosemont"
+  },
+  "beaubien": {
+   "name": "Beaubien"
+  },
+  "jean-talon": {
+   "name": "Jean-Talon",
+   "interchange": true
+  },
+  "jarry": {
+   "name": "Jarry"
+  },
+  "cremazie": {
+   "name": "Crémazie"
+  },
+  "sauve": {
+   "name": "Sauvé"
+  },
+  "henri-bourassa": {
+   "name": "Henri-Bourassa",
+   "wrap": [
+    "Henri-",
+    "Bourassa"
+   ]
+  },
+  "cartier": {
+   "name": "Cartier"
+  },
+  "de-la-concorde": {
+   "name": "De la Concorde",
+   "wrap": [
+    "De la",
+    "Concorde"
+   ]
+  },
+  "montmorency": {
+   "name": "Montmorency"
+  },
+  "jean-drapeau": {
+   "name": "Jean-Drapeau"
+  },
+  "longueuil-universite-de-sherbrooke": {
+   "name": "Longueuil–Université-de-Sherbrooke",
+   "short": "Longueuil",
+   "wrap": [
+    "Longueuil–",
+    "Université-de-",
+    "Sherbrooke"
+   ]
+  },
+  "cote-des-neiges": {
+   "name": "Côte-des-Neiges",
+   "wrap": [
+    "Côte-des-",
+    "Neiges"
+   ]
+  },
+  "universite-de-montreal": {
+   "name": "Université-de-Montréal",
+   "short": "U. de Montréal",
+   "wrap": [
+    "Université-",
+    "de-Montréal"
+   ]
+  },
+  "edouard-montpetit": {
+   "name": "Édouard-Montpetit",
+   "wrap": [
+    "Édouard-",
+    "Montpetit"
+   ]
+  },
+  "outremont": {
+   "name": "Outremont"
+  },
+  "acadie": {
+   "name": "Acadie"
+  },
+  "parc": {
+   "name": "Parc"
+  },
+  "de-castelnau": {
+   "name": "De Castelnau"
+  },
+  "fabre": {
+   "name": "Fabre"
+  },
+  "d-iberville": {
+   "name": "D'Iberville"
+  },
+  "saint-michel": {
+   "name": "Saint-Michel"
+  },
+  "vertieres": {
+   "name": "Vertières",
+   "future": true
+  },
+  "mary-two-axe-earley": {
+   "name": "Mary-Two-Axe-Earley",
+   "future": true,
+   "wrap": [
+    "Mary-Two-",
+    "Axe-Earley"
+   ]
+  },
+  "cesira-parisotto": {
+   "name": "Césira-Parisotto",
+   "future": true,
+   "wrap": [
+    "Césira-",
+    "Parisotto"
+   ]
+  },
+  "madeleine-parent": {
+   "name": "Madeleine-Parent",
+   "future": true,
+   "wrap": [
+    "Madeleine-",
+    "Parent"
+   ]
+  },
+  "anjou": {
+   "name": "Anjou",
+   "future": true
+  }
+ },
+ "extras": [],
+ "chain": [
+  "longueuil-universite-de-sherbrooke",
+  "jean-drapeau",
+  "berri-uqam",
+  "beaudry",
+  "papineau",
+  "frontenac",
+  "prefontaine",
+  "joliette",
+  "pie-ix",
+  "viau",
+  "assomption",
+  "cadillac",
+  "langelier",
+  "radisson",
+  "honore-beaugrand",
+  "anjou",
+  "madeleine-parent",
+  "cesira-parisotto",
+  "mary-two-axe-earley",
+  "vertieres",
+  "saint-michel",
+  "d-iberville",
+  "fabre",
+  "jean-talon",
+  "jarry",
+  "cremazie",
+  "sauve",
+  "henri-bourassa",
+  "cartier",
+  "de-la-concorde",
+  "montmorency",
+  "cote-vertu",
+  "du-college",
+  "de-la-savane",
+  "namur",
+  "plamondon",
+  "cote-sainte-catherine",
+  "snowdon",
+  "cote-des-neiges",
+  "universite-de-montreal",
+  "edouard-montpetit",
+  "outremont",
+  "acadie",
+  "parc",
+  "de-castelnau",
+  "beaubien",
+  "rosemont",
+  "laurier",
+  "mont-royal",
+  "sherbrooke",
+  "champ-de-mars",
+  "place-d-armes",
+  "square-victoria-oaci",
+  "bonaventure",
+  "lucien-l-allier",
+  "georges-vanier",
+  "lionel-groulx",
+  "charlevoix",
+  "lasalle",
+  "de-l-eglise",
+  "verdun",
+  "jolicoeur",
+  "monk",
+  "angrignon",
+  "villa-maria",
+  "vendome",
+  "place-saint-henri",
+  "atwater",
+  "guy-concordia",
+  "peel",
+  "mcgill",
+  "place-des-arts",
+  "saint-laurent"
+ ]
+}
