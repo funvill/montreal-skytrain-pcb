@@ -1,8 +1,11 @@
 """Turn kicad-cli's raw position/BOM exports into JLCPCB's BOM + CPL and zip
-the gerbers. Run from ai-v3/hardware after the kicad-cli exports (see
+the gerbers. Run from hardware/ after the kicad-cli exports (see
 jlcpcb/README.md):
 
-    python ../tools/make_jlcpcb.py [jlcpcb]
+    python ../tools/make_jlcpcb.py [jlcpcb] [STAMP]
+
+With STAMP (e.g. 2026-10-18-1117) the three output files are named
+montreal-skytrain-pcb-STAMP-{gerbers.zip,bom-jlcpcb.csv,cpl-jlcpcb.csv}.
 
 Only parts with an LCSC number are placed; the XIAO module, test points and
 mounting holes are left out of both files.
@@ -15,6 +18,8 @@ import sys
 import zipfile
 
 out = sys.argv[1] if len(sys.argv) > 1 else "jlcpcb"
+stamp = sys.argv[2] if len(sys.argv) > 2 else None
+name = (lambda f: f"montreal-skytrain-pcb-{stamp}-{f}") if stamp else (lambda f: f)
 
 # --- BOM: expand reference ranges, one line per LCSC part -----------------
 def expand(refs):
@@ -42,7 +47,7 @@ for r in rows:
         placed[ref] = lcsc
     bom.append({"Comment": r["Value"], "Designator": ",".join(refs),
                 "Footprint": r["Footprint"].split(":")[-1], "LCSC Part #": lcsc})
-with open(os.path.join(out, "bom-jlcpcb.csv"), "w", encoding="utf-8", newline="") as f:
+with open(os.path.join(out, name("bom-jlcpcb.csv")), "w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, fieldnames=["Comment", "Designator", "Footprint", "LCSC Part #"])
     w.writeheader()
     w.writerows(bom)
@@ -58,14 +63,14 @@ with open(os.path.join(out, "pos-raw.csv"), encoding="utf-8-sig", newline="") as
                     "Layer": "Top" if r["Side"] == "top" else "Bottom",
                     "Rotation": f"{float(r['Rot']):.1f}"})
 cpl.sort(key=lambda c: (re.sub(r"\d+$", "", c["Designator"]), int(re.sub(r"\D", "", c["Designator"]) or 0)))
-with open(os.path.join(out, "cpl-jlcpcb.csv"), "w", encoding="utf-8", newline="") as f:
+with open(os.path.join(out, name("cpl-jlcpcb.csv")), "w", encoding="utf-8", newline="") as f:
     w = csv.DictWriter(f, fieldnames=["Designator", "Mid X", "Mid Y", "Layer", "Rotation"])
     w.writeheader()
     w.writerows(cpl)
 missing = sorted(set(placed) - {c["Designator"] for c in cpl})
 
 # --- gerber zip ---------------------------------------------------------------
-zpath = os.path.join(out, "montreal-skytrain-pcb-gerbers.zip")
+zpath = os.path.join(out, name("gerbers.zip") if stamp else "montreal-skytrain-pcb-gerbers.zip")
 with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED) as z:
     for p in sorted(glob.glob(os.path.join(out, "gerbers", "*"))):
         z.write(p, os.path.basename(p))

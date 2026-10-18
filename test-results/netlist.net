@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "C:\\Users\\funvill\\Documents\\git\\montreal-skytrain-pcb\\hardware\\montreal-metro-pcb.kicad_sch")
-		(date "2026-10-13T14:50:17")
+		(date "2026-10-18T11:01:46")
 		(tool "Eeschema 10.0.5")
 		(sheet
 			(number "1")
@@ -151,6 +151,70 @@
 					(pins
 						(pin
 							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C1")
+			(value "100uF,6.3V,X5R")
+			(footprint "Capacitor_SMD:C_1206_3216Metric")
+			(datasheet "https://www.lcsc.com/datasheet/C15008.pdf")
+			(description "Bulk capacitor at the power entry (JLCPCB basic part)")
+			(fields
+				(field
+					(name "LCSC") "C15008")
+				(field
+					(name "MFG") "Samsung Electro-Mechanics")
+				(field
+					(name "MFGPN") "CL31A107MQHNNNE")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_1206_3216Metric")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/C15008.pdf")
+				(field
+					(name "Description") "Bulk capacitor at the power entry (JLCPCB basic part)")
+			)
+			(libsource
+				(lib "__sws_jlpcb")
+				(part "jlcpcb-1uF,25V,X5R")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C15008")
+			)
+			(property
+				(name "MFG")
+				(value "Samsung Electro-Mechanics")
+			)
+			(property
+				(name "MFGPN")
+				(value "CL31A107MQHNNNE")
+			)
+			(property
+				(name "Sheetname")
+				(value "montreal-metro-pcb")
+			)
+			(property
+				(name "Sheetfile")
+				(value "montreal-metro-pcb.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "0cb4c10d-2739-495b-bf63-989fc9334a61")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
 						)
 					)
 				)
@@ -4744,6 +4808,78 @@
 			)
 		)
 		(comp
+			(ref "R1")
+			(value "330R")
+			(footprint "Resistor_SMD:R_0402_1005Metric")
+			(datasheet "https://www.lcsc.com/datasheet/C25104.pdf")
+			(description "Series resistor on the LED data line (JLCPCB basic part)")
+			(fields
+				(field
+					(name "LCSC") "C25104")
+				(field
+					(name "MFG") "UNI-ROYAL(Uniroyal Elec)")
+				(field
+					(name "MFGPN") "0402WGF3300TCE")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0402_1005Metric")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/C25104.pdf")
+				(field
+					(name "Description") "Series resistor on the LED data line (JLCPCB basic part)")
+			)
+			(libsource
+				(lib "Device")
+				(part "R")
+				(description "Resistor")
+			)
+			(property
+				(name "LCSC")
+				(value "C25104")
+			)
+			(property
+				(name "MFG")
+				(value "UNI-ROYAL(Uniroyal Elec)")
+			)
+			(property
+				(name "MFGPN")
+				(value "0402WGF3300TCE")
+			)
+			(property
+				(name "Sheetname")
+				(value "montreal-metro-pcb")
+			)
+			(property
+				(name "Sheetfile")
+				(value "montreal-metro-pcb.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "eca2fdd4-0c9b-4f40-9a78-86fa9bd3226c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "ROW0")
 			(value "10uF,10V,X5R")
 			(footprint "Capacitor_SMD:C_0402_1005Metric")
@@ -5500,6 +5636,210 @@
 			)
 		)
 		(comp
+			(ref "TP1")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_Pad_3.0x3.0mm")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_3.0x3.0mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "montreal-metro-pcb")
+			)
+			(property
+				(name "Sheetfile")
+				(value "montreal-metro-pcb.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1a2bf641-8731-4a29-a23b-e9de6a1e0c4c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP2")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_Pad_3.0x3.0mm")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_3.0x3.0mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "montreal-metro-pcb")
+			)
+			(property
+				(name "Sheetfile")
+				(value "montreal-metro-pcb.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "816b299d-f711-4132-9c03-16a1fb437186")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP3")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_Pad_3.0x3.0mm")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_3.0x3.0mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "montreal-metro-pcb")
+			)
+			(property
+				(name "Sheetfile")
+				(value "montreal-metro-pcb.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9fb43557-a445-473a-96a0-79d70521edcd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP4")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_Pad_3.0x3.0mm")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_3.0x3.0mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "montreal-metro-pcb")
+			)
+			(property
+				(name "Sheetfile")
+				(value "montreal-metro-pcb.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "33e3b709-7049-4413-804b-30e7af486e09")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "U1")
 			(value "XIAO-RP2040-DIP")
 			(footprint "Seeed Studio XIAO:XIAO-RP2040-SMD")
@@ -5611,6 +5951,40 @@
 				(pin
 					(num "1")
 					(name "1")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "Device")
+			(part "R")
+			(description "Resistor")
+			(footprints
+				(fp "R_*")
+			)
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "R")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "")
+					(type "passive")
+				)
+				(pin
+					(num "2")
+					(name "")
 					(type "passive")
 				)
 			)
@@ -5854,6 +6228,10 @@
 			(uri "${KICAD10_SYMBOL_DIR}/Connector.kicad_sym")
 		)
 		(library
+			(logical "Device")
+			(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")
+		)
+		(library
 			(logical "Mechanical")
 			(uri "${KICAD10_SYMBOL_DIR}/Mechanical.kicad_sym")
 		)
@@ -5873,6 +6251,11 @@
 				(ref "+5V2")
 				(pin "1")
 				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C1")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -6371,6 +6754,12 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "TP1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
 				(ref "U1")
 				(pin "1")
 				(pinfunction "GPIO26/ADC0/A0_1")
@@ -6385,6 +6774,12 @@
 				(ref "SW3")
 				(pin "1")
 				(pinfunction "A_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP2")
+				(pin "1")
+				(pinfunction "1_1")
 				(pintype "passive")
 			)
 			(node
@@ -6405,6 +6800,12 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "TP3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
 				(ref "U1")
 				(pin "3")
 				(pinfunction "GPIO28/ADC2/A2_3")
@@ -6422,6 +6823,12 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "TP4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
 				(ref "U1")
 				(pin "4")
 				(pinfunction "GPIO29/ADC3/A3_4")
@@ -6432,6 +6839,11 @@
 			(code "6")
 			(name "GND")
 			(class "Default")
+			(node
+				(ref "C1")
+				(pin "2")
+				(pintype "passive")
+			)
 			(node
 				(ref "GND1")
 				(pin "1")
@@ -6973,18 +7385,17 @@
 		)
 		(net
 			(code "7")
-			(name "LED_IN")
+			(name "LED_DATA")
 			(class "Default")
-			(node
-				(ref "LED1")
-				(pin "2")
-				(pinfunction "DI_2")
-				(pintype "input")
-			)
 			(node
 				(ref "LED_IN1")
 				(pin "1")
 				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "R1")
+				(pin "1")
 				(pintype "passive")
 			)
 			(node
@@ -6996,6 +7407,22 @@
 		)
 		(net
 			(code "8")
+			(name "LED_IN")
+			(class "Default")
+			(node
+				(ref "LED1")
+				(pin "2")
+				(pinfunction "DI_2")
+				(pintype "input")
+			)
+			(node
+				(ref "R1")
+				(pin "2")
+				(pintype "passive")
+			)
+		)
+		(net
+			(code "9")
 			(name "LED_OUT")
 			(class "Default")
 			(node
@@ -7012,7 +7439,7 @@
 			)
 		)
 		(net
-			(code "9")
+			(code "10")
 			(name "Net-(LED1-DO)")
 			(class "Default")
 			(node
@@ -7029,7 +7456,7 @@
 			)
 		)
 		(net
-			(code "10")
+			(code "11")
 			(name "Net-(LED2-DO)")
 			(class "Default")
 			(node
@@ -7046,7 +7473,7 @@
 			)
 		)
 		(net
-			(code "11")
+			(code "12")
 			(name "Net-(LED3-DO)")
 			(class "Default")
 			(node
@@ -7063,7 +7490,7 @@
 			)
 		)
 		(net
-			(code "12")
+			(code "13")
 			(name "Net-(LED4-DO)")
 			(class "Default")
 			(node
@@ -7080,7 +7507,7 @@
 			)
 		)
 		(net
-			(code "13")
+			(code "14")
 			(name "Net-(LED5-DO)")
 			(class "Default")
 			(node
@@ -7097,7 +7524,7 @@
 			)
 		)
 		(net
-			(code "14")
+			(code "15")
 			(name "Net-(LED6-DO)")
 			(class "Default")
 			(node
@@ -7114,7 +7541,7 @@
 			)
 		)
 		(net
-			(code "15")
+			(code "16")
 			(name "Net-(LED7-DO)")
 			(class "Default")
 			(node
@@ -7131,7 +7558,7 @@
 			)
 		)
 		(net
-			(code "16")
+			(code "17")
 			(name "Net-(LED8-DO)")
 			(class "Default")
 			(node
@@ -7148,7 +7575,7 @@
 			)
 		)
 		(net
-			(code "17")
+			(code "18")
 			(name "Net-(LED10-DI)")
 			(class "Default")
 			(node
@@ -7165,7 +7592,7 @@
 			)
 		)
 		(net
-			(code "18")
+			(code "19")
 			(name "Net-(LED11-DO)")
 			(class "Default")
 			(node
@@ -7182,7 +7609,7 @@
 			)
 		)
 		(net
-			(code "19")
+			(code "20")
 			(name "Net-(LED12-DO)")
 			(class "Default")
 			(node
@@ -7199,7 +7626,7 @@
 			)
 		)
 		(net
-			(code "20")
+			(code "21")
 			(name "Net-(LED13-DO)")
 			(class "Default")
 			(node
@@ -7216,7 +7643,7 @@
 			)
 		)
 		(net
-			(code "21")
+			(code "22")
 			(name "Net-(LED14-DO)")
 			(class "Default")
 			(node
@@ -7233,7 +7660,7 @@
 			)
 		)
 		(net
-			(code "22")
+			(code "23")
 			(name "Net-(LED15-DO)")
 			(class "Default")
 			(node
@@ -7250,7 +7677,7 @@
 			)
 		)
 		(net
-			(code "23")
+			(code "24")
 			(name "Net-(LED16-DO)")
 			(class "Default")
 			(node
@@ -7267,7 +7694,7 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "25")
 			(name "Net-(LED17-DO)")
 			(class "Default")
 			(node
@@ -7284,7 +7711,7 @@
 			)
 		)
 		(net
-			(code "25")
+			(code "26")
 			(name "Net-(LED18-DO)")
 			(class "Default")
 			(node
@@ -7301,7 +7728,7 @@
 			)
 		)
 		(net
-			(code "26")
+			(code "27")
 			(name "Net-(LED19-DO)")
 			(class "Default")
 			(node
@@ -7318,7 +7745,7 @@
 			)
 		)
 		(net
-			(code "27")
+			(code "28")
 			(name "Net-(LED21-DO)")
 			(class "Default")
 			(node
@@ -7335,7 +7762,7 @@
 			)
 		)
 		(net
-			(code "28")
+			(code "29")
 			(name "Net-(LED22-DO)")
 			(class "Default")
 			(node
@@ -7352,7 +7779,7 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "30")
 			(name "Net-(LED23-DO)")
 			(class "Default")
 			(node
@@ -7369,7 +7796,7 @@
 			)
 		)
 		(net
-			(code "30")
+			(code "31")
 			(name "Net-(LED24-DO)")
 			(class "Default")
 			(node
@@ -7386,7 +7813,7 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "32")
 			(name "Net-(LED25-DO)")
 			(class "Default")
 			(node
@@ -7403,7 +7830,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "33")
 			(name "Net-(LED26-DO)")
 			(class "Default")
 			(node
@@ -7420,7 +7847,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "34")
 			(name "Net-(LED27-DO)")
 			(class "Default")
 			(node
@@ -7437,7 +7864,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "35")
 			(name "Net-(LED28-DO)")
 			(class "Default")
 			(node
@@ -7454,7 +7881,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "36")
 			(name "Net-(LED29-DO)")
 			(class "Default")
 			(node
@@ -7471,7 +7898,7 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "37")
 			(name "Net-(LED31-DO)")
 			(class "Default")
 			(node
@@ -7488,7 +7915,7 @@
 			)
 		)
 		(net
-			(code "37")
+			(code "38")
 			(name "Net-(LED32-DO)")
 			(class "Default")
 			(node
@@ -7505,7 +7932,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "39")
 			(name "Net-(LED33-DO)")
 			(class "Default")
 			(node
@@ -7522,7 +7949,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "40")
 			(name "Net-(LED34-DO)")
 			(class "Default")
 			(node
@@ -7539,7 +7966,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "41")
 			(name "Net-(LED35-DO)")
 			(class "Default")
 			(node
@@ -7556,7 +7983,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "42")
 			(name "Net-(LED36-DO)")
 			(class "Default")
 			(node
@@ -7573,7 +8000,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "43")
 			(name "Net-(LED37-DO)")
 			(class "Default")
 			(node
@@ -7590,7 +8017,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "44")
 			(name "Net-(LED38-DO)")
 			(class "Default")
 			(node
@@ -7607,7 +8034,7 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "45")
 			(name "Net-(LED39-DO)")
 			(class "Default")
 			(node
@@ -7624,7 +8051,7 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "46")
 			(name "Net-(LED41-DO)")
 			(class "Default")
 			(node
@@ -7641,7 +8068,7 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "47")
 			(name "Net-(LED42-DO)")
 			(class "Default")
 			(node
@@ -7658,7 +8085,7 @@
 			)
 		)
 		(net
-			(code "47")
+			(code "48")
 			(name "Net-(LED43-DO)")
 			(class "Default")
 			(node
@@ -7675,7 +8102,7 @@
 			)
 		)
 		(net
-			(code "48")
+			(code "49")
 			(name "Net-(LED44-DO)")
 			(class "Default")
 			(node
@@ -7692,7 +8119,7 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "50")
 			(name "Net-(LED45-DO)")
 			(class "Default")
 			(node
@@ -7709,7 +8136,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "51")
 			(name "Net-(LED46-DO)")
 			(class "Default")
 			(node
@@ -7726,7 +8153,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "52")
 			(name "Net-(LED47-DO)")
 			(class "Default")
 			(node
@@ -7743,7 +8170,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "53")
 			(name "Net-(LED48-DO)")
 			(class "Default")
 			(node
@@ -7760,7 +8187,7 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "54")
 			(name "Net-(LED49-DO)")
 			(class "Default")
 			(node
@@ -7777,7 +8204,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "55")
 			(name "Net-(LED51-DO)")
 			(class "Default")
 			(node
@@ -7794,7 +8221,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "56")
 			(name "Net-(LED52-DO)")
 			(class "Default")
 			(node
@@ -7811,7 +8238,7 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "57")
 			(name "Net-(LED53-DO)")
 			(class "Default")
 			(node
@@ -7828,7 +8255,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "58")
 			(name "Net-(LED54-DO)")
 			(class "Default")
 			(node
@@ -7845,7 +8272,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "59")
 			(name "Net-(LED55-DO)")
 			(class "Default")
 			(node
@@ -7862,7 +8289,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "60")
 			(name "Net-(LED56-DO)")
 			(class "Default")
 			(node
@@ -7879,7 +8306,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "61")
 			(name "Net-(LED57-DO)")
 			(class "Default")
 			(node
@@ -7896,7 +8323,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "62")
 			(name "Net-(LED58-DO)")
 			(class "Default")
 			(node
@@ -7913,7 +8340,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "63")
 			(name "Net-(LED59-DO)")
 			(class "Default")
 			(node
@@ -7930,7 +8357,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "64")
 			(name "Net-(LED61-DO)")
 			(class "Default")
 			(node
@@ -7947,7 +8374,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "65")
 			(name "Net-(LED62-DO)")
 			(class "Default")
 			(node
@@ -7964,7 +8391,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "66")
 			(name "Net-(LED63-DO)")
 			(class "Default")
 			(node
@@ -7981,7 +8408,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "67")
 			(name "Net-(LED64-DO)")
 			(class "Default")
 			(node
@@ -7998,7 +8425,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "68")
 			(name "Net-(LED65-DO)")
 			(class "Default")
 			(node
@@ -8015,7 +8442,7 @@
 			)
 		)
 		(net
-			(code "68")
+			(code "69")
 			(name "Net-(LED66-DO)")
 			(class "Default")
 			(node
@@ -8032,7 +8459,7 @@
 			)
 		)
 		(net
-			(code "69")
+			(code "70")
 			(name "Net-(LED67-DO)")
 			(class "Default")
 			(node
@@ -8049,7 +8476,7 @@
 			)
 		)
 		(net
-			(code "70")
+			(code "71")
 			(name "Net-(LED68-DO)")
 			(class "Default")
 			(node
@@ -8066,7 +8493,7 @@
 			)
 		)
 		(net
-			(code "71")
+			(code "72")
 			(name "Net-(LED69-DO)")
 			(class "Default")
 			(node
@@ -8083,7 +8510,7 @@
 			)
 		)
 		(net
-			(code "72")
+			(code "73")
 			(name "Net-(LED71-DO)")
 			(class "Default")
 			(node
@@ -8100,7 +8527,7 @@
 			)
 		)
 		(net
-			(code "73")
+			(code "74")
 			(name "Net-(LED72-DO)")
 			(class "Default")
 			(node
@@ -8117,7 +8544,7 @@
 			)
 		)
 		(net
-			(code "74")
+			(code "75")
 			(name "ROW2")
 			(class "Default")
 			(node
@@ -8134,7 +8561,7 @@
 			)
 		)
 		(net
-			(code "75")
+			(code "76")
 			(name "ROW3")
 			(class "Default")
 			(node
@@ -8151,7 +8578,7 @@
 			)
 		)
 		(net
-			(code "76")
+			(code "77")
 			(name "ROW4")
 			(class "Default")
 			(node
@@ -8168,7 +8595,7 @@
 			)
 		)
 		(net
-			(code "77")
+			(code "78")
 			(name "ROW5")
 			(class "Default")
 			(node
@@ -8185,7 +8612,7 @@
 			)
 		)
 		(net
-			(code "78")
+			(code "79")
 			(name "ROW6")
 			(class "Default")
 			(node
@@ -8202,7 +8629,7 @@
 			)
 		)
 		(net
-			(code "79")
+			(code "80")
 			(name "ROW7")
 			(class "Default")
 			(node
@@ -8219,7 +8646,7 @@
 			)
 		)
 		(net
-			(code "80")
+			(code "81")
 			(name "ROW9")
 			(class "Default")
 			(node
@@ -8236,7 +8663,7 @@
 			)
 		)
 		(net
-			(code "81")
+			(code "82")
 			(name "unconnected-(SW1-B-Pad2)")
 			(class "Default")
 			(node
@@ -8247,7 +8674,7 @@
 			)
 		)
 		(net
-			(code "82")
+			(code "83")
 			(name "unconnected-(SW2-A-Pad1)")
 			(class "Default")
 			(node
@@ -8258,7 +8685,7 @@
 			)
 		)
 		(net
-			(code "83")
+			(code "84")
 			(name "unconnected-(SW3-B-Pad2)")
 			(class "Default")
 			(node
@@ -8269,7 +8696,7 @@
 			)
 		)
 		(net
-			(code "84")
+			(code "85")
 			(name "unconnected-(SW4-A-Pad1)")
 			(class "Default")
 			(node
@@ -8280,7 +8707,7 @@
 			)
 		)
 		(net
-			(code "85")
+			(code "86")
 			(name "unconnected-(U1-3V3-Pad12)")
 			(class "Default")
 			(node
@@ -8291,7 +8718,7 @@
 			)
 		)
 		(net
-			(code "86")
+			(code "87")
 			(name "unconnected-(U1-GPIO0{slash}TX-Pad7)")
 			(class "Default")
 			(node
@@ -8302,7 +8729,7 @@
 			)
 		)
 		(net
-			(code "87")
+			(code "88")
 			(name "unconnected-(U1-GPIO2{slash}SCK-Pad9)")
 			(class "Default")
 			(node
@@ -8313,7 +8740,7 @@
 			)
 		)
 		(net
-			(code "88")
+			(code "89")
 			(name "unconnected-(U1-GPIO3{slash}MOSI-Pad11)")
 			(class "Default")
 			(node
@@ -8324,7 +8751,7 @@
 			)
 		)
 		(net
-			(code "89")
+			(code "90")
 			(name "unconnected-(U1-GPIO4{slash}MISO-Pad10)")
 			(class "Default")
 			(node
@@ -8335,7 +8762,7 @@
 			)
 		)
 		(net
-			(code "90")
+			(code "91")
 			(name "unconnected-(U1-GPIO6{slash}SDA-Pad5)")
 			(class "Default")
 			(node
@@ -8346,7 +8773,7 @@
 			)
 		)
 		(net
-			(code "91")
+			(code "92")
 			(name "unconnected-(U1-GPIO7{slash}SCL-Pad6)")
 			(class "Default")
 			(node

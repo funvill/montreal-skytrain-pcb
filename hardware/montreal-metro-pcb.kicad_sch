@@ -1662,6 +1662,146 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 106.68 162.56)
@@ -1704,6 +1844,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0cccf991-9301-4e15-95f2-8a9b289c215b")
+	)
+	(junction
+		(at 83.82 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0faf6ffd-2399-4a6b-ae7a-5cb8ea250629")
 	)
 	(junction
 		(at 160.02 149.86)
@@ -1766,6 +1912,12 @@
 		(uuid "23864b62-3f10-44a8-9fa3-e7505138992c")
 	)
 	(junction
+		(at 241.3 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "294e6fd5-5c83-4781-b969-8288bc9d8c93")
+	)
+	(junction
 		(at 179.07 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1800,6 +1952,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2bdc52e2-74fb-449f-b009-4330c07c386c")
+	)
+	(junction
+		(at 88.9 179.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2ca4e0a0-78eb-4063-87ff-89f887d3d306")
 	)
 	(junction
 		(at 82.55 116.84)
@@ -1986,6 +2144,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5e3f7903-6bb6-4db5-b309-88d01e56468a")
+	)
+	(junction
+		(at 102.87 166.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5ee6ebb9-bcca-4e8d-91c0-5bc23ab0060b")
 	)
 	(junction
 		(at 102.87 116.84)
@@ -2180,6 +2344,12 @@
 		(uuid "97195c43-2859-4448-a454-4f292e2073ad")
 	)
 	(junction
+		(at 44.45 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97c69175-83a2-4d2a-8b0b-2639b827b4ec")
+	)
+	(junction
 		(at 255.27 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2222,6 +2392,12 @@
 		(uuid "9f397e9d-c197-41a8-ae65-2b8bc001c289")
 	)
 	(junction
+		(at 255.27 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a2fa93cf-36cb-4288-912f-935f5257f7ad")
+	)
+	(junction
 		(at 160.02 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2256,6 +2432,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aa3c6547-2e5f-4557-ab22-3b3b5b7f4750")
+	)
+	(junction
+		(at 69.85 179.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "abec866e-d759-4df9-99e0-d6f838fdbb47")
 	)
 	(junction
 		(at 120.65 116.84)
@@ -2322,6 +2504,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bceacc19-8548-408c-a373-55de891335ea")
+	)
+	(junction
+		(at 29.21 29.21)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c2472664-3b69-46ba-ba19-bde7063c9434")
 	)
 	(junction
 		(at 147.32 30.48)
@@ -2408,6 +2596,18 @@
 		(uuid "db5f4e5f-ba52-432c-911d-bea94e3acd17")
 	)
 	(junction
+		(at 222.25 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df828578-3d78-4bc9-b73a-1738cbcdae46")
+	)
+	(junction
+		(at 59.69 21.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e0aea405-ddd8-4c72-8d22-d8cc65fe9128")
+	)
+	(junction
 		(at 236.22 50.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2418,6 +2618,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e2d39a87-8c50-44f4-9c6d-f53807beee58")
+	)
+	(junction
+		(at 44.45 33.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e3581bd6-ece8-4923-89b3-067ef88b95d3")
 	)
 	(junction
 		(at 198.12 50.8)
@@ -2502,6 +2708,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fe835f3d-5144-4dff-83a3-aa3341af88fd")
+	)
+	(junction
+		(at 236.22 149.86)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ffdedb4c-90d1-4876-ae75-c3503893f1bc")
 	)
 	(no_connect
 		(at 97.79 40.64)
@@ -2619,6 +2831,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 171.45) (xy 121.92 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "026052f2-ae3b-446e-ac7b-894c3fa55744")
+	)
+	(wire
+		(pts
 			(xy 162.56 124.46) (xy 162.56 121.92)
 		)
 		(stroke
@@ -2626,6 +2848,26 @@
 			(type default)
 		)
 		(uuid "029c888a-eecd-433c-baf8-1b1abb2e4b02")
+	)
+	(wire
+		(pts
+			(xy 237.49 157.48) (xy 237.49 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "02c73c09-1828-4ee8-8681-7a77eae7f300")
+	)
+	(wire
+		(pts
+			(xy 255.27 154.94) (xy 255.27 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0353278e-9b08-459c-9c3f-bab58f05fc27")
 	)
 	(wire
 		(pts
@@ -2809,6 +3051,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 29.21) (xy 29.21 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c27c46b-51f1-4b2d-b467-1e77217808b5")
+	)
+	(wire
+		(pts
 			(xy 160.02 157.48) (xy 162.56 157.48)
 		)
 		(stroke
@@ -2946,6 +3198,16 @@
 			(type default)
 		)
 		(uuid "128775ba-d315-4280-9ef2-5264e659f9bc")
+	)
+	(wire
+		(pts
+			(xy 67.31 179.07) (xy 69.85 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12f3fd8e-6cd7-4ec9-b1e1-2da57a895d32")
 	)
 	(wire
 		(pts
@@ -3096,6 +3358,36 @@
 			(type default)
 		)
 		(uuid "1c9f4f2d-0069-4a20-9bb9-acfcb6dbb532")
+	)
+	(wire
+		(pts
+			(xy 222.25 157.48) (xy 222.25 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d0f40a6-5271-432f-bf64-8f1bdffea128")
+	)
+	(wire
+		(pts
+			(xy 67.31 166.37) (xy 83.82 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d2701ba-3ac0-41ac-ad7c-830287d01650")
+	)
+	(wire
+		(pts
+			(xy 236.22 157.48) (xy 237.49 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d64ec46-8b86-49da-a561-9846424ac0bd")
 	)
 	(wire
 		(pts
@@ -3259,6 +3551,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 154.94) (xy 241.3 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2301c4dc-82c6-41a3-b8ea-bd1d8ce14083")
+	)
+	(wire
+		(pts
 			(xy 200.66 91.44) (xy 200.66 88.9)
 		)
 		(stroke
@@ -3356,6 +3658,16 @@
 			(type default)
 		)
 		(uuid "26c32d4f-b7f8-44e4-9d7f-01d3c45cd4b6")
+	)
+	(wire
+		(pts
+			(xy 104.14 173.99) (xy 104.14 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "26c50a25-29dc-42ef-84cc-93ed36c627ee")
 	)
 	(wire
 		(pts
@@ -3669,6 +3981,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 25.4) (xy 44.45 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34843d2a-a7de-41fe-974c-ea2d8d90bc95")
+	)
+	(wire
+		(pts
 			(xy 266.7 67.31) (xy 266.7 71.12)
 		)
 		(stroke
@@ -3959,6 +4281,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 33.02) (xy 44.45 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42cc7f4c-1b3b-41cf-8cde-e044ccd43226")
+	)
+	(wire
+		(pts
 			(xy 238.76 72.39) (xy 241.3 72.39)
 		)
 		(stroke
@@ -4239,6 +4571,26 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 19.05) (xy 44.45 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53359113-34ee-4bf7-90ca-e73d07b6aa10")
+	)
+	(wire
+		(pts
+			(xy 83.82 173.99) (xy 85.09 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5343394a-7ea6-4dd0-93b3-083f3d7a8282")
+	)
+	(wire
+		(pts
 			(xy 67.31 113.03) (xy 88.9 113.03)
 		)
 		(stroke
@@ -4499,6 +4851,26 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 33.02) (xy 62.23 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e6c69ee-06f6-40b2-ae01-691dbd0ed571")
+	)
+	(wire
+		(pts
+			(xy 236.22 154.94) (xy 236.22 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ec67229-2e08-40b5-9d46-bf7cc4d8c173")
+	)
+	(wire
+		(pts
 			(xy 217.17 116.84) (xy 236.22 116.84)
 		)
 		(stroke
@@ -4649,6 +5021,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 154.94) (xy 222.25 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68a693f5-6b87-47a3-86d2-bfefcf8d34f2")
+	)
+	(wire
+		(pts
 			(xy 120.65 83.82) (xy 120.65 88.9)
 		)
 		(stroke
@@ -4656,6 +5038,16 @@
 			(type default)
 		)
 		(uuid "69b4a380-8807-4fd2-b7e9-465cd0150629")
+	)
+	(wire
+		(pts
+			(xy 59.69 19.05) (xy 59.69 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69cc7777-6297-4181-8326-203006ea4fbd")
 	)
 	(wire
 		(pts
@@ -4999,6 +5391,26 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 171.45) (xy 83.82 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7eff89de-ae34-438d-815c-5788ac3399be")
+	)
+	(wire
+		(pts
+			(xy 88.9 179.07) (xy 107.95 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "800fe57d-6c7d-4ae3-a03c-2ea0fc190975")
+	)
+	(wire
+		(pts
 			(xy 83.82 58.42) (xy 83.82 55.88)
 		)
 		(stroke
@@ -5129,6 +5541,16 @@
 	)
 	(wire
 		(pts
+			(xy 107.95 173.99) (xy 107.95 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "866aef1a-feb4-4007-a603-3d626fd55be6")
+	)
+	(wire
+		(pts
 			(xy 67.31 140.97) (xy 67.31 146.05)
 		)
 		(stroke
@@ -5136,6 +5558,16 @@
 			(type default)
 		)
 		(uuid "8763d09a-a2af-4218-9848-b1455c99bdae")
+	)
+	(wire
+		(pts
+			(xy 44.45 25.4) (xy 62.23 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87e9849c-654d-459c-a2e2-f5e5d67bb3e3")
 	)
 	(wire
 		(pts
@@ -5449,6 +5881,16 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 157.48) (xy 241.3 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9543b7cb-2062-4a0a-b691-566b68f0933d")
+	)
+	(wire
+		(pts
 			(xy 120.65 116.84) (xy 120.65 121.92)
 		)
 		(stroke
@@ -5516,6 +5958,16 @@
 			(type default)
 		)
 		(uuid "965b43a6-5c82-4ca5-8d7e-1076e152a7a4")
+	)
+	(wire
+		(pts
+			(xy 104.14 171.45) (xy 107.95 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96983c23-85ae-45b7-a33a-bf3af588e231")
 	)
 	(wire
 		(pts
@@ -5699,6 +6151,16 @@
 	)
 	(wire
 		(pts
+			(xy 102.87 166.37) (xy 121.92 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cb7caeb-17a9-41fa-9505-59990608d7fb")
+	)
+	(wire
+		(pts
 			(xy 162.56 72.39) (xy 165.1 72.39)
 		)
 		(stroke
@@ -5746,6 +6208,16 @@
 			(type default)
 		)
 		(uuid "a1785b51-9855-473a-a3ee-5b99bf4e78d9")
+	)
+	(wire
+		(pts
+			(xy 85.09 173.99) (xy 85.09 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1c479ee-9865-41c6-8ea0-d5da6c53cd10")
 	)
 	(wire
 		(pts
@@ -5836,6 +6308,16 @@
 			(type default)
 		)
 		(uuid "a48f2c73-47d6-43d9-ab35-76d8ddd836a7")
+	)
+	(wire
+		(pts
+			(xy 29.21 19.05) (xy 29.21 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4dd62b6-50f0-4db9-9cc4-601559ed1787")
 	)
 	(wire
 		(pts
@@ -6026,6 +6508,16 @@
 			(type default)
 		)
 		(uuid "b0ba8d06-2c32-4d88-ab83-831132c98dbe")
+	)
+	(wire
+		(pts
+			(xy 102.87 173.99) (xy 104.14 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b101fabc-4140-4730-bd08-b87fa65bf9dd")
 	)
 	(wire
 		(pts
@@ -6329,6 +6821,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 166.37) (xy 102.87 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3319bb7-711b-42ae-84f0-ef3ad3344b9d")
+	)
+	(wire
+		(pts
 			(xy 238.76 74.93) (xy 238.76 72.39)
 		)
 		(stroke
@@ -6499,6 +7001,26 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 157.48) (xy 218.44 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cdf05978-ef65-4626-8c23-1b9451c6e504")
+	)
+	(wire
+		(pts
+			(xy 69.85 179.07) (xy 88.9 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce356e7a-a783-4e64-8482-1b13a4058200")
+	)
+	(wire
+		(pts
 			(xy 88.9 74.93) (xy 88.9 80.01)
 		)
 		(stroke
@@ -6646,6 +7168,16 @@
 			(type default)
 		)
 		(uuid "d538282a-b1a8-4233-bf6c-87d0319db7e5")
+	)
+	(wire
+		(pts
+			(xy 218.44 157.48) (xy 218.44 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5e0f506-94d4-423c-bf62-c0c32a0e4d17")
 	)
 	(wire
 		(pts
@@ -6809,6 +7341,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 171.45) (xy 88.9 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da7c3d8f-2a17-4437-9e57-0e291961370a")
+	)
+	(wire
+		(pts
 			(xy 160.02 67.31) (xy 160.02 72.39)
 		)
 		(stroke
@@ -6916,6 +7458,16 @@
 			(type default)
 		)
 		(uuid "e1a4d3a4-fef9-43a5-99c8-b0449579d47f")
+	)
+	(wire
+		(pts
+			(xy 69.85 173.99) (xy 69.85 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1dc6e1b-ae1a-4ab0-9226-f000a8e577f4")
 	)
 	(wire
 		(pts
@@ -7269,6 +7821,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 21.59) (xy 59.69 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4148af8-ceb2-4ad9-a988-470802cf13c2")
+	)
+	(wire
+		(pts
 			(xy 160.02 67.31) (xy 179.07 67.31)
 		)
 		(stroke
@@ -7389,6 +7951,26 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 21.59) (xy 62.23 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fafb019f-860e-42bd-a447-beff39efdedc")
+	)
+	(wire
+		(pts
+			(xy 88.9 173.99) (xy 88.9 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb3d0a94-d6ff-4beb-a439-6018c07ef754")
+	)
+	(wire
+		(pts
 			(xy 236.22 50.8) (xy 236.22 55.88)
 		)
 		(stroke
@@ -7426,6 +8008,26 @@
 			(type default)
 		)
 		(uuid "fc9061ab-76c3-450d-9f07-d9c852ebf0b6")
+	)
+	(wire
+		(pts
+			(xy 102.87 171.45) (xy 102.87 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcdbf7b5-59e8-410c-b1ec-3243d26e6316")
+	)
+	(wire
+		(pts
+			(xy 29.21 29.21) (xy 62.23 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fdbe06fd-aa75-4ab6-86f8-34997501e250")
 	)
 	(wire
 		(pts
@@ -7521,7 +8123,7 @@
 			)
 		)
 	)
-	(global_label "LED_IN"
+	(global_label "LED_DATA"
 		(shape input)
 		(at 24.13 74.93 180)
 		(fields_autoplaced yes)
@@ -7617,7 +8219,31 @@
 			)
 		)
 	)
-	(global_label "LED_IN"
+	(global_label "ROW8"
+		(shape output)
+		(at 121.92 173.99 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "16a9ec2c-e5fd-4617-a876-341bfaa76b70")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 129.512 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "LED_DATA"
 		(shape output)
 		(at 97.79 44.45 0)
 		(fields_autoplaced yes)
@@ -7761,6 +8387,30 @@
 			)
 		)
 	)
+	(global_label "ROW9"
+		(shape output)
+		(at 255.27 157.48 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "55b9326a-0ec8-4a4e-8fc5-2283ae1f37d6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 262.862 157.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
 	(global_label "BUTTON_01"
 		(shape output)
 		(at 129.54 22.86 180)
@@ -7811,7 +8461,7 @@
 	)
 	(global_label "BUTTON_04"
 		(shape input)
-		(at 62.23 33.02 180)
+		(at 43.18 33.02 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7821,7 +8471,7 @@
 		)
 		(uuid "5c0420a6-8d57-4241-9bb8-8e52d0c1f0ff")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.6615 33.02 0)
+			(at 29.6115 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7883,7 +8533,7 @@
 	)
 	(global_label "BUTTON_01"
 		(shape input)
-		(at 62.23 21.59 180)
+		(at 58.42 21.59 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7893,7 +8543,7 @@
 		)
 		(uuid "87cbd1b2-e88b-49db-b26d-0d8de40a04d5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.6615 21.59 0)
+			(at 44.8515 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8051,7 +8701,7 @@
 	)
 	(global_label "BUTTON_02"
 		(shape input)
-		(at 62.23 25.4 180)
+		(at 43.18 25.4 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8061,7 +8711,31 @@
 		)
 		(uuid "d7f4d612-c1bf-4395-a5df-c4e6698c1154")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.6615 25.4 0)
+			(at 29.6115 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
+	(global_label "ROW9"
+		(shape input)
+		(at 69.85 171.45 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "df82549a-686d-42cb-a927-f3b4ebffdd1b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 62.2576 171.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8075,7 +8749,7 @@
 	)
 	(global_label "BUTTON_03"
 		(shape input)
-		(at 62.23 29.21 180)
+		(at 27.94 29.21 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8085,7 +8759,7 @@
 		)
 		(uuid "f1abf38a-e394-40b0-ab57-b0f9683e7c2d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 48.6615 29.21 0)
+			(at 14.3715 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8740,6 +9414,121 @@
 		)
 	)
 	(symbol
+		(lib_id "__sws_jlpcb:jlcpcb-1uF,25V,X5R")
+		(at 113.03 39.37 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0cb4c10d-2739-495b-bf63-989fc9334a61")
+		(property "Reference" "C1"
+			(at 115.57 38.0999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100uF,6.3V,X5R"
+			(at 115.57 40.6399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+			(at 113.03 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C15008.pdf"
+			(at 113.03 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bulk capacitor at the power entry (JLCPCB basic part)"
+			(at 113.03 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C15008"
+			(at 113.03 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "Samsung Electro-Mechanics"
+			(at 113.03 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "CL31A107MQHNNNE"
+			(at 113.03 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6f63089b-1045-4ac3-99c9-6c7e6e639a46")
+		)
+		(pin "2"
+			(uuid "fa7b0d8a-5d98-4291-ad0a-430ded654f7c")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "JLCPCB-C5349954:XL-1615RGBC-WS2812B")
 		(at 228.6 90.17 180)
 		(unit 1)
@@ -9032,6 +9821,103 @@
 	)
 	(symbol
 		(lib_id "JLCPCB-C5349954:XL-1615RGBC-WS2812B")
+		(at 76.2 172.72 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1533602a-67b2-48bb-bf7e-b0999f1ada0b")
+		(property "Reference" "LED71"
+			(at 72.136 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XL-1615RGBC-WS2812B"
+			(at 74.295 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "C5349954-led:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B-1"
+			(at 76.2 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 76.2 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C5349954"
+			(at 76.2 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "9816fc5e-0600-4674-8b76-2325d29d60bd")
+		)
+		(pin "1"
+			(uuid "6b7701c5-4e50-42fe-bbb7-b7f9d3fff72f")
+		)
+		(pin "3"
+			(uuid "7aac916f-81ad-4c25-a9d4-f2a05ec806fd")
+		)
+		(pin "2"
+			(uuid "50d4521d-3273-440b-99bb-3ef5154aa531")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "LED71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "JLCPCB-C5349954:XL-1615RGBC-WS2812B")
 		(at 74.93 106.68 180)
 		(unit 1)
 		(body_style 1)
@@ -9122,6 +10008,85 @@
 			(project "montreal-metro-pcb"
 				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
 					(reference "LED31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 59.69 19.05 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "1a2bf641-8731-4a29-a23b-e9de6a1e0c4c")
+		(property "Reference" "TP1"
+			(at 57.15 14.4779 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 57.15 17.0179 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_3.0x3.0mm"
+			(at 54.61 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 59.69 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d32c19c3-6774-4399-ac2f-9e0c3e4f9c72")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -9472,6 +10437,182 @@
 			(project "montreal-metro-pcb"
 				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
 					(reference "LED44")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "JLCPCB-C5349954:XL-1615RGBC-WS2812B")
+		(at 114.3 172.72 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "332d9aa2-1534-41e0-88d4-1d44c176ffa1")
+		(property "Reference" "LED73"
+			(at 110.236 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XL-1615RGBC-WS2812B"
+			(at 112.395 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "C5349954-led:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B-1"
+			(at 114.3 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 114.3 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C5349954"
+			(at 114.3 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "1e2935a7-d489-48ae-81a8-497552add883")
+		)
+		(pin "1"
+			(uuid "7baee7b3-0804-41b1-938c-67cf4a12523b")
+		)
+		(pin "3"
+			(uuid "efad98d8-0be6-42e1-a0a1-b2ef975db550")
+		)
+		(pin "2"
+			(uuid "345bf8f1-cc7f-4bbf-815e-624210e67abd")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "LED73")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 44.45 33.02 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "33e3b709-7049-4413-804b-30e7af486e09")
+		(property "Reference" "TP4"
+			(at 46.99 37.5921 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 46.99 35.0521 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_3.0x3.0mm"
+			(at 49.53 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 44.45 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6404e140-cff7-44c9-b084-71526fbf5271")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -11833,6 +12974,200 @@
 	)
 	(symbol
 		(lib_id "JLCPCB-C5349954:XL-1615RGBC-WS2812B")
+		(at 247.65 156.21 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "68487688-4ce5-4baa-b888-beea5cd68840")
+		(property "Reference" "LED70"
+			(at 243.586 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XL-1615RGBC-WS2812B"
+			(at 245.745 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "C5349954-led:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B-1"
+			(at 247.65 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 247.65 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 247.65 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C5349954"
+			(at 247.65 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "5ed8bf71-6e87-4f6f-bc78-0471ccad6dee")
+		)
+		(pin "1"
+			(uuid "bca8277a-8409-4411-95b2-b2b6e27cbe75")
+		)
+		(pin "3"
+			(uuid "df5f74c9-0a4f-41c3-a849-a15009d3cf28")
+		)
+		(pin "2"
+			(uuid "7ddea45c-7c8b-4022-9cd8-a2d35a334ec3")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "LED70")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "JLCPCB-C5349954:XL-1615RGBC-WS2812B")
+		(at 228.6 156.21 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "69e5f97e-0bec-445f-976c-44edf80cdd08")
+		(property "Reference" "LED69"
+			(at 224.536 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XL-1615RGBC-WS2812B"
+			(at 226.695 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "C5349954-led:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B-1"
+			(at 228.6 147.32 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 228.6 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C5349954"
+			(at 228.6 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "cffc8641-9a7e-4e0b-982b-a049dd879544")
+		)
+		(pin "1"
+			(uuid "81409ebb-ac77-4707-898b-8cd9643cddbc")
+		)
+		(pin "3"
+			(uuid "b8586ddb-0823-4444-818c-1b61134e46bb")
+		)
+		(pin "2"
+			(uuid "5414923c-a05e-4cb3-87d3-7c001175f77f")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "LED69")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "JLCPCB-C5349954:XL-1615RGBC-WS2812B")
 		(at 113.03 73.66 180)
 		(unit 1)
 		(body_style 1)
@@ -12387,6 +13722,85 @@
 			(project "montreal-metro-pcb"
 				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
 					(reference "SW1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 67.31 179.07 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7603e232-2742-455f-84b2-94b74f302d42")
+		(property "Reference" "#PWR027"
+			(at 71.12 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 63.5 179.07 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 67.31 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "305e3660-0b96-4806-a229-f4738fc5d343")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -12956,6 +14370,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 44.45 19.05 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "816b299d-f711-4132-9c03-16a1fb437186")
+		(property "Reference" "TP2"
+			(at 41.91 14.4779 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 41.91 17.0179 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_3.0x3.0mm"
+			(at 39.37 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 44.45 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "edcad7ce-631a-4421-ac6b-10e0265b349b")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "JLCPCB-C318884:TS-1187A-B-A-B")
 		(at 157.48 25.4 0)
 		(unit 1)
@@ -13149,6 +14642,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 67.31 166.37 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "84f73b9a-0d43-4ee8-b521-a4b37375b94e")
+		(property "Reference" "#PWR026"
+			(at 60.96 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 63.5 166.37 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 67.31 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 67.31 166.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6d31b72f-be66-4baf-aba1-749f14390a42")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "#PWR026")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "JLCPCB-C5349954:XL-1615RGBC-WS2812B")
 		(at 113.03 106.68 180)
 		(unit 1)
@@ -13240,6 +14812,103 @@
 			(project "montreal-metro-pcb"
 				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
 					(reference "LED33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "JLCPCB-C5349954:XL-1615RGBC-WS2812B")
+		(at 95.25 172.72 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "89b442af-31b9-4ad0-915f-42d8511e8506")
+		(property "Reference" "LED72"
+			(at 91.186 168.91 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "XL-1615RGBC-WS2812B"
+			(at 93.345 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "C5349954-led:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B-1"
+			(at 95.25 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 95.25 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC Part" "C5349954"
+			(at 95.25 161.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "6b93db69-5394-4f7b-b2ff-9e30ce11276f")
+		)
+		(pin "1"
+			(uuid "a8bd9da2-9055-4275-ad0a-10e4b9a12424")
+		)
+		(pin "3"
+			(uuid "cb3d57bd-99c6-4755-946a-86f329ddf186")
+		)
+		(pin "2"
+			(uuid "e170cca1-ca1e-499d-bc9a-a2b8614822b5")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "LED72")
 					(unit 1)
 				)
 			)
@@ -14325,6 +15994,85 @@
 			(project "montreal-metro-pcb"
 				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
 					(reference "ROW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 29.21 19.05 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9fb43557-a445-473a-96a0-79d70521edcd")
+		(property "Reference" "TP3"
+			(at 26.67 14.4779 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 26.67 17.0179 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_3.0x3.0mm"
+			(at 24.13 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 24.13 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 29.21 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e7246882-b08e-4862-82d4-f8b3f44dbd9f")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -16344,6 +18092,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 113.03 36.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d24a3009-80ba-48c0-8ca7-948e6bd33ff1")
+		(property "Reference" "#PWR28"
+			(at 113.03 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 113.03 33.274 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 113.03 36.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "156618cf-ab03-46b5-aebb-19fa4a105c24")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "#PWR28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "JLCPCB-C5349954:XL-1615RGBC-WS2812B")
 		(at 133.35 57.15 180)
 		(unit 1)
@@ -16435,6 +18260,83 @@
 			(project "montreal-metro-pcb"
 				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
 					(reference "LED4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 113.03 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d3a3bb56-0e5e-440e-b43c-28ac542a0f44")
+		(property "Reference" "#PWR29"
+			(at 113.03 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 113.03 45.466 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 113.03 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3a7608cf-415c-4481-8530-b864ea06ebec")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "#PWR29")
 					(unit 1)
 				)
 			)
@@ -18770,8 +20672,8 @@
 		)
 	)
 	(symbol
-		(lib_id "JLCPCB-C5349954:XL-1615RGBC-WS2812B")
-		(at 228.6 156.21 180)
+		(lib_id "Device:R")
+		(at 120.65 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18779,739 +20681,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "69e5f97e-0bec-445f-976c-44edf80cdd08")
-		(property "Reference" "LED69"
-			(at 224.536 152.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XL-1615RGBC-WS2812B"
-			(at 226.695 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "C5349954-led:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B-1"
-			(at 228.6 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 228.6 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 228.6 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C5349954"
-			(at 228.6 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "cffc8641-9a7e-4e0b-982b-a049dd879544")
-		)
-		(pin "1"
-			(uuid "81409ebb-ac77-4707-898b-8cd9643cddbc")
-		)
-		(pin "3"
-			(uuid "b8586ddb-0823-4444-818c-1b61134e46bb")
-		)
-		(pin "2"
-			(uuid "5414923c-a05e-4cb3-87d3-7c001175f77f")
-		)
-		(instances
-			(project "montreal-metro-pcb"
-				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "LED69")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 222.25 157.48) (xy 222.25 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d0f40a6-5271-432f-bf64-8f1bdffea128")
-	)
-	(wire
-		(pts
-			(xy 236.22 154.94) (xy 236.22 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ec67229-2e08-40b5-9d46-bf7cc4d8c173")
-	)
-	(symbol
-		(lib_id "JLCPCB-C5349954:XL-1615RGBC-WS2812B")
-		(at 247.65 156.21 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "68487688-4ce5-4baa-b888-beea5cd68840")
-		(property "Reference" "LED70"
-			(at 243.586 152.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XL-1615RGBC-WS2812B"
-			(at 245.745 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "C5349954-led:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B-1"
-			(at 247.65 147.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 247.65 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 247.65 156.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C5349954"
-			(at 247.65 144.78 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "5ed8bf71-6e87-4f6f-bc78-0471ccad6dee")
-		)
-		(pin "1"
-			(uuid "bca8277a-8409-4411-95b2-b2b6e27cbe75")
-		)
-		(pin "3"
-			(uuid "df5f74c9-0a4f-41c3-a849-a15009d3cf28")
-		)
-		(pin "2"
-			(uuid "7ddea45c-7c8b-4022-9cd8-a2d35a334ec3")
-		)
-		(instances
-			(project "montreal-metro-pcb"
-				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "LED70")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 241.3 157.48) (xy 241.3 162.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9543b7cb-2062-4a0a-b691-566b68f0933d")
-	)
-	(wire
-		(pts
-			(xy 255.27 154.94) (xy 255.27 149.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0353278e-9b08-459c-9c3f-bab58f05fc27")
-	)
-	(symbol
-		(lib_id "JLCPCB-C5349954:XL-1615RGBC-WS2812B")
-		(at 76.2 172.72 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1533602a-67b2-48bb-bf7e-b0999f1ada0b")
-		(property "Reference" "LED71"
-			(at 72.136 168.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XL-1615RGBC-WS2812B"
-			(at 74.295 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "C5349954-led:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B-1"
-			(at 76.2 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 76.2 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C5349954"
-			(at 76.2 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "9816fc5e-0600-4674-8b76-2325d29d60bd")
-		)
-		(pin "1"
-			(uuid "6b7701c5-4e50-42fe-bbb7-b7f9d3fff72f")
-		)
-		(pin "3"
-			(uuid "7aac916f-81ad-4c25-a9d4-f2a05ec806fd")
-		)
-		(pin "2"
-			(uuid "50d4521d-3273-440b-99bb-3ef5154aa531")
-		)
-		(instances
-			(project "montreal-metro-pcb"
-				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "LED71")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 69.85 173.99) (xy 69.85 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1dc6e1b-ae1a-4ab0-9226-f000a8e577f4")
-	)
-	(wire
-		(pts
-			(xy 83.82 171.45) (xy 83.82 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7eff89de-ae34-438d-815c-5788ac3399be")
-	)
-	(symbol
-		(lib_id "JLCPCB-C5349954:XL-1615RGBC-WS2812B")
-		(at 95.25 172.72 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "89b442af-31b9-4ad0-915f-42d8511e8506")
-		(property "Reference" "LED72"
-			(at 91.186 168.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XL-1615RGBC-WS2812B"
-			(at 93.345 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "C5349954-led:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B-1"
-			(at 95.25 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 95.25 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 95.25 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C5349954"
-			(at 95.25 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "6b93db69-5394-4f7b-b2ff-9e30ce11276f")
-		)
-		(pin "1"
-			(uuid "a8bd9da2-9055-4275-ad0a-10e4b9a12424")
-		)
-		(pin "3"
-			(uuid "cb3d57bd-99c6-4755-946a-86f329ddf186")
-		)
-		(pin "2"
-			(uuid "e170cca1-ca1e-499d-bc9a-a2b8614822b5")
-		)
-		(instances
-			(project "montreal-metro-pcb"
-				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "LED72")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 88.9 173.99) (xy 88.9 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fb3d0a94-d6ff-4beb-a439-6018c07ef754")
-	)
-	(wire
-		(pts
-			(xy 102.87 171.45) (xy 102.87 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fcdbf7b5-59e8-410c-b1ec-3243d26e6316")
-	)
-	(symbol
-		(lib_id "JLCPCB-C5349954:XL-1615RGBC-WS2812B")
-		(at 114.3 172.72 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "332d9aa2-1534-41e0-88d4-1d44c176ffa1")
-		(property "Reference" "LED73"
-			(at 110.236 168.91 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "XL-1615RGBC-WS2812B"
-			(at 112.395 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "C5349954-led:LED-SMD_4P-L1.6-W1.5_XL-1615RGBC-WS2812B-1"
-			(at 114.3 163.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 114.3 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 114.3 172.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC Part" "C5349954"
-			(at 114.3 161.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "1e2935a7-d489-48ae-81a8-497552add883")
-		)
-		(pin "1"
-			(uuid "7baee7b3-0804-41b1-938c-67cf4a12523b")
-		)
-		(pin "3"
-			(uuid "efad98d8-0be6-42e1-a0a1-b2ef975db550")
-		)
-		(pin "2"
-			(uuid "345bf8f1-cc7f-4bbf-815e-624210e67abd")
-		)
-		(instances
-			(project "montreal-metro-pcb"
-				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "LED73")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 107.95 173.99) (xy 107.95 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "866aef1a-feb4-4007-a603-3d626fd55be6")
-	)
-	(wire
-		(pts
-			(xy 121.92 171.45) (xy 121.92 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "026052f2-ae3b-446e-ac7b-894c3fa55744")
-	)
-	(wire
-		(pts
-			(xy 217.17 157.48) (xy 218.44 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cdf05978-ef65-4626-8c23-1b9451c6e504")
-	)
-	(wire
-		(pts
-			(xy 218.44 157.48) (xy 218.44 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5e0f506-94d4-423c-bf62-c0c32a0e4d17")
-	)
-	(wire
-		(pts
-			(xy 218.44 154.94) (xy 222.25 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68a693f5-6b87-47a3-86d2-bfefcf8d34f2")
-	)
-	(wire
-		(pts
-			(xy 236.22 157.48) (xy 237.49 157.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d64ec46-8b86-49da-a561-9846424ac0bd")
-	)
-	(wire
-		(pts
-			(xy 237.49 157.48) (xy 237.49 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "02c73c09-1828-4ee8-8681-7a77eae7f300")
-	)
-	(wire
-		(pts
-			(xy 237.49 154.94) (xy 241.3 154.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2301c4dc-82c6-41a3-b8ea-bd1d8ce14083")
-	)
-	(wire
-		(pts
-			(xy 83.82 173.99) (xy 85.09 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5343394a-7ea6-4dd0-93b3-083f3d7a8282")
-	)
-	(wire
-		(pts
-			(xy 85.09 173.99) (xy 85.09 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1c479ee-9865-41c6-8ea0-d5da6c53cd10")
-	)
-	(wire
-		(pts
-			(xy 85.09 171.45) (xy 88.9 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "da7c3d8f-2a17-4437-9e57-0e291961370a")
-	)
-	(wire
-		(pts
-			(xy 102.87 173.99) (xy 104.14 173.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b101fabc-4140-4730-bd08-b87fa65bf9dd")
-	)
-	(wire
-		(pts
-			(xy 104.14 173.99) (xy 104.14 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "26c50a25-29dc-42ef-84cc-93ed36c627ee")
-	)
-	(wire
-		(pts
-			(xy 104.14 171.45) (xy 107.95 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96983c23-85ae-45b7-a33a-bf3af588e231")
-	)
-	(junction
-		(at 222.25 162.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "df828578-3d78-4bc9-b73a-1738cbcdae46")
-	)
-	(junction
-		(at 236.22 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ffdedb4c-90d1-4876-ae75-c3503893f1bc")
-	)
-	(junction
-		(at 241.3 162.56)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "294e6fd5-5c83-4781-b969-8288bc9d8c93")
-	)
-	(junction
-		(at 255.27 149.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a2fa93cf-36cb-4288-912f-935f5257f7ad")
-	)
-	(global_label "ROW9"
-		(shape output)
-		(at 255.27 157.48 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "55b9326a-0ec8-4a4e-8fc5-2283ae1f37d6")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 262.862 157.48 0)
-			(hide yes)
+		(fields_autoplaced no)
+		(uuid "eca2fdd4-0c9b-4f40-9a78-86fa9bd3226c")
+		(property "Reference" "R1"
+			(at 123.19 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19521,34 +20694,101 @@
 				(justify left)
 			)
 		)
+		(property "Value" "330R"
+			(at 123.19 43.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 120.65 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C25104.pdf"
+			(at 120.65 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Series resistor on the LED data line (JLCPCB basic part)"
+			(at 120.65 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C25104"
+			(at 120.65 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFG" "UNI-ROYAL(Uniroyal Elec)"
+			(at 120.65 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(property "MFGPN" "0402WGF3300TCE"
+			(at 120.65 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 0.0254 0.0254)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "377a37e4-b259-45dd-b93f-583c3cbd300b")
+		)
+		(pin "2"
+			(uuid "7ae4e498-b11c-4447-aaee-41477b73e233")
+		)
+		(instances
+			(project "montreal-metro-pcb"
+				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
+					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
 	)
-	(global_label "ROW9"
+	(global_label "LED_DATA"
 		(shape input)
-		(at 69.85 171.45 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "df82549a-686d-42cb-a927-f3b4ebffdd1b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 62.2576 171.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-	)
-	(global_label "ROW8"
-		(shape output)
-		(at 121.92 173.99 0)
+		(at 120.65 38.1 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -19556,9 +20796,9 @@
 			)
 			(justify left)
 		)
-		(uuid "16a9ec2c-e5fd-4617-a876-341bfaa76b70")
+		(uuid "5aecc504-e60d-4bc2-b2c6-f5af9ff09606")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 129.512 173.99 0)
+			(at 129.331 38.1 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19570,110 +20810,20 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "power:GND")
-		(at 67.31 166.37 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
+	(global_label "LED_IN"
+		(shape output)
+		(at 120.65 45.72 270)
 		(fields_autoplaced yes)
-		(uuid "84f73b9a-0d43-4ee8-b521-a4b37375b94e")
-		(property "Reference" "#PWR026"
-			(at 60.96 166.37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7b326e51-9cc7-4882-ab60-2a3338b60a14")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 129.331 45.72 270)
 			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 63.5 166.37 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 67.31 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 67.31 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 67.31 166.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6d31b72f-be66-4baf-aba1-749f14390a42")
-		)
-		(instances
-			(project "montreal-metro-pcb"
-				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 67.31 179.07 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7603e232-2742-455f-84b2-94b74f302d42")
-		(property "Reference" "#PWR027"
-			(at 71.12 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 63.5 179.07 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19683,134 +20833,6 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 67.31 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 67.31 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 67.31 179.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "305e3660-0b96-4806-a229-f4738fc5d343")
-		)
-		(instances
-			(project "montreal-metro-pcb"
-				(path "/a4b89d58-73a6-456d-b4c1-2065753e9341"
-					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(wire
-		(pts
-			(xy 67.31 166.37) (xy 83.82 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d2701ba-3ac0-41ac-ad7c-830287d01650")
-	)
-	(wire
-		(pts
-			(xy 83.82 166.37) (xy 102.87 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3319bb7-711b-42ae-84f0-ef3ad3344b9d")
-	)
-	(wire
-		(pts
-			(xy 102.87 166.37) (xy 121.92 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9cb7caeb-17a9-41fa-9505-59990608d7fb")
-	)
-	(wire
-		(pts
-			(xy 67.31 179.07) (xy 69.85 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12f3fd8e-6cd7-4ec9-b1e1-2da57a895d32")
-	)
-	(wire
-		(pts
-			(xy 69.85 179.07) (xy 88.9 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ce356e7a-a783-4e64-8482-1b13a4058200")
-	)
-	(wire
-		(pts
-			(xy 88.9 179.07) (xy 107.95 179.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "800fe57d-6c7d-4ae3-a03c-2ea0fc190975")
-	)
-	(junction
-		(at 83.82 166.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0faf6ffd-2399-4a6b-ae7a-5cb8ea250629")
-	)
-	(junction
-		(at 102.87 166.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5ee6ebb9-bcca-4e8d-91c0-5bc23ab0060b")
-	)
-	(junction
-		(at 69.85 179.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "abec866e-d759-4df9-99e0-d6f838fdbb47")
-	)
-	(junction
-		(at 88.9 179.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2ca4e0a0-78eb-4063-87ff-89f887d3d306")
 	)
 	(sheet_instances
 		(path "/"

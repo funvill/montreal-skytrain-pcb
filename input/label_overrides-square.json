@@ -3,48 +3,48 @@
   "label": {
    "angle": 0,
    "anchor": "end",
-   "dx": 1.4,
-   "dy": 2.1
+   "dx": 1.3,
+   "dy": 2.5
   }
  },
  "monk": {
   "label": {
    "angle": 0,
    "anchor": "start",
-   "dx": 1.9,
-   "dy": 0.89
+   "dx": 2.0,
+   "dy": 0.1
   }
  },
  "jolicoeur": {
   "label": {
    "angle": 0,
    "anchor": "start",
-   "dx": 1.9,
-   "dy": 0.89
+   "dx": 2.0,
+   "dy": 0.1
   }
  },
  "verdun": {
   "label": {
    "angle": 0,
    "anchor": "end",
-   "dx": -1.9,
-   "dy": -0.89
+   "dx": -2.1,
+   "dy": -0.3
   }
  },
  "de-l-eglise": {
   "label": {
    "angle": 0,
    "anchor": "center",
-   "dx": 5.14,
-   "dy": 2.49
+   "dx": 6.6,
+   "dy": 0.6
   }
  },
  "lasalle": {
   "label": {
    "angle": 0,
    "anchor": "end",
-   "dx": -1.9,
-   "dy": -0.89
+   "dx": -2.1,
+   "dy": -0.1
   }
  },
  "charlevoix": {
@@ -52,7 +52,7 @@
    "angle": 0,
    "anchor": "start",
    "dx": 1.9,
-   "dy": 0.89
+   "dy": 0.0
   }
  },
  "lionel-groulx": {
@@ -248,24 +248,24 @@
   "label": {
    "angle": 0,
    "anchor": "start",
-   "dx": 2.0,
-   "dy": -0.3
+   "dx": 2.3,
+   "dy": -0.5
   }
  },
  "plamondon": {
   "label": {
    "angle": 0,
    "anchor": "center",
-   "dx": -6.4,
-   "dy": 0.0
+   "dx": -6.5,
+   "dy": 0.2
   }
  },
  "cote-sainte-catherine": {
   "label": {
    "angle": 0,
    "anchor": "end",
-   "dx": -1.8,
-   "dy": 0.1
+   "dx": -2.2,
+   "dy": 0.3
   },
   "wrap": false
  },
@@ -289,7 +289,7 @@
   "label": {
    "angle": 0,
    "anchor": "center",
-   "dx": -5.5,
+   "dx": -5.7,
    "dy": 0.0
   }
  },
@@ -306,8 +306,8 @@
   "label": {
    "angle": 0,
    "anchor": "start",
-   "dx": 1.8,
-   "dy": 0.3
+   "dx": 1.9,
+   "dy": 0.6
   },
   "wrap": [
    "Georges-",
@@ -360,8 +360,8 @@
   "label": {
    "angle": 0,
    "anchor": "start",
-   "dx": 2.0,
-   "dy": -0.5
+   "dx": 1.9,
+   "dy": 0.1
   },
   "wrap": [
    "Champ-de-",
