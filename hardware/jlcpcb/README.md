@@ -1,14 +1,18 @@
 # JLCPCB outputs
 
-Generated 2026-10-18 11:17 from `montreal-metro-pcb.kicad_pcb` / `.kicad_sch`
+Generated 2026-10-18 18:53 from `montreal-metro-pcb.kicad_pcb` / `.kicad_sch`
 with KiCad 10 `kicad-cli` (commands at the bottom). Regenerate after any
 board change, with a new timestamp.
 
+Run `../tools/mask_under_silk.py` on the board first if the artwork was
+regenerated: it closes the water's mask opening under the silkscreen, or
+the routes and rings crossing the water are clipped out of the silk.
+
 | File | Upload as |
 |---|---|
-| `montreal-skytrain-pcb-2026-10-18-1117-gerbers.zip` | **Gerber file** on the order page: F/B Cu, Paste, Mask, Silk, Edge.Cuts, Excellon drill (PTH + NPTH merged) and the drill map |
-| `montreal-skytrain-pcb-2026-10-18-1117-bom-jlcpcb.csv` | **BOM** on the SMT assembly page: `Comment, Designator, Footprint, LCSC Part #` |
-| `montreal-skytrain-pcb-2026-10-18-1117-cpl-jlcpcb.csv` | **CPL / pick-and-place**: `Designator, Mid X, Mid Y, Layer, Rotation` |
+| `montreal-skytrain-pcb-2026-10-18-1853-gerbers.zip` | **Gerber file** on the order page: F/B Cu, Paste, Mask, Silk, Edge.Cuts, Excellon drill (PTH + NPTH merged) and the drill map |
+| `montreal-skytrain-pcb-2026-10-18-1853-bom-jlcpcb.csv` | **BOM** on the SMT assembly page: `Comment, Designator, Footprint, LCSC Part #` |
+| `montreal-skytrain-pcb-2026-10-18-1853-cpl-jlcpcb.csv` | **CPL / pick-and-place**: `Designator, Mid X, Mid Y, Layer, Rotation` |
 
 Assembly is **top side only**, 83 parts, all JLCPCB basic except the LEDs:
 
@@ -46,5 +50,5 @@ kicad-cli pcb export pos montreal-metro-pcb.kicad_pcb -o jlcpcb/pos-raw.csv \
     --format csv --units mm --side both --exclude-dnp
 kicad-cli sch export bom montreal-metro-pcb.kicad_sch -o jlcpcb/bom-raw.csv \
     --fields "Reference,Value,Footprint,LCSC Part,LCSC,DNP" --group-by "Value,Footprint,LCSC Part,LCSC" --exclude-dnp
-python ../tools/make_jlcpcb.py jlcpcb 2026-10-18-1117
+python ../tools/make_jlcpcb.py jlcpcb 2026-10-18-1853
 ```

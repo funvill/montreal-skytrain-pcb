@@ -33,10 +33,17 @@ python reposition_board.py ../hardware/montreal-metro-pcb.kicad_pcb ../hardware/
 kicad-cli sch export netlist --format kicadsexpr -o ../test-results/netlist.net ../hardware/montreal-metro-pcb.kicad_sch
 "C:/Program Files/KiCad/10.0/bin/python.exe" port_board.py ../hardware/montreal-metro-pcb.kicad_pcb ../test-results/netlist.net ../hardware/leds.csv ../hardware/parts.csv
 python export_art.py       ../input/montreal-schematic-square.json ../hardware/montreal-metro-pcb.kicad_pcb --scale 2.0
+"C:/Program Files/KiCad/10.0/bin/python.exe" mask_under_silk.py ../hardware/montreal-metro-pcb.kicad_pcb
 ```
 
 Use the same `reposition_board.py` arguments every time, including
 `--controller 124 122`.
+
+`mask_under_silk.py` must follow every `export_art.py` run. The water is a
+solder-mask opening, and silkscreen cannot print on an opening (JLCPCB clips
+it, as does the gerber export's `--subtract-soldermask`), so the routes,
+rings and leaders crossing the water would vanish. It closes the opening
+0.2 mm around the ink; the copper stays, under mask.
 
 ## Routing
 
