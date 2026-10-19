@@ -36,3 +36,4 @@ Renders are KiCad 10 `kicad-cli pcb render` output (`tools/render_board.py`).
 | [`tools/`](tools/) | The pipeline: placement, artwork, labels, routing helpers, checks, outputs |
 | [`firmware/`](firmware/) | XIAO RP2040 firmware with the STM line colours |
 | [`runbook-new-city.md`](runbook-new-city.md) | How to port the board to another city |
+| [`lessons-learned.md`](lessons-learned.md) | What this board and the Vancouver one taught, and the pre-order checklist |

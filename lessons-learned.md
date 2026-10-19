@@ -1,10 +1,296 @@
 # Lessons learned — building a transit-map LED PCB
 
-Collected while building v3 of the Vancouver SkyTrain board. Written for
-the next board of this kind (another city, another network), so each
-lesson says what to do, not just what went wrong.
+Written for the next board of this kind (another city, another network), so
+each lesson says what to do, not just what went wrong.
 
-## 1. Get the landmass right first, on its own, before anything touches the PCB
+- **Part A** is the Montréal Métro board (October 2026: 73 LEDs, 160 × 160
+  mm, sent to JLCPCB on 2026-10-18). It ran from data to fab files in about
+  ten days.
+- **Part C** is the checklist to run before ordering, built from both.
+- **Part B**, at the end, is the Vancouver SkyTrain v3 board this one was
+  ported from. Every lesson there still holds; Part A adds to it.
+
+---
+
+# Part A — Montréal
+
+## A1. Settle scope and style early; keep every style as a variant
+
+The map went through four styles before the user settled:
+
+| Round | Style | Verdict |
+|---|---|---|
+| 1 | Natural map, 2:1, 200 mm (the Vancouver recipe) | Kept as `montreal.json`, but too sparse downtown |
+| 2 | STM-style schematic: straight lines, 45° bends | Liked the lines, wanted real land |
+| 3 | Schematic lines on natural land, rounded bends | Right idea, wrong frame |
+| 4 | **Square 1:1, 160 × 160 mm, schematic lines, true-scale land** | Built and ordered |
+
+What made this cheap:
+
+- **Every style is a variant in one builder** (`build_schematic.py`'s
+  `VARIANTS` table, plus the separate natural builder), not a rewrite. The
+  user could compare them side by side and change their mind without losing
+  work.
+- **When asked for options, give two or three with a recommendation.**
+  "What do you think looks best?" moved faster than open-ended iterations.
+- **Ask the scope questions first**: metro only or commuter rail too? Under
+  construction lines included? Here the Blue line extension went in because
+  the board outlives the construction timeline. That decision fixed the LED
+  count (73) before any layout work.
+
+## A2. Schematic lines on real land: move the land rigidly, never warp it
+
+A schematic moves stations off their true positions; the land has to follow
+somehow. Stretching or bending the land to meet the stations gave "looks too
+stretched, doesn't look realistic", every time. What held:
+
+- **Fit the land to the stations with a similarity transform only**
+  (scale, rotation, translation; Procrustes). Weight the shore stations
+  heavily (`SHORE_STATIONS`, weight 6) and ignore stations the schematic
+  deliberately displaces (`FIT_IGNORE`: Jean-Drapeau, Longueuil).
+- **Exaggerate the station-to-shore distance, not the coastline.** The user
+  allowed stations to sit further from the water than they really are. They
+  did not allow the shore itself to move.
+- **Project at true scale** (turn off any warp left over from the natural
+  map). Real proportions are what made it read as Montréal.
+- **Detail comes from the water, not the land**: the port's piers, the
+  Lachine Canal, rivers east of downtown. Use area thresholds for small
+  water bodies, keep named water at a lower threshold, and drop islands
+  below a minimum area *and* width so slivers don't etch.
+
+## A3. OSM water and Overpass specifics
+
+- **`out body geom`, not `out tags geom`.** The latter drops relation
+  members, so multipolygon water (the St. Lawrence, the river islands)
+  silently vanished.
+- Overpass returns busy/500 under load: retry and fall back to a mirror,
+  and cache the raw responses in the repo (`input/osm/`).
+- Future stations (the Blue line extension) are not in OSM as nodes. Their
+  positions came from the planned alignment intersected with cross streets.
+  Record where each hand-made position came from.
+
+## A4. Labels: learn the human's method, then make it the default
+
+The optimiser's first output was technically clear of overlaps and still
+wrong to the user. Their markups taught the rules, in this order:
+
+1. **Cartographic rule of thumb:** upper right of the station, then lower
+   right, upper left, lower left, middle right, middle left.
+2. **The user's hand method**, inferred from their KiCad edits: put the
+   label beside the station and level with it, close in; keep the same side
+   along a run of stations; alternate sides on a level run; wrap the name
+   rather than let it cross water.
+3. **Horizontal text wherever possible**, and as few leader lines as
+   possible. A leader is a last resort, not a placement option.
+4. **Official names with their hyphens**, line-broken at the hyphen
+   (Mary-Two-/Axe-Earley), never abbreviated.
+
+Then encode it: the optimiser's cost function (`position_cost()` in
+`auto_label.py`) now scores exactly those preferences. **Treat the hand
+pass in KiCad as the truth**: `import_labels.py` →
+`save_label_overrides.py` freezes every hand placement in
+`label_overrides-square.json`, which every build re-applies. The water is
+cut away under labels (`LABEL_CLEAR_MM`), so a label never has to dodge
+it.
+
+**Always import and freeze before any rebuild.** The user kept editing
+labels between sessions (13 more edits turned up during the PCB review).
+An unimported edit is one rebuild away from being lost.
+
+## A5. Exposed-copper water fights the ground pour; plan for islands
+
+The water is bare copper on the front with no net. It cuts the front ground
+pour into islands, and a hand-routed board will have islands that carry LED
+ground pads but never reach the back pour. The first review of the
+hand-routed board found the map would have stayed almost entirely dark:
+
+- **LED2 (Jean-Drapeau)** sat on a 22 mm² ground island with an
+  unconnected +5V stub. It was second in the chain, so LEDs 3–73 would
+  have received no data.
+- **An 835 mm² front island** under LEDs 58–64 had no via to the back pour.
+- **The XIAO's ground pad** sat between two pads closer together than the
+  pour clearance, so the pour never reached it.
+- Two decoupling capacitors were never joined to +5V, and three LEDs had
+  starved thermal reliefs.
+
+What to do:
+
+- **Treat the back pour as the ground plane and the front pour as
+  decoration.** Every front ground pad gets a via to the back. Give the
+  controller's ground pad an explicit track.
+- **Count the islands, don't eyeball them.** Refill the zones, then list
+  each front pour piece with its vias and pads (a KiCad Python loop over
+  `GetFilledPolysList`). "0 unconnected after refill" is the bar; one via
+  for a 3000 mm² island is legal but weak, so add more.
+- **One ground zone, not three.** Copying zones during editing left
+  duplicates whose leftover slivers show up as isolated-copper warnings.
+- **The autorouter is a useful proof, not the answer.** Freerouting got the
+  board DRC-clean (commit `b02ee1b`): art keepouts with `Fracture()` so
+  island holes stay open, ground plane declared on the back only. The user
+  still routed by hand for looks. Keep the autorouted version in history
+  as evidence the board is routable.
+
+## A6. The fab clips silkscreen over exposed copper — close the mask under the ink
+
+The board was already uploaded when the user spotted it in JLCPCB's gerber
+viewer. The yellow line's route over the water, the Jean-Drapeau ring and
+its leader were missing.
+
+- **Silkscreen cannot print on a solder-mask opening.** JLCPCB clips it,
+  and so does `kicad-cli` with `--subtract-soldermask`. The water *is* a
+  mask opening.
+- **KiCad's 3D render does not show this.** It draws silk over the
+  opening as if it will print, so every render looked right.
+- **Fix:** close the mask opening under the ink with a margin (0.2 mm;
+  JLCPCB wants ≥ 0.15 mm), keeping the copper. `tools/mask_under_silk.py`
+  does it, and `rebuild_board.sh` runs it after every `export_art.py`.
+- **Verify with a clipped plot, not a render**:
+  `kicad-cli pcb export pdf -l F.Mask,F.SilkS --subtract-soldermask` or the
+  fab's own gerber viewer. Measure silk ∩ mask opening in KiCad Python;
+  it must be 0 mm².
+
+## A7. Saved zone fills are what gets plotted
+
+Gerber export plots the fill as last saved. A +5V via added after the last
+fill sat inside the saved ground pour: the plotted copper would have
+shorted +5V to ground even though the editor showed nothing wrong.
+
+**Refill (press B) and save before exporting**, and export with
+`--check-zones`. Run DRC both with and without `--refill-zones`; a
+difference between the two runs means the saved fill is stale.
+
+## A8. Parts: query JLCPCB's library, don't guess, and keep fields honest
+
+- **Look parts up instead of recalling them.** JLCPCB's parts API
+  (`selectSmtComponentList`, with `componentLibraryType: "base"`) answers
+  "is there a basic part for X" in one call. There is no basic aluminium
+  electrolytic at 100–470 µF. The basic choices were a 100 µF 6.3 V 1206
+  ceramic (C15008) and a 100 µF 6.3 V tantalum (C16133). The ceramic won:
+  a 6.3 V tantalum on a 5 V USB rail is under-derated and fails short.
+  Ceramic DC-bias derating leaves roughly 20–30 µF at 5 V; say so.
+- **The Value field and the LCSC number must agree.** The ROW capacitors
+  say "10uF,10V,X5R" but C52923 is a 1 µF part, and the Value text
+  becomes the BOM comment JLCPCB shows. Check every BOM line against its
+  part number.
+- **Put every assembled part on one side.** The user moved everything JLCPCB
+  places to the top: one-sided assembly is cheaper. The XIAO is soldered by
+  hand; the buttons are do-not-populate with bare pads for hand fitting.
+- **Mark test points, art and holes as excluded from the BOM and position
+  files**, or they clutter the assembly order.
+- **Add the cheap insurance parts**: a 330 Ω series resistor on the LED
+  data line (C25104, basic) and a bulk capacitor at the power entry. Both
+  cost cents; a missing footprint costs a board spin.
+
+## A9. KiCad 10 scripting gotchas
+
+- **Check for lock files before editing** (`~*.kicad_pcb.lck`). When the
+  user has the board open, a script's changes are overwritten the next
+  time they save. Tell them to close without saving and reopen.
+- **After `board.Remove()`, the Python wrappers go bad**: objects come
+  back as bare `SwigPyObject`s with no methods. Read and add everything
+  first, remove last.
+- Use `COutline()` (const) rather than `Outline()`, and
+  `TransformShapeToPolygon` rather than `GetPolyShape()`, when you only
+  need to read a polygon.
+- `Duplicate(False)` (not `Duplicate()`) when cloning a footprint;
+  `LSET()` + `AddLayer()` to build layer sets.
+- KiCad's bundled Python has no shapely. Do the geometry with
+  `SHAPE_POLY_SET` (`BooleanXor`, `BooleanSubtract`, `Fracture`) or in a
+  separate system-Python step.
+- **Polygons with holes need `Fracture()`** before they become a
+  `gr_poly`, a zone outline or a keepout. Otherwise islands fill in (the
+  autorouter fenced off Jean-Drapeau until this was fixed).
+
+## A10. Artwork from an SVG: one board-only footprint
+
+The back-side owl came as a one-bit SVG (a single even-odd path).
+`tools/svg_to_silk.py` turns it into one footprint (`LOGO1`):
+
+- **board-only, excluded from the BOM and position files**, so it doesn't
+  upset schematic parity or the assembly order;
+- **built for the front, then flipped**, so it reads correctly from the
+  back;
+- **movable as one piece** in KiCad, and regenerated in place by re-running
+  the tool.
+
+Size the art to the space the parts leave free (here, the top 2/3 of the
+back), and check it against every back-side part.
+
+## A11. Process
+
+- **Screenshots with markups were the fastest review loop.** The user's
+  annotated images ("move this up", "remove these islands", "parallel
+  leaders here") turned into concrete changes with no ambiguity. Ask for
+  them.
+- **Review the hand-routed board from the files, not the picture.** The
+  screenshot looked finished; DRC with `--refill-zones`, schematic parity
+  and a pour-island analysis found every critical fault.
+- **Timestamp fab outputs and delete superseded sets.** Generate
+  `montreal-skytrain-pcb-<YYYY-MM-DD-HHMM>-*` files, and delete a set as
+  soon as it is known to be wrong (the `-1117` set had the clipped silk),
+  so nobody uploads it.
+- **Keep the exact package that was sent** (`manufactured/`) and check it
+  byte for byte against the repo's outputs.
+- **Commit as the agent identity**, every time: `git -c
+  user.name="SWS-Chipkin" -c user.email="sws-dev@chipkin.com" commit`.
+- **Shipping:** JLCPCB's cheapest tracked line ("Global Standard Direct
+  Line") greys out above its weight and size limits; a 160 mm assembled
+  order can exceed them. Budget for the next tier.
+
+## A12. Known issues in the board as ordered
+
+Check these when the boards arrive, and fix them in the next revision:
+
+- **LED rotation** in JLCPCB's placement. Their part orientation for
+  C5349954 may differ from the footprint's by a constant.
+- **ROW0–7 Value text** reads 10 µF; the parts are 1 µF (C52923).
+- **USB-C sits 26 mm in from the bottom edge**, so the cable plugs into
+  the middle of the back. Move the XIAO to an edge if the board will hang
+  on a wall.
+- **The northern front ground pour** joins the back through a single via.
+- **Copper scraps:** a redundant `gnd` zone leaves three tiny scraps
+  (warnings only).
+- **The LED data line is 3.3 V into 5 V LEDs**, with a series resistor
+  but no level shifter. If the first LED misbehaves, a 74AHCT1G125 is the
+  fix.
+- **Power:** the firmware caps brightness at 900 mA. Full white on 73 LEDs
+  is about 4.4 A, beyond USB.
+
+---
+
+# Part C — Before you order
+
+Run all of it, every time:
+
+1. Import and freeze any hand label edits (`import_labels.py`,
+   `save_label_overrides.py`).
+2. If the artwork was regenerated, run `mask_under_silk.py`.
+3. Refill all zones and save.
+4. DRC with `--refill-zones --schematic-parity`: 0 errors, 0 unconnected,
+   0 parity issues. Read every remaining warning and say why it's
+   acceptable.
+5. Pour-island analysis: every front ground piece with pads has at least
+   one via; the controller's ground pad is tracked.
+6. Clipped silk check: a `--subtract-soldermask` plot, and silk ∩ mask
+   opening = 0 mm².
+7. BOM check: every Value matches its LCSC part; every assembled part is on
+   one side; non-parts are excluded.
+8. Export with `--check-zones`; timestamp the files; delete superseded
+   sets.
+9. Open the zip in the fab's gerber viewer and look at the silkscreen
+   over the water, the board edge and the drill holes.
+10. After upload, save the exact package in `manufactured/` and record the
+    date in the README.
+
+---
+
+# Part B — Vancouver SkyTrain v3
+
+Collected while building v3 of the Vancouver SkyTrain board, the project
+this one was ported from.
+
+
+## B1. Get the landmass right first, on its own, before anything touches the PCB
 
 The single biggest time sink of this project was geography. Five
 successive sources were tried before the shape was right:
@@ -42,7 +328,7 @@ What made #5 work is worth generalising:
   reaching the sea, the big lakes. Every one of those was missing at some
   point and no checker caught it; a human did.
 
-## 2. Use real station positions, then bend them only where physics demands
+## B2. Use real station positions, then bend them only where physics demands
 
 Station positions came, in order, from a schematic, a hand drawing and
 finally OSM nodes (`railway=station` + `station=subway`). Real positions
@@ -58,7 +344,7 @@ not the 2.5 mm the package suggests**: LED footprints rotate to aim DOUT
 at the next LED, and two diagonal neighbours' pads overlap at 2.8 mm.
 Found by DRC after the layout looked fine.
 
-## 3. Size the board to the map's aspect, not the other way round
+## B3. Size the board to the map's aspect, not the other way round
 
 A square board for a 2:1 region wastes half the area and pushes the map
 scale down until labels stop fitting. Decide the frame (lat/lon box)
@@ -67,7 +353,7 @@ budget allow, and treat "leave a blank band" as a warning sign. Going
 from 150 mm square to 200 × 109 mm raised the scale 40 % and solved more
 label problems than any algorithm did.
 
-## 4. Labels: the tight cluster decides everything — plan for it
+## B4. Labels: the tight cluster decides everything — plan for it
 
 Downtown (six stations inside 1 km, three lines crossing) is where every
 labelling scheme broke. What eventually held:
@@ -89,7 +375,7 @@ labelling scheme broke. What eventually held:
   "Granville" are 300 m apart; no layout algorithm fixes that, a bigger
   board does.
 
-## 5. Make hand edits survive regeneration — deterministic ids + an importer
+## B5. Make hand edits survive regeneration — deterministic ids + an importer
 
 The generated board is edited by hand in KiCad; the generator regenerates
 it. Without a round trip, one of them always loses. What worked:
@@ -113,7 +399,7 @@ edits into a commit, a regeneration overwrote them on disk, and a
 **Take the backup before the first regeneration, never overwrite a backup,
 and tag the commit.**
 
-## 6. Model the fab's reality, not the editor's
+## B6. Model the fab's reality, not the editor's
 
 - KiCad's stroke `type dash` line style is an **editor display hint**; it
   does not survive to gerbers, SVG export or 3D render. Draw dashes as
@@ -135,7 +421,7 @@ and tag the commit.**
   `kicad-cli` then fails with "Failed to load board". Pin the CLI to the
   newest install.
 
-## 7. Process lessons
+## B7. Process lessons
 
 - **Verify against the source, not against the previous fix.** Two rounds
   were spent adding a "missing" peninsula that the source map never
@@ -155,7 +441,7 @@ and tag the commit.**
   preview) after every change meant problems were seen the same minute
   they were made.
 
-## 8. Reusing this for another city
+## B8. Reusing this for another city
 
 The pipeline is city-agnostic below `vancouver.json`. For a new city you
 need: (a) a lat/lon frame and board width in `geo_fwa.py`'s successor,

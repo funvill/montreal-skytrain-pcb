@@ -322,8 +322,9 @@ flashes the board twice.
 
 ## Further reading
 
-- [lessons-learned.md](lessons-learned.md) — the eight things this project
-  learned the hard way, including the five geography sources that failed
+- [lessons-learned.md](lessons-learned.md) — what the Montréal and
+  Vancouver boards learned the hard way, and the checklist to run before
+  ordering
 - [AGENTS.md](AGENTS.md) — conventions the scripts depend on: units,
   deterministic uuids, the label schema, copper rules
 - [`ai-v3/input/README.md`](ai-v3/input/README.md) — data sources and the
