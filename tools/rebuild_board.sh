@@ -30,6 +30,7 @@ python -X utf8 reposition_board.py "$PCB" ../hardware/leds.csv --board 160 --hei
 python -X utf8 check_led_chain.py ../test-results/netlist.net 73 | tail -1
 "$KICAD/python.exe" port_board.py "$PCB" ../test-results/netlist.net ../hardware/leds.csv ../hardware/parts.csv 2>&1 | quiet
 python -X utf8 export_art.py "$DATA" "$PCB" --scale 2.0 | tail -1
+"$KICAD/python.exe" mask_under_silk.py "$PCB" 2>&1 | quiet | tail -1
 
 if [ $AUTOROUTE = 1 ]; then
 "$KICAD/python.exe" autoroute.py export "$PCB" "$(cygpath -w "$WORK")\\board.dsn" 2>&1 | quiet | grep -o "[0-9]* art keepouts"
